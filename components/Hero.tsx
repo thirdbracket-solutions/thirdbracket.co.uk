@@ -6,8 +6,8 @@ const Hero = () => {
   return (
     <section className="space-y-8 py-16 sm:py-20 md:py-24">
       {/* <h1 className="max-w-lg sm:max-w-xl     lg:max-w-4xl xl:max-w-6xl mx-auto font-extrabold text-gray-950 dark:text-white text-4xl sm:text-[44px] md:text-[50px]  leading-[1.1] lg:text-[60px] text-center  "> */}
-      <h1 className="text-[44px]/1 md:text-6xl  font-black mx-auto text-center lg:text-7xl md:max-w-5xl px-2 md:px-0">
-        Bringing Enterprise Solutions within Your Budget
+      <h1 className="text-5xl md:text-6xl  font-black mx-auto text-center lg:text-7xl md:max-w-5xl px-1 md:px-0">
+      Enterprise Solutions, Minus the Overhead Cost
       </h1>
 
       <p className="text-base/7 lg:text-lg/8 text-center  text-gray-500   mx-auto px-3 md:px-0 md:max-w-5xl    ">

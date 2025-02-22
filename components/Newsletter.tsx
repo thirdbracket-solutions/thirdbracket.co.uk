@@ -52,17 +52,17 @@ const Newsletter = () => {
   };
 
   return (
-    <section className="py-16 sm:py-20 md:py-24 bg-gradient-to-b from-transparent to-gray-50 dark:to-gray-900/20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-12 md:gap-16">
+    <section className="py-16 sm:py-20 md:py-24 ">
+      <div className="max-w-7xl mx-auto ">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-8 md:gap-16">
           {/* Left side content */}
           <div className="flex-1 max-w-xl">
-            <h2 className="font-bold text-4xl sm:text-5xl lg:text-6xl text-gray-900 dark:text-white mb-6 leading-tight">
+            <h2 className="font-bold text-4xl md:text-5xl lg:text-6xl text-gray-950 dark:text-white mb-2 ">
               Stay in the loop
             </h2>
-            <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300">
-              Subscribe to our newsletter for updates, tips, and exclusive
-              content delivered straight to your inbox.
+            <p className="text-base/7 lg:text-lg/8  text-gray-500">
+              Subscribe to our newsletter for updates and exclusive content
+              delivered straight to your inbox.
             </p>
           </div>
 
@@ -100,7 +100,6 @@ const Newsletter = () => {
                         disabled={state.isSubmitting}
                         isLoading={state.isSubmitting}
                         size="lg"
-                        className="rounded-lg px-6 font-medium"
                       >
                         Subscribe
                       </Button>

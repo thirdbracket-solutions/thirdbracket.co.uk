@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section className="space-y-8 py-16 sm:py-20 md:py-24">
       {/* <h1 className="max-w-lg sm:max-w-xl     lg:max-w-4xl xl:max-w-6xl mx-auto font-extrabold text-gray-950 dark:text-white text-4xl sm:text-[44px] md:text-[50px]  leading-[1.1] lg:text-[60px] text-center  "> */}
-      <h1 className="text-[40px]/[1.1] sm:text-5xl/[1.2]  font-black mx-auto text-center lg:text-6xl/[1.2] md:max-w-5xl px-2 md:px-0">
+      <h1 className="text-5xl md:text-6xl  font-black mx-auto text-center lg:text-7xl md:max-w-5xl px-2 md:px-0">
         Bringing Enterprise Solutions within Your Budget
       </h1>
 
@@ -19,24 +19,24 @@ const Hero = () => {
       <div className="flex flex-wrap gap-4 items-center justify-center">
         {/* Desktop buttons */}
         <div className="hidden md:block">
-          <Button size="lg" outline as={Link} href="#">
+          <Button size="xl" outline as={Link} href="#">
             Let's Grow
           </Button>
         </div>
         <div className="hidden md:block">
-          <Button size="lg" as={Link} href="#">
+          <Button size="xl" as={Link} href="#">
             Our Solutions
           </Button>
         </div>
 
         {/* Mobile buttons */}
         <div className="md:hidden">
-          <Button size="md" outline as={Link} href="#">
+          <Button size="lg" outline as={Link} href="#">
             Let's Grow
           </Button>
         </div>
         <div className="md:hidden">
-          <Button size="md" as={Link} href="#">
+          <Button size="lg" as={Link} href="#">
             Our Solutions
           </Button>
         </div>

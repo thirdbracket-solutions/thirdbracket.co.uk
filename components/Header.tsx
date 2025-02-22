@@ -33,13 +33,6 @@ const Header: FC = () => {
         <span className="text-[22px] sm:text-2xl font-medium   text-gray-950 dark:text-white">
           <span className="font-light">THIRD</span>BRACKET
         </span>
-        {/* <Image
-          src="/path.svg"
-          alt=""
-          width={120}
-          height={27}
-          className="h-4 sm:h-5    w-auto dark:invert"
-        /> */}
       </Navbrand>
 
       <NavItem>
@@ -406,9 +399,9 @@ const Header: FC = () => {
         </Navlink>
       </NavItem>
       <MobileNav>
-        <div className="space-y-2 py-1">
+        <div className="space-y-2 py-1.5">
           <Megamenu label="Web Development">
-            <div className="space-y-2 py-1">
+            <div className="space-y-2 py-1.5">
               <Navlink as={Link} href="#" isDropdownItem>
                 Next.js Development
               </Navlink>
@@ -430,34 +423,11 @@ const Header: FC = () => {
               <Navlink as={Link} href="#" isDropdownItem>
                 Other
               </Navlink>
-
-              {/* <Megamenu label="DevOps" isDropdownItem>
-                <div className=" space-y-3">
-                  <Navlink as={Link} href="#" isDropdownItem>
-                    Edge Configuration
-                  </Navlink>
-                  <Navlink as={Link} href="#" isDropdownItem>
-                    CI/CD & Workflow
-                  </Navlink>
-                  <Navlink as={Link} href="#" isDropdownItem>
-                    AWS Serverless
-                  </Navlink>
-                  <Navlink as={Link} href="#" isDropdownItem>
-                    Cloud Management
-                  </Navlink>
-                  <Navlink as={Link} href="#" isDropdownItem>
-                    Release Management
-                  </Navlink>
-                  <Navlink as={Link} href="#" isDropdownItem>
-                    Cost Optimization
-                  </Navlink>
-                </div>
-              </Megamenu> */}
             </div>
           </Megamenu>
 
           <Megamenu label="Business Solutions">
-            <div className="">
+            <div className="space-y-2 py-1.5">
               <Navlink as={Link} href="#" isDropdownItem>
                 Business 360
               </Navlink>
@@ -487,9 +457,9 @@ const Header: FC = () => {
           </Navlink>
 
           <Megamenu label="Resources">
-            <div className=" space-y-2">
+            <div className="space-y-2 py-1.5">
               <Megamenu label="UI Components" isDropdownItem>
-                <div className=" space-y-2">
+                <div className="space-y-2 py-1.5">
                   <Navlink as={Link} href="#" isDropdownItem>
                     Bracket UI Component
                   </Navlink>
@@ -502,7 +472,7 @@ const Header: FC = () => {
                 </div>
               </Megamenu>
               <Megamenu label="Themes" isDropdownItem>
-                <div className="space-y-2">
+                <div className="space-y-2 py-1.5">
                   <Navlink as={Link} href="#" isDropdownItem>
                     Wordpress Themes
                   </Navlink>
@@ -518,7 +488,7 @@ const Header: FC = () => {
                 </div>
               </Megamenu>
               <Megamenu label="Templates" isDropdownItem>
-                <div className=" space-y-2">
+                <div className="space-y-2 py-1.5">
                   <Navlink as={Link} href="#" isDropdownItem>
                     Elementor Templates
                   </Navlink>

@@ -106,14 +106,14 @@ import { Card, Navlink } from "@thirdbracket/bracketui";
 
 const Features = () => {
   return (
-    <section className="py-16 sm:py-20 lg:py-28">
+    <section className="py-16 sm:py-20 lg:py-28 ">
       <div className="space-y-6 sm:space-y-7 lg:space-y-8">
         {/* Header group */}
-        <div className="flex flex-col lg:flex-row items-start lg:items-center justify-center lg:justify-start gap-5 sm:gap-6  lg:gap-7   ">
-          <h2 className="max-w-3xl sm:max-w-4xl lg:max-w-6xl text-[1.875rem]/[2.375rem] sm:text-[2.25rem]/[2.75rem] lg:text-[2.75rem]/[3.25rem] font-black text-center lg:text-right text-gray-950 dark:text-white ">
+        <div className="flex flex-col lg:flex-row items-start lg:items-center justify-center lg:justify-start gap-5 sm:gap-6  lg:gap-0  ">
+          <h2 className="max-w-3xl sm:max-w-4xl lg:max-w-6xl text-[1.875rem]/[2.375rem] sm:text-[2.25rem]/[2.75rem] lg:text-[2.75rem]/[3.25rem] font-black  lg:text-right text-gray-950 dark:text-white px-4 lg:px-0">
             Think Your Business Can’t Afford a Professional Start?
           </h2>
-          <p className="text-[0.9375rem]/[1.75rem] sm:text-[1.0625rem]/[1.875rem] lg:text-[1.1875rem]/[2rem] text-center lg:text-left text-gray-600 dark:text-gray-400 max-w-2xl sm:max-w-3xl lg:max-w-4xl ">
+          <p className="text-[0.9375rem]/[1.75rem] sm:text-[1.0625rem]/[1.875rem] lg:text-[1.1875rem]/[2rem] lg:text-left text-gray-600 dark:text-gray-400 max-w-2xl sm:max-w-3xl lg:max-w-4xl px-4 lg:px-5">
             We bring enterprise-level web development and digital marketing
             solutions within your budget, so you never feel left behind.
           </p>
@@ -126,7 +126,7 @@ const Features = () => {
             href="#"
             className="h-full"
             cover={
-              <div className="w-full h-full flex items-center justify-center bg-white dark:bg-gray-950 bg-[linear-gradient(to_right,#80808009_1px,transparent_1px),linear-gradient(to_bottom,#80808009_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,#28282860_1px,transparent_1px),linear-gradient(to_bottom,#28282860_1px,transparent_1px)] bg-[size:24px_24px]">
+              <div className="w-full h-full flex items-center justify-center  ">
                 <Image
                   src="card1.svg"
                   width={500}

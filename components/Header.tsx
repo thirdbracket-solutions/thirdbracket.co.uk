@@ -19,16 +19,15 @@ const Header: FC = () => {
   return (
     <Navbar>
       <Navbrand
-        // logo={
-        //   <Image
-        //     src="/22.svg"
-        //     alt=""
-        //     width={512}
-        //     height={430}
-        //     className="h-5 sm:h-6    w-auto dark:invert"
-        //   />
-        // }
-        logo="third.svg"
+        logo={
+          <Image
+            src="/third.svg"
+            alt=""
+            width={684}
+            height={80}
+            className="h-5 sm:h-6    w-auto dark:invert"
+          />
+        }
         href="/"
       >
         {/* <span className="text-[22px] sm:text-2xl font-medium   text-gray-950 dark:text-white">

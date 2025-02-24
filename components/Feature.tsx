@@ -109,11 +109,11 @@ const Features = () => {
     <section className="py-16 sm:py-20 lg:py-28">
       <div className="space-y-6 sm:space-y-7 lg:space-y-8">
         {/* Header group */}
-        <div className="flex flex-col lg:flex-row items-start lg:items-center justify-center lg:justify-start  lg:gap-4 space-y-4 lg:space-y-0  lg:px-16">
-          <h2 className="text-[1.65rem]/[2rem] sm:text-[1.75rem]/[2.15rem] lg:text-[1.85rem]/[2.25rem] font-black text-center lg:text-right text-gray-950 dark:text-white">
+        <div className="flex flex-col lg:flex-row items-start lg:items-center justify-center lg:justify-start gap-5 sm:gap-6  lg:gap-7   ">
+          <h2 className="max-w-3xl sm:max-w-4xl lg:max-w-6xl text-[1.875rem]/[2.375rem] sm:text-[2.25rem]/[2.75rem] lg:text-[2.75rem]/[3.25rem] font-black text-center lg:text-right text-gray-950 dark:text-white ">
             Think Your Business Can’t Afford a Professional Start?
           </h2>
-          <p className="text-[0.875rem]/[1.5rem] sm:text-[0.925rem]/[1.6rem] lg:text-[0.975rem]/[1.65rem] text-center lg:text-left text-gray-600 dark:text-gray-300">
+          <p className="text-[0.9375rem]/[1.75rem] sm:text-[1.0625rem]/[1.875rem] lg:text-[1.1875rem]/[2rem] text-center lg:text-left text-gray-600 dark:text-gray-400 max-w-2xl sm:max-w-3xl lg:max-w-4xl ">
             We bring enterprise-level web development and digital marketing
             solutions within your budget, so you never feel left behind.
           </p>

@@ -57,7 +57,7 @@ const Hero = () => {
       {/* Background Pattern */}
       <div className="w-full h-full  bg-white dark:bg-gray-950 bg-[linear-gradient(to_right,#80808010_1px,transparent_1px),linear-gradient(to_bottom,#80808010_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,#28282860_1px,transparent_1px),linear-gradient(to_bottom,#28282860_1px,transparent_1px)] bg-[size:24px_24px]">
         <div className="flex flex-col items-center space-y-6 sm:space-y-7 lg:space-y-8">
-          <h1 className="text-[2.70rem]/[2.70rem] sm:text-[3rem]/[3rem] lg:text-[3.25rem]/[3.25rem] font-black text-center max-w-3xl sm:max-w-4xl lg:max-w-6xl px-4 bg-gradient-to-r from-gray-800 via-gray-900 to-gray-800 dark:from-gray-200 dark:via-gray-100 dark:to-gray-200 text-transparent bg-clip-text">
+          <h1 className="text-[2.70rem]/[3rem] sm:text-[3rem]/[3.30rem] lg:text-[3.25rem]/[3.55rem] font-black text-center max-w-3xl sm:max-w-4xl lg:max-w-6xl px-4 bg-gradient-to-r from-gray-800 via-gray-900 to-gray-800 dark:from-gray-200 dark:via-gray-100 dark:to-gray-200 text-transparent bg-clip-text">
             Enterprise Solutions, Minus the Overhead Cost
           </h1>
 

@@ -106,25 +106,25 @@ import { Card, Navlink } from "@thirdbracket/bracketui";
 
 const Features = () => {
   return (
-    <section className="py-16 sm:py-20 lg:py-28 ">
-      <div className="space-y-6 sm:space-y-7 lg:space-y-8">
+    <section className="py-16 sm:py-20  ">
+      <div className="space-y-7 sm:space-y-8 lg:space-y-12">
         {/* Header group */}
-        <div className="flex flex-col lg:flex-row items-start lg:items-center justify-center lg:justify-start gap-4 sm:gap-5  lg:gap-0  ">
-          <h2 className="max-w-3xl sm:max-w-4xl lg:max-w-6xl text-[1.875rem]/[2.375rem] sm:text-[2.25rem]/[2.75rem] lg:text-[2.75rem]/[3.25rem] font-black text-center lg:text-right text-gray-950 dark:text-white px-4">
+        <div className="flex flex-col lg:flex-row items-center lg:items-center justify-center lg:justify-start gap-4 sm:gap-5  lg:gap-0  ">
+          <h2 className="max-w-2xl sm:max-w-3xl lg:max-w-6xl text-[1.875rem]/[2.20rem] sm:text-[2.25rem]/[2.75rem] lg:text-[2.50rem]/[2.60rem] font-black  lg:text-right text-center text-gray-950 dark:text-white px-4 lg:px-0">
             Think Your Business Can’t Afford a Professional Start?
           </h2>
-          <p className="text-[0.9375rem]/[1.75rem] sm:text-[1.0625rem]/[1.875rem] lg:text-[1.1875rem]/[2rem] text-center px-4 lg:text-left text-gray-800/70 dark:text-gray-200/40 max-w-2xl sm:max-w-3xl lg:max-w-4xl ">
+          <p className="text-[0.9375rem]/[1.75rem] sm:text-[1.0625rem]/[1.875rem] lg:text-[1.1875rem]/[2rem] px-4 lg:text-left text-gray-800/70 dark:text-gray-200/40 max-w-xl sm:max-w-2xl lg:max-w-4xl text-center lg:px-8">
             We bring enterprise-level web development and digital marketing
             solutions within your budget, so you never feel left behind.
           </p>
         </div>
 
         {/* Cards grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start mx-auto justify-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-7 lg:gap-8 items-start mx-auto justify-center">
           {/* Left Column - Featured Feature Card */}
           <Card
             href="#"
-            className="h-full"
+            className="h-full "
             cover={
               <div className="w-full h-full flex items-center justify-center  ">
                 <Image
@@ -138,28 +138,36 @@ const Features = () => {
             }
             header="Your Website Is Your Business’s First Impression"
           >
-            Make your first impression count with a custom website—something
-            your business couldn’t afford until now.
+            <p className="leading-relaxed">
+              Make your first impression count with a custom website—something
+              your business couldn’t afford until now.
+            </p>
           </Card>
 
           {/* Right Column - Stack of Cards */}
           <div className="space-y-4">
             <Card header="Finding the Right UI is Frustrating—We’ve Simplified It">
-              Piecing together UI elements is time-consuming. We provide a React
-              component library and Elementor templates for WordPress—modern,
-              flexible, and ready to use.
+              <p className="leading-relaxed">
+                Piecing together UI elements is time-consuming. We provide a
+                React component library and Elementor templates for
+                WordPress—modern, flexible, and ready to use.
+              </p>
             </Card>
 
             <Card header="Missing Modern Features? Your Website Deserves Better">
-              Most websites lack speed and SEO optimization. We use Next.js
-              features like server-side rendering and image optimization to give
-              you an edge.
+              <p className="leading-relaxed">
+                Most websites lack speed and SEO optimization. We use Next.js
+                features like server-side rendering and image optimization to
+                give you an edge.
+              </p>
             </Card>
 
             <Card header="Struggling to Find the Right Marketer? Get a Whole Team">
-              Hiring a good freelancer is hit-or-miss, and agencies are
-              expensive. Our developers, designers, and marketers work as one to
-              drive real results.
+              <p className="leading-relaxed">
+                Hiring a good freelancer is hit-or-miss, and agencies are
+                expensive. Our developers, designers, and marketers work as one
+                to drive real results.
+              </p>
             </Card>
 
             <Card
@@ -167,9 +175,11 @@ const Features = () => {
               isExternal
               header="SEO Takes Too Long—We Speed It Up"
             >
-              SEO can be slow and unpredictable. Our AI-driven strategies and
-              marketplace expertise accelerate rankings and improve visibility
-              faster.
+              <p className="leading-relaxed">
+                SEO can be slow and unpredictable. Our AI-driven strategies and
+                marketplace expertise accelerate rankings and improve visibility
+                faster.
+              </p>
             </Card>
           </div>
         </div>

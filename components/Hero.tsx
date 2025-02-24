@@ -62,11 +62,11 @@ const Hero = () => {
   dark:bg-[linear-gradient(to_right,#BEBEBE0A_1px,transparent_1px),linear-gradient(to_bottom,#BEBEBE0A_1px,transparent_1px)]
   bg-[size:14px_24px]"
       >
-        <h1 className="text-[2.65rem]/[2.90rem] sm:text-[3.5rem]/[3.75rem] lg:text-[4.5rem]/[4.5rem] font-black text-center max-w-3xl sm:max-w-4xl lg:max-w-6xl px-4 bg-gradient-to-r from-gray-800 via-gray-900 to-gray-800 dark:from-gray-200 dark:via-gray-100 dark:to-gray-200 text-transparent bg-clip-text">
+        <h1 className="text-[2.70rem]/[2.85rem] sm:text-[3.5rem]/[3.75rem] lg:text-[4.5rem]/[4.5rem] font-black text-center max-w-3xl sm:max-w-4xl lg:max-w-6xl px-4 bg-gradient-to-r from-gray-800 via-gray-900 to-gray-800 dark:from-gray-200 dark:via-gray-100 dark:to-gray-200 text-transparent bg-clip-text">
           Enterprise Solutions, Minus the Overhead Cost
         </h1>
 
-        <p className="text-[0.9375rem]/[1.75rem] sm:text-[1.0625rem]/[1.875rem] lg:text-[1.1875rem]/[2rem] text-center text-gray-800/70 dark:text-gray-200/40 max-w-2xl sm:max-w-3xl lg:max-w-4xl px-4">
+        <p className="bg-white dark:bg-gray-950 text-[0.9375rem]/[1.75rem] sm:text-[1.0625rem]/[1.875rem] lg:text-[1.1875rem]/[2rem] text-center text-gray-800/70 dark:text-gray-200/40 max-w-2xl sm:max-w-3xl lg:max-w-4xl px-4 ">
           Everything you'd expect from an agency—resources, expertise, and
           strategy—at a price you'd normally pay a freelancer. Get custom web
           development and digital marketing designed for startups and growing

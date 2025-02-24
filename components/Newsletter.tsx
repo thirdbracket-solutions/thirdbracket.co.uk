@@ -57,12 +57,11 @@ const Newsletter = () => {
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-8 md:gap-16">
           {/* Left side content */}
           <div className="flex-1 max-w-xl">
-            <h2 className="font-black text-[1.875rem]/[2.375rem] sm:text-[2.25rem]/[2.75rem] lg:text-[2.75rem]/[3.25rem] text-gray-950 dark:text-white mb-2 ">
+            <h2 className="font-black text-[1.875rem]/[2.125rem] sm:text-[2.25rem]/[2.75rem] lg:text-[2.75rem]/[3.25rem] text-gray-950 dark:text-white mb-2 ">
               Stay in the loop
             </h2>
-            <p className="text-[0.9375rem]/[1.75rem] sm:text-[1.0625rem]/[1.875rem] lg:text-[1.1875rem]/[2rem]  text-gray-800/70 dark:text-gray-200/40">
-              Subscribe to our newsletter for updates and exclusive content
-              delivered straight to your inbox.
+            <p className="text-[0.9375rem]/[1.75rem] sm:text-[1.0625rem]/[1.875rem] lg:text-[1.1875rem]/[2rem] text-gray-800/70 dark:text-gray-200/40">
+              Subscribe to our newsletter for updates and exclusive content.
             </p>
           </div>
 

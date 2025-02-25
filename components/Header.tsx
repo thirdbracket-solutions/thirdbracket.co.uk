@@ -26,7 +26,7 @@ const Header: FC = () => {
               alt=""
               width={684}
               height={80}
-              className="h-4 sm:h-5 grayscale   w-auto dark:invert"
+              className="h-[18px] md:h-5 grayscale   w-auto dark:invert"
             />
           }
           href="/"

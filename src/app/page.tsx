@@ -44,6 +44,9 @@ import Hero from "../../components/Hero";
 import Feature from "../../components/Feature";
 import Newsletter from "../../components/Newsletter";
 import Table from "../../components/table";
+import Solutions from "../../components/Solutions";
+import Feature2 from "../../components/Feature2";
+import Sub from "../../components/Subscription";
 // import EnterpriseFeatures from "../../components/Services";
 
 // import Feature from "../../components/Feature";
@@ -218,6 +221,8 @@ export default function Page() {
       <Bracket>
         <Hero />
         <Feature />
+        <Solutions />
+        <Feature2 />
 
         {/* <EnterpriseFeatures /> */}
 
@@ -226,6 +231,7 @@ export default function Page() {
             <Table data={tableData} />
           </div>
         </section>
+        <Sub />
         <Newsletter />
       </Bracket>
     </main>

@@ -41,9 +41,6 @@ import {
 
 import Hero from "../../components/Hero";
 
-import Feature from "../../components/Feature";
-import Newsletter from "../../components/Newsletter";
-import Table from "../../components/table";
 import Solutions from "../../components/Solutions";
 import Feature2 from "../../components/Feature2";
 import Sub from "../../components/Subscription";
@@ -220,19 +217,20 @@ export default function Page() {
     <main className="bg-white dark:bg-gray-950 text-gray-950 dark:text-white">
       <Bracket>
         <Hero />
-        <Feature />
+
         <Solutions />
         <Feature2 />
+        <Sub />
 
         {/* <EnterpriseFeatures /> */}
 
-        <section className="space-y-8 py-16 md:py-24">
+        {/* <section className="space-y-8 py-16 md:py-24">
           <div>
             <Table data={tableData} />
           </div>
-        </section>
-        <Sub />
-        <Newsletter />
+        </section> */}
+
+        {/* <Newsletter /> */}
       </Bracket>
     </main>
   );

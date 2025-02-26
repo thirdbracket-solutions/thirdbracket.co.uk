@@ -4,9 +4,9 @@ import Image from "next/image";
 const Feature2 = () => {
   const features = [
     {
-      title: "Modern Stack",
+      title: "Expertise & Flexibility",
       description:
-        "Built with Next.js, TypeScript, and modern web technologies",
+        "Experience agency expertise with freelancer flexibility. Access a unified team of top-rated professionals, not just scattered freelancers.",
       icon: "🚀",
     },
     {
@@ -37,21 +37,23 @@ const Feature2 = () => {
   ];
 
   return (
-    <section className="py-16 sm:py-24 lg:py-28">
-      <div className="mx-auto ">
+    <section className="py-16 md:py-20 lg:py-24">
+      <div className="mx-auto space-y-8 md:space-y-10 lg:space-y-12">
         {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold mb-4">Why Choose Third Bracket?</h2>
-          <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+        <div className="text-center px-4 max-w-4xl mx-auto">
+          <h2 className="text-3xl  font-bold  text-gray-950 dark:text-gray-200 mb-4">
+            Why Choose Third Bracket?
+          </h2>
+          <p className="text-base md:text-xl text-gray-800/70 dark:text-gray-200/40 ">
             We deliver cutting-edge solutions with a focus on performance,
             scalability, and user experience
           </p>
         </div>
 
         {/* Image Section */}
-        <div className="mb-16 relative h-[400px] rounded-xl overflow-hidden">
+        <div className=" relative h-[400px] rounded-xl overflow-hidden">
           <Image
-            src="/card1.svg" // Replace with your image path
+            src="/main.svg" // Replace with your image path
             alt="Third Bracket Features"
             fill
             className="object-cover"

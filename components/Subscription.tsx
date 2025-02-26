@@ -53,7 +53,7 @@ const Sub = () => {
     <section className="py-20">
       <div className="mx-auto ">
         <Card className="max-w-7xl mx-auto">
-          <div className="p-2 ">
+          <div className="p-4 ">
             {state.isSuccess ? (
               <div className="text-center space-y-4">
                 <div className="text-5xl mb-4">🎉</div>
@@ -68,7 +68,7 @@ const Sub = () => {
               <div className="space-y-8 lg:space-y-0 lg:flex lg:items-center gap-8">
                 <div className="">
                   <h2 className="text-3xl font-bold mb-4">Stay Updated</h2>
-                  <p className="text-gray-600 dark:text-gray-400 max-w-2xl lg:max-w-md  text-base ">
+                  <p className="text-gray-600 dark:text-gray-400 max-w-2xl lg:max-w-md  text-sm ">
                     Subscribe to our newsletter for updates and exclusive
                     content delivered straight to your inbox.
                   </p>

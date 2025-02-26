@@ -6,33 +6,37 @@ const Feature2 = () => {
     {
       title: "Expertise & Flexibility",
       description:
-        "Experience agency expertise with freelancer flexibility. Access a unified team of top-rated professionals, not just scattered freelancers.",
-      icon: "🚀",
+        "Experience agency expertise with freelancer flexibility with an unified team of top-rated professionals.",
+      icon: "👨‍💻",
     },
     {
-      title: "Scalable Solutions",
-      description: "Enterprise-grade architecture that grows with your needs",
-      icon: "📈",
-    },
-    {
-      title: "Rapid Development",
-      description: "Quick turnaround with quality code and best practices",
+      title: "Modern Stack",
+      description: "Delivering the best of both worlds: Next.js and WordPress.",
       icon: "⚡",
     },
     {
-      title: "Cloud Native",
-      description: "Leveraging AWS and modern cloud infrastructure",
-      icon: "☁️",
+      title: "Built for Growth",
+      description:
+        "We don’t just build websites; from the start, we ensure your site is optimized for SEO.",
+      icon: "🌟",
     },
     {
-      title: "Security First",
-      description: "Built-in security features and compliance standards",
-      icon: "🔒",
+      title: "Seamless Collaboration ",
+      description:
+        "Unlike freelancers working in silos, our developers, marketers, and designers collaborate seamlessly.",
+      icon: "🤝",
     },
     {
-      title: "24/7 Support",
-      description: "Round-the-clock technical support and maintenance",
-      icon: "🛠️",
+      title: "No Lock-in, No Bloat",
+      description:
+        "We provide transparent, scalable solutions without unnecessary overhead.",
+      icon: "🔓",
+    },
+    {
+      title: "Get Started",
+      description:
+        "Get started with Third bracket today to unlock unlimited achievement which was impossible before.",
+      icon: "🚀",
     },
   ];
 
@@ -51,12 +55,12 @@ const Feature2 = () => {
         </div>
 
         {/* Image Section */}
-        <div className=" relative h-[400px] rounded-xl overflow-hidden">
+        <div className=" relative h-[250px] rounded-xl overflow-hidden">
           <Image
-            src="/main.svg" // Replace with your image path
+            src="/website.svg" // Replace with your image path
             alt="Third Bracket Features"
             fill
-            className="object-cover"
+            className="object-cover  h-full w-auto grayscale dark:hue-rotate-15"
             priority
           />
         </div>
@@ -64,7 +68,7 @@ const Feature2 = () => {
         {/* Features Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {features.map((feature, index) => (
-            <Card key={index} className="p-6">
+            <Card key={index} className="p-2">
               <div className="text-3xl mb-4">{feature.icon}</div>
               <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
               <p className="text-gray-600 dark:text-gray-400">

@@ -22,37 +22,52 @@ const Solutions = () => {
         {/* Cards grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start mx-auto justify-center">
           {/* Left Column - Featured Feature Card */}
-          <Card
-            href="#"
-            className="h-full p-2"
-            cover={
-              <div className="w-full h-full flex items-center justify-center  ">
+          <div className="space-y-4">
+            <Card
+              href="#"
+              className="h-full p-2"
+              cover={
+                // <div className="w-full h-full flex items-start justify-center ml-auto">
                 <Image
-                  src="card1.svg"
-                  width={500}
+                  src="feat.svg"
+                  width={700}
                   height={500}
                   alt=""
-                  className="aspect-video object-contain dark:grayscale-[1] grayscale-[0.8]"
+                  className="aspect-[5/3] w-full h-full mt-4 mx-4 grayscale dark:hue-rotate-30   object-cover"
                 ></Image>
-              </div>
-            }
-            header="Your Website Reflects your budget"
-          >
-            Your Website Is Your Business’s First Impression. Make your first
-            impression count with a custom website—something your business
-            couldn’t afford until now.
-          </Card>
-
-          {/* Right Column - Stack of Cards */}
-          <div className="space-y-4">
+                // </div>
+              }
+              header="Your Website Reflects your budget"
+            >
+              Your Website Is Your Business’s First Impression. Make your first
+              impression count with a custom website—something your business
+              couldn’t afford until now.
+            </Card>
             <Card className="p-2" header="Finding the Right UI is Frustrating!">
               We’ve simplified UI design. Introducing Bracket UI—a minimal,
               geometric, pixel-perfect component library. Open-source and ready
               for React & Next.js. Stop overspending on menus, dropdowns, and
               forms.
             </Card>
+          </div>
 
-            <Card className="p-2" header="Missing Modern Features?">
+          {/* Right Column - Stack of Cards */}
+          <div className="space-y-4">
+            <Card
+              cover={
+                // <div className="w-full h-full flex items-start justify-center ml-auto">
+                <Image
+                  src="web.svg"
+                  width={750}
+                  height={500}
+                  alt=""
+                  className="aspect-[5/2] w-full h-full mt-4 mx-4   object-cover grayscale dark:hue-rotate-30"
+                ></Image>
+                // </div>
+              }
+              className="p-2 h-full"
+              header="Missing Modern Features?"
+            >
               Your Website Deserves More. Most budget websites miss out on
               essential features like image optimization, edge performance,
               accelerated rendering, cloud functions, and more. Now, experience

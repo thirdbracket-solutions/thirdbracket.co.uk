@@ -9,7 +9,7 @@ const Solutions = () => {
     <section className="py-16 md:py-20 lg:py-24">
       <div className="space-y-8 md:space-y-10 lg:space-y-12 mx-auto">
         {/* Header group */}
-        <div className="max-w-4xl  px-4 lg:px-0 flex flex-col lg:flex-row items-center  justify-center  gap-4 mx-auto">
+        <div className="max-w-6xl  px-4 lg:px-0 flex flex-col lg:flex-row items-center  justify-center  gap-4 mx-auto">
           <h2 className="text-3xl  font-bold  text-gray-950 dark:text-gray-200 lg:text-right text-center ">
             Think Your Business Can't Afford a Professional Start?
           </h2>

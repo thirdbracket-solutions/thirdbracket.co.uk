@@ -58,7 +58,7 @@ const Hero = () => {
         className="flex flex-col items-center space-y-8 md:space-y-10 lg:space-y-12  inset-0 -z-10 h-full w-full bg-white dark:bg-gray-950 
   bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] 
   dark:bg-[linear-gradient(to_right,#BEBEBE0A_1px,transparent_1px),linear-gradient(to_bottom,#BEBEBE0A_1px,transparent_1px)]
-  bg-[size:14px_24px]  px-4 text-center "
+  bg-[size:14px_24px]  text-center "
       >
         <h1 className="text-[2.75rem]/[2.75rem] md:text-5xl lg:text-6xl  font-black  bg-gradient-to-r from-gray-800 via-gray-900 to-gray-800 dark:from-gray-200 dark:via-gray-100 dark:to-gray-200 text-transparent bg-clip-text px-4 max-w-4xl  lg:max-w-6xl">
           Enterprise Solutions Without the Overhead&nbsp;Cost

@@ -4,7 +4,6 @@ import {
   description,
   imagealt,
   keywords,
-  siteicon,
   sitename,
   twitterhandle,
   url,
@@ -22,7 +21,7 @@ export const Settings = {
   title: sitename,
   metadataBase: url,
   description: description,
-  siteicon: siteicon,
+  // siteicon: siteicon,
   keywords: keywords,
   openGraph: {
     type: "website",

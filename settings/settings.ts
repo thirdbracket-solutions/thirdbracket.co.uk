@@ -1,5 +1,5 @@
 export const url = "https://thirdbracket.vercel.app";
-export const siteicon = "/icon.png";
+// export const siteicon = "/icon.png";
 
 // export const gtm = "GTM-XXXXXXX"
 // export const gtmconnected = true

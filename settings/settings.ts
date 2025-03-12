@@ -1,4 +1,4 @@
-export const url = "https://thirdbracket.vercel.app";
+export const url = "https://www.thirdbracket.co.uk";
 // export const siteicon = "/icon.png";
 
 // export const gtm = "GTM-XXXXXXX"
@@ -19,4 +19,4 @@ export const imagealt = "Third Bracket";
 export const twitterhandle = "@ThirdbracketStudio";
 
 export const companyname = "Third Bracket Studio";
-export const companylink = "https://thirdbracket.vercel.app";
+export const companylink = "https://www.thirdbracket.co.uk";

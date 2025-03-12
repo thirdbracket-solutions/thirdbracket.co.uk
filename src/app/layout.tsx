@@ -87,6 +87,10 @@ export const metadata: Metadata = {
       url: `${baseUrl}${image.url}`,
     })),
   },
+  // verification: {
+  //   google: Settings.verification.google,
+  // },
+
   alternates: {
     canonical: baseUrl,
   },

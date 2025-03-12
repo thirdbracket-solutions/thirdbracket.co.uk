@@ -5,6 +5,7 @@ import Header from "../../components/Header";
 import SiteFooter from "../../components/Footer";
 import { Settings } from "../../lib/meta";
 import { Metadata } from "next";
+import { WebPage, WithContext } from "schema-dts";
 
 const roboto = localFont({
   src: [
@@ -59,6 +60,29 @@ const roboto = localFont({
 // import Header from "..npm run dev
 // /../components/Header";
 
+export const jsonLd: WithContext<WebPage> = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  name: "Third Bracket",
+
+  url: "https://www.thirdbracket.co.uk/",
+  description:
+    "Step into Third Bracket Solutions, a UK-based modern web infrastructure development service born from the collective efforts of a group of nomads who conquered platforms like Upwork and Fiverr",
+
+  isPartOf: {
+    "@type": "WebSite",
+    name: "Third Bracket Solutions",
+    url: "https://www.thirdbracket.co.uk/",
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "Third Bracket Solution",
+    url: "https://www.thirdbracket.co.uk/",
+    legalName: "Third Bracket Solution",
+    sameAs: ["https://www.facebook.com/thirdbracket.co.uk"],
+  },
+};
+
 const baseUrl = Settings.metadataBase;
 
 export const metadata: Metadata = {
@@ -109,6 +133,14 @@ export default function RootLayout({
     >
       <head>
         <ThemeScript />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <meta
+          name="facebook-domain-verification"
+          content="jvzc8wivgbd7yp2malwzexmw1rj7rh"
+        />
       </head>
       <body suppressHydrationWarning>
         {/* <MegaHeader /> */}

@@ -14,7 +14,7 @@ export const keywords = [
   "Bracket UI",
   "Third Bracket",
 ];
-export const urlimage = "/images/og-image.png";
+export const urlimage = "/og-image.png";
 export const imagealt = "Third Bracket";
 export const twitterhandle = "@ThirdbracketStudio";
 

@@ -1,5 +1,10 @@
 import "./globals.css";
 import localFont from "next/font/local";
+import { ThemeScript } from "@thirdbracket/bracketui";
+import Header from "../../components/Header";
+import SiteFooter from "../../components/Footer";
+import { Settings } from "../../lib/meta";
+import { Metadata } from "next";
 
 const roboto = localFont({
   src: [
@@ -53,11 +58,39 @@ const roboto = localFont({
 
 // import Header from "..npm run dev
 // /../components/Header";
-import { ThemeScript } from "@thirdbracket/bracketui";
-import Header from "../../components/Header";
-import SiteFooter from "../../components/Footer";
 
-// import { Navbar } from "@thirdbracket/core";
+const baseUrl = Settings.metadataBase;
+
+export const metadata: Metadata = {
+  title: Settings.title,
+  metadataBase: new URL(baseUrl),
+  description: Settings.description,
+  keywords: Settings.keywords,
+  openGraph: {
+    type: Settings.openGraph.type,
+    url: baseUrl,
+    title: Settings.openGraph.title,
+    description: Settings.openGraph.description,
+    siteName: Settings.openGraph.siteName,
+    images: Settings.openGraph.images.map((image) => ({
+      ...image,
+      url: `${baseUrl}${image.url}`,
+    })),
+  },
+  twitter: {
+    card: Settings.twitter.card,
+    title: Settings.twitter.title,
+    description: Settings.twitter.description,
+    site: Settings.twitter.site,
+    images: Settings.twitter.images.map((image) => ({
+      ...image,
+      url: `${baseUrl}${image.url}`,
+    })),
+  },
+  alternates: {
+    canonical: baseUrl,
+  },
+};
 
 export default function RootLayout({
   children,

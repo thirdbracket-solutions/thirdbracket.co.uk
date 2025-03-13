@@ -4,7 +4,7 @@ import { Nextjs, Tailwind, Vercel } from "./icons";
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="flex flex-col items-center  py-16 md:py-20  space-y-8  md:space-y-12 mx-auto xl:max-w-6xl lg:max-w-4xl  md:max-w-3xl max-w-md sm:max-w-2xl ">
+    <section className="flex flex-col items-center  py-16 md:py-20  space-y-8  md:space-y-12 mx-auto xl:max-w-6xl lg:max-w-4xl  md:max-w-3xl max-w-md sm:max-w-2xl bg-white dark:bg-gray-950 bg-[radial-gradient(#f1f5f9_1px,transparent_1px)] dark:bg-[radial-gradient(#212121_1px,transparent_1px)]  [background-size:16px_16px]">
       <a
         href="#"
         className="flex items-center justify-between rounded-full  
@@ -46,9 +46,9 @@ const HeroSection: React.FC = () => {
       <h1 className="text-5xl font-extrabold md:text-6xl lg:text-7xl bg-gradient-to-r from-gray-800 via-gray-900 to-gray-800 dark:from-gray-200 dark:via-gray-100 dark:to-gray-200 text-transparent bg-clip-text  text-center px-4 tracking-normal">
         Enterprise Solutions Without&nbsp;the Overhead&nbsp;Cost
       </h1>
-
+      {/* 800-#1f2937,900- #111827, 200-#e5e7eb, 100-#f3f4f6  #030712 #f9fafb*/}
       {/* Paragraph */}
-      <p className="text-gray-950/60 text-base md:text-lg lg:text-xl dark:text-gray-200/60 text-center px-4 font-light">
+      <p className="text-gray-950/60 text-base md:text-lg lg:text-xl dark:text-gray-200/60 font-light text-center px-4  ">
         Everything you'd expect from an agency; resources, expertise, and
         strategy; at a price you'd normally pay a freelancer. Get{" "}
         <span className="font-bold">custom web development</span> and digital

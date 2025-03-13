@@ -12,7 +12,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
 import { BiChevronRight } from "react-icons/bi";
-import { Logo } from "./icons";
+import { Logo, LogoDark } from "./icons";
 
 // import { RiArrowRightUpLine, RiRecycleLine } from "react-icons/ri";
 
@@ -32,13 +32,13 @@ const Header: FC = () => {
                   </h3>
                 </div>
                 <div className="flex flex-col space-y-3 ">
-                  <Navlink href="#" as={Link} cto>
+                  <Navlink href="/services" as={Link} cto>
                     Web Development
                   </Navlink>
-                  <Navlink href="#" as={Link} cto>
+                  <Navlink href="/services" as={Link} cto>
                     Digital Marketing
                   </Navlink>
-                  <Navlink href="#" as={Link} cto>
+                  <Navlink href="/services" as={Link} cto>
                     Ui/Ux
                   </Navlink>
                 </div>
@@ -47,7 +47,7 @@ const Header: FC = () => {
                 <div className=" mt-6 ">
                   <Navlink
                     as={Link}
-                    href="#"
+                    href="/services"
                     className="block md:inline-flex md:items-center gap-1"
                     isDropdownItem
                   >
@@ -68,22 +68,22 @@ const Header: FC = () => {
                   </h3>
                 </div>
                 <div className="flex flex-col space-y-1.5">
-                  <Navlink as={Link} href="#" isDropdownItem>
+                  <Navlink as={Link} href="/services" isDropdownItem>
                     Next.js Development
                   </Navlink>
-                  <Navlink as={Link} href="#" isDropdownItem>
+                  <Navlink as={Link} href="/services" isDropdownItem>
                     WordPress Development
                   </Navlink>
-                  <Navlink as={Link} href="#" isDropdownItem>
+                  <Navlink as={Link} href="/services" isDropdownItem>
                     Headless & Serverles
                   </Navlink>
-                  <Navlink as={Link} href="#" isDropdownItem>
+                  <Navlink as={Link} href="/services" isDropdownItem>
                     Custom Backend
                   </Navlink>
-                  <Navlink as={Link} href="#" isDropdownItem>
+                  <Navlink as={Link} href="/services" isDropdownItem>
                     API Development
                   </Navlink>
-                  <Navlink as={Link} href="#" isDropdownItem>
+                  <Navlink as={Link} href="/services" isDropdownItem>
                     Other Dev Services
                   </Navlink>
                 </div>
@@ -91,7 +91,7 @@ const Header: FC = () => {
                 <div className=" mt-6 ">
                   <Navlink
                     as={Link}
-                    href="#"
+                    href="/services"
                     className="block md:inline-flex md:items-center gap-1"
                     isDropdownItem
                   >
@@ -113,19 +113,19 @@ const Header: FC = () => {
                   </h3>{" "}
                 </div>
                 <div className="flex flex-col space-y-1.5">
-                  <Navlink as={Link} href="#" isDropdownItem>
+                  <Navlink as={Link} href="/services" isDropdownItem>
                     SEO & Web Visibility
                   </Navlink>
-                  <Navlink as={Link} href="#" isDropdownItem>
+                  <Navlink as={Link} href="/services" isDropdownItem>
                     Branding & Design
                   </Navlink>
-                  <Navlink as={Link} href="#" isDropdownItem>
+                  <Navlink as={Link} href="/services" isDropdownItem>
                     Social Media Marketing
                   </Navlink>
-                  <Navlink as={Link} href="#" isDropdownItem>
+                  <Navlink as={Link} href="/services" isDropdownItem>
                     PPC & Social Ad
                   </Navlink>
-                  <Navlink as={Link} href="#" isDropdownItem>
+                  <Navlink as={Link} href="/services" isDropdownItem>
                     Content & Copywriting
                   </Navlink>
                   <Navlink as={Link} href="#" isDropdownItem>
@@ -208,10 +208,10 @@ const Header: FC = () => {
                   </h3>
                 </div>
                 <div className="flex flex-col space-y-3 ">
-                  <Navlink href="#" as={Link} cto>
+                  <Navlink href="/solutions" as={Link} cto>
                     Automation & Integration
                   </Navlink>
-                  <Navlink href="#" as={Link} cto>
+                  <Navlink href="/solutions" as={Link} cto>
                     UI/UX
                   </Navlink>
                 </div>
@@ -392,52 +392,52 @@ const Header: FC = () => {
               <div className="space-y-2 py-1.5">
                 <Megamenu label="Web Development">
                   <div className="space-y-2 py-1.5">
-                    <Navlink as={Link} href="#" isDropdownItem>
+                    <Navlink as={Link} href="/services" isDropdownItem>
                       Next.js Development
                     </Navlink>
-                    <Navlink as={Link} href="#" isDropdownItem>
+                    <Navlink as={Link} href="/services" isDropdownItem>
                       WordPress Development
                     </Navlink>
-                    <Navlink as={Link} href="#" isDropdownItem>
+                    <Navlink as={Link} href="/services" isDropdownItem>
                       Headless & Serverles
                     </Navlink>
-                    <Navlink as={Link} href="#" isDropdownItem>
+                    <Navlink as={Link} href="/services" isDropdownItem>
                       Custom Backend & API Development
                     </Navlink>
-                    <Navlink as={Link} href="#" isDropdownItem>
+                    <Navlink as={Link} href="/services" isDropdownItem>
                       Other Development Services
                     </Navlink>
                   </div>
                 </Megamenu>
                 <Megamenu label="Digital Marketing">
                   <div className="space-y-2 py-1.5">
-                    <Navlink as={Link} href="#" isDropdownItem>
+                    <Navlink as={Link} href="/services" isDropdownItem>
                       SEO & Web Visibility
                     </Navlink>
-                    <Navlink as={Link} href="#" isDropdownItem>
+                    <Navlink as={Link} href="/services" isDropdownItem>
                       Branding & Design
                     </Navlink>
-                    <Navlink as={Link} href="#" isDropdownItem>
+                    <Navlink as={Link} href="/services" isDropdownItem>
                       Social Media Marketing
                     </Navlink>
-                    <Navlink as={Link} href="#" isDropdownItem>
+                    <Navlink as={Link} href="/services" isDropdownItem>
                       PPC & Social Ad
                     </Navlink>
-                    <Navlink as={Link} href="#" isDropdownItem>
+                    <Navlink as={Link} href="/services" isDropdownItem>
                       Content strategy & Copywriting
                     </Navlink>
-                    <Navlink as={Link} href="#" isDropdownItem>
+                    <Navlink as={Link} href="/services" isDropdownItem>
                       Other Digital Marketing Services
                     </Navlink>
                   </div>
                 </Megamenu>
-                <Navlink as={Link} href="#" isDropdownItem>
+                <Navlink as={Link} href="/services" isDropdownItem>
                   UI/UX Design & Prototyping
                 </Navlink>
-                <Navlink as={Link} href="#" isDropdownItem>
+                <Navlink as={Link} href="/services" isDropdownItem>
                   Performance Optimization
                 </Navlink>
-                <Navlink as={Link} href="#" isDropdownItem>
+                <Navlink as={Link} href="/services" isDropdownItem>
                   Other Services
                 </Navlink>
               </div>
@@ -447,72 +447,72 @@ const Header: FC = () => {
               <div className="space-y-2 py-1.5">
                 <Megamenu label="Automation & Integration">
                   <div className="space-y-2 py-1.5">
-                    <Navlink as={Link} href="#" isDropdownItem>
+                    <Navlink as={Link} href="/solutions" isDropdownItem>
                       Form Integration
                     </Navlink>
-                    <Navlink as={Link} href="#" isDropdownItem>
+                    <Navlink as={Link} href="/solutions" isDropdownItem>
                       Marketing Automation
                     </Navlink>
-                    <Navlink as={Link} href="#" isDropdownItem>
+                    <Navlink as={Link} href="/solutions" isDropdownItem>
                       Search Integration
                     </Navlink>
-                    <Navlink as={Link} href="#" isDropdownItem>
+                    <Navlink as={Link} href="/solutions" isDropdownItem>
                       Interntionalization
                     </Navlink>
-                    <Navlink as={Link} href="#" isDropdownItem>
+                    <Navlink as={Link} href="/solutions" isDropdownItem>
                       CI/CD
                     </Navlink>
-                    <Navlink as={Link} href="#" isDropdownItem>
+                    <Navlink as={Link} href="/solutions" isDropdownItem>
                       Release Automation
                     </Navlink>
                   </div>
                 </Megamenu>
                 <Megamenu label="UI/UX">
                   <div className="space-y-2 py-1.5">
-                    <Navlink as={Link} href="#" isDropdownItem>
+                    <Navlink as={Link} href="/solutions" isDropdownItem>
                       Bracket UI
                     </Navlink>
                     <Megamenu label="Templates">
                       <div className="space-y-2 py-1.5">
-                        <Navlink as={Link} href="#" isDropdownItem>
+                        <Navlink as={Link} href="/solutions" isDropdownItem>
                           Elementor Template
                         </Navlink>
-                        <Navlink as={Link} href="#" isDropdownItem>
+                        <Navlink as={Link} href="/solutions" isDropdownItem>
                           Tailwind Template
                         </Navlink>
-                        <Navlink as={Link} href="#" isDropdownItem>
+                        <Navlink as={Link} href="/solutions" isDropdownItem>
                           Html5 Template
                         </Navlink>
                       </div>
                     </Megamenu>
                     <Megamenu label="Themes">
                       <div className="space-y-2 py-1.5">
-                        <Navlink as={Link} href="#" isDropdownItem>
+                        <Navlink as={Link} href="/solutions" isDropdownItem>
                           Nextjs Themes
                         </Navlink>
-                        <Navlink as={Link} href="#" isDropdownItem>
+                        <Navlink as={Link} href="/solutions" isDropdownItem>
                           Hugo Themes
                         </Navlink>
-                        <Navlink as={Link} href="#" isDropdownItem>
+                        <Navlink as={Link} href="/solutions" isDropdownItem>
                           Wordpress Theme
                         </Navlink>
                       </div>
                     </Megamenu>
-                    <Navlink as={Link} href="#" isDropdownItem>
+                    <Navlink as={Link} href="/solutions" isDropdownItem>
                       Reusable Blocks
                     </Navlink>
-                    <Navlink as={Link} href="#" isDropdownItem>
+                    <Navlink as={Link} href="/solutions" isDropdownItem>
                       Landing Pages
                     </Navlink>
                   </div>
                 </Megamenu>
-                <Navlink as={Link} href="#" isDropdownItem>
+                <Navlink as={Link} href="/solutions" isDropdownItem>
                   Wordpress 360
                 </Navlink>
-                <Navlink as={Link} href="#" isDropdownItem>
+                <Navlink as={Link} href="/solutions" isDropdownItem>
                   Notion Blog
                 </Navlink>
-                <Navlink as={Link} href="#" isDropdownItem>
+                <Navlink as={Link} href="/solutions" isDropdownItem>
                   Business 360
                 </Navlink>
               </div>

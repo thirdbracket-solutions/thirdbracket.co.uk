@@ -31,8 +31,8 @@ interface Service {
 function ServiceCard({ title, description, icon: Icon, features }: Service) {
   return (
     <div className="p-6 border border-gray-200 dark:border-gray-800 rounded-lg hover:shadow-lg transition-all">
-      <div className="w-12 h-12 mb-4 flex items-center justify-center bg-slate-100 dark:bg-slate-900 rounded-lg">
-        <Icon className="w-6 h-6 text-slate-600 dark:text-slate-400" />
+      <div className="w-12 h-12 mb-4 flex items-center justify-center  bg-accent-400 dark:bg-primary-800 rounded-lg">
+        <Icon className="w-6 h-6 text-white dark:text-accent-400" />
       </div>
       <h3 className="text-xl font-semibold mb-3">{title}</h3>
       <p className="text-gray-600 dark:text-gray-400 mb-4">{description}</p>
@@ -42,7 +42,7 @@ function ServiceCard({ title, description, icon: Icon, features }: Service) {
             key={index}
             className="flex items-center text-sm text-gray-600 dark:text-gray-400"
           >
-            <span className="w-1.5 h-1.5 bg-slate-600 dark:bg-slate-400 rounded-full mr-2"></span>
+            <span className="w-1.5 h-1.5 bg-accent-400 dark:bg-accent-400 rounded-full mr-2"></span>
             {feature}
           </li>
         ))}
@@ -71,14 +71,14 @@ function CategorySection({ title, description, services }: ServiceCategory) {
 
 function ContactCTA() {
   return (
-    <div className="bg-slate-600 dark:bg-slate-700 rounded-lg p-8 text-center">
+    <div className="bg-accent-400 dark:bg-primary-700 rounded-lg p-8 text-center">
       <h3 className="text-2xl font-bold text-white mb-4">
         Ready to Transform Your Digital Presence?
       </h3>
-      <p className="text-slate-100 mb-6">
+      <p className="text-primary-100 mb-6">
         Let's discuss how we can help you achieve your goals
       </p>
-      <button className="bg-white text-slate-600 px-8 py-3 rounded-lg font-semibold hover:bg-slate-50 transition-colors">
+      <button className="bg-primary-50 text-accent-500 px-8 py-3 rounded-lg font-semibold hover:bg-accent-100 transition-colors">
         Contact Us
       </button>
     </div>
@@ -260,7 +260,7 @@ export default function Services() {
                 },
               ].map((phase, index) => (
                 <div key={index} className="text-center">
-                  <div className="w-12 h-12 rounded-full bg-slate-600 dark:bg-slate-500 text-white flex items-center justify-center mx-auto mb-4">
+                  <div className="w-12 h-12 rounded-full bg-accent-400  text-white flex items-center justify-center mx-auto mb-4">
                     {phase.step}
                   </div>
                   <h3 className="text-xl font-semibold mb-2">{phase.title}</h3>

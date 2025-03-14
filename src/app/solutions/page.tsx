@@ -52,7 +52,7 @@
 // }
 
 // src/app/solutions/page.tsx
-import { Bracket } from "@thirdbracket/bracketui";
+import { Bracket, Card } from "@thirdbracket/bracketui";
 import PageHeader from "../../../components/PageHeader";
 import Image from "next/image";
 import { IconType } from "react-icons";
@@ -99,42 +99,50 @@ function SolutionCard({
   image,
 }: Solution) {
   return (
-    <div className="border border-gray-200 dark:border-gray-800 rounded-lg overflow-hidden hover:shadow-lg transition-all">
-      {image && (
-        <div className="relative h-48 w-full">
-          <Image src={image} alt={title} fill className="object-cover" />
-        </div>
-      )}
-      <div className="p-6">
+    <Card
+      size="lg"
+      cover={
+        image && (
+          <div className="relative h-48 w-full">
+            <Image src={image} alt={title} fill className="object-cover" />
+          </div>
+        )
+      }
+      header={
         <div className="flex items-center mb-4">
-          <div className="w-10 h-10 flex items-center justify-center bg-blue-100 dark:bg-blue-900 rounded-lg mr-3">
-            <Icon className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+          <div className="w-10 h-10 flex items-center justify-center bg-primary-100 dark:bg-primary-900 rounded-lg mr-3">
+            <Icon className="w-5 h-5 text-accent-600 dark:text-accent-400" />
           </div>
           <h3 className="text-xl font-semibold">{title}</h3>
         </div>
-        <p className="text-gray-600 dark:text-gray-400 mb-4">{description}</p>
+      }
+    >
+      <div>
+        <p className="text-primary-600 dark:text-primary-400 mb-4">
+          {description}
+        </p>
         <div className="mb-4">
           <h4 className="font-semibold mb-2">Key Features:</h4>
           <ul className="space-y-2">
             {features.map((feature, index) => (
               <li
                 key={index}
-                className="flex items-center text-sm text-gray-600 dark:text-gray-400"
+                className="flex items-center text-sm text-primary-600 dark:text-primary-400"
               >
-                <span className="w-1.5 h-1.5 bg-blue-600 dark:bg-blue-400 rounded-full mr-2"></span>
+                <span className="w-1.5 h-1.5 bg-accent-400  rounded-full mr-2"></span>
                 {feature}
               </li>
             ))}
           </ul>
         </div>
         {technologies && (
-          <div className="pt-4 border-t border-gray-200 dark:border-gray-800">
+          <div className="pt-4 border-t border-primary-200 dark:border-primary-800">
             <h4 className="font-semibold mb-2">Technologies:</h4>
             <div className="flex flex-wrap gap-2">
               {technologies.map((tech, index) => (
                 <span
                   key={index}
-                  className="px-3 py-1 text-sm bg-gray-100 dark:bg-gray-800 rounded-full"
+                  className="px-3 py-1 text-sm bg-primary-100 dark:bg-primary-800 rounded-full"
                 >
                   {tech}
                 </span>
@@ -143,7 +151,7 @@ function SolutionCard({
           </div>
         )}
       </div>
-    </div>
+    </Card>
   );
 }
 
@@ -152,7 +160,7 @@ function CategorySection({ title, description, solutions }: SolutionCategory) {
     <div className="mb-20">
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold mb-4">{title}</h2>
-        <p className="text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+        <p className="text-primary-600 dark:text-primary-400 max-w-3xl mx-auto">
           {description}
         </p>
       </div>
@@ -167,10 +175,10 @@ function CategorySection({ title, description, solutions }: SolutionCategory) {
 
 function CaseStudyHighlight() {
   return (
-    <div className="bg-gray-50 dark:bg-gray-900 rounded-lg p-8">
+    <div className="bg-primary-50 dark:bg-primary-900 rounded-lg p-8">
       <div className="max-w-3xl mx-auto text-center">
         <h3 className="text-2xl font-bold mb-4">Success Stories</h3>
-        <p className="text-gray-600 dark:text-gray-400 mb-8">
+        <p className="text-primary-600 dark:text-primary-400 mb-8">
           See how our solutions have helped businesses achieve their goals
         </p>
         <div className="grid md:grid-cols-3 gap-6">
@@ -180,7 +188,7 @@ function CaseStudyHighlight() {
             { metric: "3x", label: "ROI Increase" },
           ].map((stat, index) => (
             <div key={index} className="text-center">
-              <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">
+              <div className="text-3xl font-bold text-accent-600 dark:text-accent-400 mb-2">
                 {stat.metric}
               </div>
               <div className="text-gray-600 dark:text-gray-400">
@@ -354,33 +362,32 @@ export default function Solutions() {
           ))}
 
           {/* Case Study Highlight */}
-          <div className="mb-20">
+          {/* <div className="mb-20">
             <CaseStudyHighlight />
-          </div>
+          </div> */}
 
           {/* Integration Partners */}
-          <div className="text-center mb-20">
+          {/* <div className="text-center mb-20">
             <h2 className="text-3xl font-bold mb-12">Integration Partners</h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 mx-auto">
-              {/* Add partner logos here */}
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-12 justify-between mx-auto">
+           
               <Tailwind />
               <Nextjs />
               <Vercel />
               <Tailwind />
               <Nextjs />
-              <Vercel />
             </div>
-          </div>
+          </div> */}
 
           {/* CTA Section */}
-          <div className="bg-red-600 dark:bg-red-700 rounded-lg p-8 text-center">
+          <div className="bg-primary-900 dark:bg-primary-800 rounded-lg p-8 text-center">
             <h3 className="text-2xl font-bold text-white mb-4">
               Ready to Transform Your Business?
             </h3>
-            <p className="text-red-100 mb-6">
+            <p className="text-primary-50 mb-6">
               Let's discuss how our solutions can help you achieve your goals
             </p>
-            <button className="bg-white text-red-600 px-8 py-3 rounded-lg font-semibold hover:bg-red-50 transition-colors">
+            <button className="bg-white text-primary-900 px-8 py-3 rounded-lg font-semibold hover:bg-primary-50 transition-colors">
               Schedule a Consultation
             </button>
           </div>

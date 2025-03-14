@@ -17,7 +17,13 @@ function CaseStudyCard({
 }) {
   return (
     <div className="border border-gray-200 dark:border-gray-800 rounded-lg overflow-hidden">
-      <Image src={image} alt={title} className="w-full h-64 object-cover" />
+      <Image
+        src={image}
+        alt={title}
+        className="w-full h-64 object-cover"
+        width={800}
+        height={500}
+      />
       <div className="p-6">
         <h3 className="text-xl font-semibold mb-2">{title}</h3>
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
@@ -37,7 +43,7 @@ export default function CaseStudies() {
       client: "Tech Corp",
       description: "Implementing digital solutions...",
       result: "50% increase in efficiency",
-      image: "/case1.jpg",
+      image: "/ui.svg",
     },
     // Add more case studies
   ];

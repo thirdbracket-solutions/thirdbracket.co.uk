@@ -17,7 +17,13 @@ function BlogCard({
 }) {
   return (
     <div className="border border-gray-200 dark:border-gray-800 rounded-lg overflow-hidden">
-      <Image src={image} alt={title} className="w-full h-48 object-cover" />
+      <Image
+        src={image}
+        alt={title}
+        width={800}
+        height={500}
+        className="w-full h-48 object-cover"
+      />
       <div className="p-6">
         <h3 className="text-xl font-semibold mb-2">{title}</h3>
         <p className="text-gray-600 dark:text-gray-400 mb-4">{excerpt}</p>
@@ -38,7 +44,7 @@ export default function Blog() {
       excerpt: "An overview of current trends...",
       date: "2024-01-15",
       author: "John Doe",
-      image: "/blog1.jpg",
+      image: "/website.svg",
     },
     // Add more blog posts
   ];

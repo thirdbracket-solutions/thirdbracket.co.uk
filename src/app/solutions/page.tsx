@@ -373,14 +373,14 @@ export default function Solutions() {
           </div>
 
           {/* CTA Section */}
-          <div className="bg-blue-600 dark:bg-blue-700 rounded-lg p-8 text-center">
+          <div className="bg-red-600 dark:bg-red-700 rounded-lg p-8 text-center">
             <h3 className="text-2xl font-bold text-white mb-4">
               Ready to Transform Your Business?
             </h3>
-            <p className="text-blue-100 mb-6">
+            <p className="text-red-100 mb-6">
               Let's discuss how our solutions can help you achieve your goals
             </p>
-            <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
+            <button className="bg-white text-red-600 px-8 py-3 rounded-lg font-semibold hover:bg-red-50 transition-colors">
               Schedule a Consultation
             </button>
           </div>

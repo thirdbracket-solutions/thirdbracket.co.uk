@@ -226,7 +226,7 @@ export default function Services() {
           description="Comprehensive digital solutions tailored to your needs"
         />
 
-        <div className="max-w-7xl mx-auto px-6 py-20">
+        <div className="max-w-7xl mx-auto py-20">
           {serviceCategories.map((category, index) => (
             <CategorySection key={index} {...category} />
           ))}

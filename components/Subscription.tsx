@@ -42,7 +42,7 @@ const Subscription = () => {
 
   return (
     <section className="   py-8 sm:py-12 md:py-16   ">
-      <div className="max-w-screen-xl bg-primary-50 dark:bg-primary-900 border border-primary-200 dark:border-primary-800 rounded-lg p-6 md:p-8 lg:p-10">
+      <div className="max-w-screen-xl bg-accent-400 dark:bg-accent-600 border border-primary-200 dark:border-primary-800 rounded-lg p-6 md:p-8 lg:p-10">
         {state.isSuccess ? (
           <div className="text-center space-y-4">
             <div className="text-5xl mb-4">🎉</div>
@@ -54,10 +54,10 @@ const Subscription = () => {
         ) : (
           <div className="flex flex-col lg:flex-row items-start justify-between gap-6 lg:gap-12 ">
             <div>
-              <h2 className="text-3xl lg:text-4xl font-bold  text-primary-950 dark:text-white tracking-wide mb-2">
+              <h2 className="text-3xl lg:text-4xl font-bold  text-primary-900 dark:text-white tracking-wide mb-2">
                 Stay Updated
               </h2>
-              <p className="text-primary-950/60 text-base md:text-lg lg:text-xl dark:text-primary-200/60 max-w-md font-light">
+              <p className="text-primary-800 text-base md:text-lg lg:text-xl dark:text-primary-100 max-w-md font-light">
                 Subscribe to our newsletter for updates and exclusive content
                 delivered straight to your inbox.
               </p>
@@ -106,7 +106,7 @@ const Subscription = () => {
                 </div>
 
                 <div className="mt-3">
-                  <p className="text-sm text-primary-400 dark:text-primary-600">
+                  <p className="text-sm text-primary-800 dark:text-primary-200 font-light">
                     We respect your privacy. Unsubscribe at any time.
                   </p>
                   {state.error && (

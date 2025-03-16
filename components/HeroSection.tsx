@@ -4,14 +4,14 @@ import { Nextjs, Tailwind, Vercel } from "./icons";
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="flex flex-col items-center  py-16 md:py-20  space-y-8  md:space-y-12 mx-auto xl:max-w-6xl lg:max-w-4xl  md:max-w-3xl max-w-md sm:max-w-2xl  bg-[radial-gradient(#f0f0f0_1px,transparent_1px)] dark:bg-[radial-gradient(#1c1c1c_1px,transparent_1px)]  [background-size:16px_16px] ">
+    <section className="flex flex-col items-center  py-16 md:py-20  space-y-8  md:space-y-12 mx-auto xl:max-w-6xl lg:max-w-4xl  md:max-w-3xl max-w-md sm:max-w-2xl   bg-[radial-gradient(#f0f0f0_1px,transparent_1px)] dark:bg-[radial-gradient(#1c1c1c_1px,transparent_1px)]  [background-size:16px_16px] ">
       <a
         href="#"
         className="flex items-center justify-between rounded-full  
     pr-3 py-0.5 pl-0.5  text-xs md:text-sm 
-     bg-gradient-to-r from-slate-500/10 to-gray-500/10
+     bg-gradient-to-r from-slate-500/10 to-primary-500/10
     backdrop-filter backdrop-blur-md
-    text-gray-700 dark:text-gray-300 
+    text-primary-700 dark:text-primary-300 
     transition-opacity duration-200 ease-in-out text-nowrap
     motion-reduce:transition-none motion-reduce:hover:transform-none 
     hover:opacity-90 max-w-full tracking-wide"
@@ -20,7 +20,7 @@ const HeroSection: React.FC = () => {
           className="mr-2 lg:mr-3 rounded-full 
    text-[10px] md:text-xs 
     px-2 py-0.5 
-    text-white bg-gray-700 "
+    text-white dark:text-primary-950 bg-primary-800 dark:bg-primary-200"
         >
           New
         </span>
@@ -44,13 +44,13 @@ const HeroSection: React.FC = () => {
 
       {/* Heading */}
       <div className="px-4">
-        <h1 className="text-5xl font-extrabold md:text-6xl lg:text-7xl bg-gradient-to-r from-gray-800 via-gray-900 to-gray-800 dark:from-gray-200 dark:via-gray-100 dark:to-gray-200 text-transparent bg-clip-text  text-center  tracking-normal ">
+        <h1 className="text-5xl font-extrabold md:text-6xl lg:text-7xl bg-gradient-to-r from-primary-900 via-primary-950 to-primary-900 dark:from-primary-200 dark:via-primary-100 dark:to-primary-200 text-transparent bg-clip-text  text-center  tracking-normal ">
           Enterprise Solutions Without&nbsp;the Overhead&nbsp;Cost
         </h1>
       </div>
       {/* 800-#1f2937,900- #111827, 200-#e5e7eb, 100-#f3f4f6  #030712 #f9fafb*/}
       {/* Paragraph */}
-      <p className="text-gray-950/60 text-base md:text-lg lg:text-xl dark:text-gray-200/60 font-light text-center px-4  backdrop-blur-sm">
+      <p className="text-primary-950/60 text-base md:text-lg lg:text-xl dark:text-primary-200/60 font-light text-center px-4  backdrop-blur-sm">
         Everything you'd expect from an agency; resources, expertise, and
         strategy; at a price you'd normally pay a freelancer. Get{" "}
         <span className="font-bold">custom web development</span> and digital
@@ -59,7 +59,10 @@ const HeroSection: React.FC = () => {
 
       {/* Button Group */}
       <div className="flex justify-center gap-3 md:gap-4 backdrop-blur-sm">
-        <Button size="lg" className="hidden  md:flex">
+        <Button
+          size="lg"
+          className="hidden  md:flex bg-primary-900 dark:bg-primary-100 text-gray-100 dark:text-primary-900"
+        >
           Let's Grow
           <svg
             className="size-4 ml-2"
@@ -74,7 +77,11 @@ const HeroSection: React.FC = () => {
             />
           </svg>
         </Button>
-        <Button outline size="lg" className="hidden  md:flex ">
+        <Button
+          outline
+          size="lg"
+          className="hidden  md:flex border-primary-500/40   text-primary-900 dark:text-primary-100  [@media(hover:hover)]:hover:bg-primary-100/40 [@media(hover:hover)]:dark:hover:bg-zinc-800/70 active:bg-primary-200 dark:active:bg-primary-800"
+        >
           <svg
             className="size-4 mr-2"
             fill="currentColor"
@@ -85,7 +92,10 @@ const HeroSection: React.FC = () => {
           </svg>
           Get Consultation
         </Button>
-        <Button size="md" className="md:hidden flex  ">
+        <Button
+          size="md"
+          className="md:hidden flex  bg-primary-900 dark:bg-primary-100 text-gray-100 dark:text-primary-900"
+        >
           Let's Grow
           <svg
             className="size-4 ml-2"
@@ -100,7 +110,11 @@ const HeroSection: React.FC = () => {
             />
           </svg>
         </Button>
-        <Button outline size="md" className="md:hidden flex ">
+        <Button
+          outline
+          size="md"
+          className="md:hidden flex border-primary-500/40   text-primary-800 dark:text-primary-200  [@media(hover:hover)]:hover:bg-primary-100/40 [@media(hover:hover)]:dark:hover:bg-zinc-800/70 active:bg-primary-200 dark:active:bg-primary-800"
+        >
           <svg
             className="size-4 mr-2"
             fill="currentColor"
@@ -114,25 +128,25 @@ const HeroSection: React.FC = () => {
       </div>
       {/* Featured section*/}
       <div className="mx-auto py-4 px-4 text-center   lg:px-36">
-        <span className="font-semibold uppercase text-gray-400 backdrop-blur-sm">
+        <span className="font-semibold uppercase text-primary-500 backdrop-blur-sm">
           FEATURED IN
         </span>
-        <div className="mt-6 sm:mt-8 flex flex-wrap items-center justify-center text-gray-500 sm:justify-between ">
+        <div className="mt-6 sm:mt-8 flex flex-wrap items-center justify-center text-primary-500 sm:justify-between ">
           <a
             href="#"
-            className="mb-5 mr-5  hover:text-gray-800 dark:hover:text-gray-400 lg:mb-0"
+            className="mb-5 mr-5 text-primary-500 hover:text-primary-800 dark:hover:text-primary-400 lg:mb-0"
           >
             <Tailwind />
           </a>
           <a
             href="#"
-            className="mb-5 mr-5 hover:text-gray-800 dark:hover:text-gray-400 lg:mb-0"
+            className="mb-5 mr-5 hover:text-primary-800 text-primary-500 dark:hover:text-primary-400 lg:mb-0"
           >
             <Nextjs />
           </a>
           <a
             href="#"
-            className="mb-5 mr-5 hover:text-gray-800 dark:hover:text-gray-400 lg:mb-0"
+            className="mb-5 mr-5 text-primary-500 hover:text-primary-800 dark:hover:text-primary-400 lg:mb-0"
           >
             <Vercel />
           </a>

@@ -8,8 +8,8 @@ export function FeatureOne() {
       <div className="mx-auto max-w-screen-xl">
         {/* Title group with flex layout on large screens */}
         <div className="mx-auto mb-8 md:mb-12 lg:mb-16 xl:max-w-6xl lg:max-w-6xl md:max-w-3xl max-w-lg sm:max-w-xl lg:flex lg:items-center lg:justify-between lg:gap-6">
-          <h2 className="mb-4 md:mb-6 text-3xl lg:text-4xl font-extrabold text-primary-950 dark:text-white lg:mb-0 text-center lg:text-right  px-4 tracking-wide lg:px-0">
-            Think Your Business Can't Afford a Professional Start?
+          <h2 className="mb-4 md:mb-6 text-3xl lg:text-4xl font-extrabold text-primary-950 dark:text-white lg:mb-0 text-center lg:text-right  px-4  lg:px-0">
+            Think Your Business Can't Afford a Professional&nbsp;Start?
           </h2>
           <p className="text-primary-950/60 dark:text-primary-200/60 font-light text-base md:text-lg lg:text-xl text-center lg:text-left px-4 lg:px-0">
             We bring enterprise-level web development and digital marketing
@@ -37,7 +37,7 @@ export function FeatureOne() {
               }
               header="First Impressions Matter"
             >
-              <span className="font-light">
+              <span className="font-light text-primary-950/60 dark:text-primary-200/60">
                 Your Website Is Your Business’s First Impression. Make your
                 first impression count with a custom website—without the
                 “custom” price.
@@ -60,7 +60,7 @@ export function FeatureOne() {
               }
               header="The Perfect UI is Never Free!"
             >
-              <span className=" font-light">
+              <span className="text-primary-950/60 dark:text-primary-200/60 font-light">
                 Presenting Bracket UI: A minimal, geometric, pixel-perfect
                 component library. Open-source and ready for React & Next.js
                 projects.
@@ -75,7 +75,7 @@ export function FeatureOne() {
               className="w-full h-full" // Added full width and height
               header="Missing Modern Features?"
             >
-              <span className=" font-light">
+              <span className="text-primary-950/60 dark:text-primary-200/60 font-light">
                 Now, experience essential features like image optimization, edge
                 performance, accelerated rendering, cloud functions, and more
                 without raising your budget.
@@ -87,7 +87,7 @@ export function FeatureOne() {
               className="w-full h-full" // Added full width and height
               header="Tired of Searching for Marketers?"
             >
-              <span className=" font-light">
+              <span className="text-primary-950/60 dark:text-primary-200/60 font-light">
                 Get the Whole Team. Our integrated team of marketers,developers,
                 and designers delivers real results that drive your business
                 forward.
@@ -99,7 +99,7 @@ export function FeatureOne() {
               className="w-full h-full" // Added full width and height
               header="SEO Takes Too Long!"
             >
-              <span className=" font-light">
+              <span className="text-primary-950/60 dark:text-primary-200/60 font-light">
                 SEO can be slow and unpredictable. Our AI-driven strategies and
                 marketplace expertise accelerate rankings and improve visibility
                 faster.

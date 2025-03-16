@@ -1,5 +1,5 @@
 // src/app/services/page.tsx
-import { Bracket } from "@thirdbracket/bracketui";
+import { Bracket, Button, Card } from "@thirdbracket/bracketui";
 import PageHeader from "../../../components/PageHeader";
 import { IconType } from "react-icons";
 import {
@@ -30,11 +30,21 @@ interface Service {
 
 function ServiceCard({ title, description, icon: Icon, features }: Service) {
   return (
-    <div className="p-6 border border-primary-200 dark:border-primary-800 rounded-lg hover:shadow-lg transition-all">
-      <div className="w-12 h-12 mb-4 flex items-center justify-center  dark:bg-primary-50 bg-primary-900 rounded-lg">
-        <Icon className="w-6 h-6 text-accent-50 dark:text-accent-950" />
-      </div>
-      <h3 className="text-xl  font-semibold mb-3">{title}</h3>
+    <Card
+      isIcon
+      size="lg"
+      header={title}
+      cover={
+        <div className="w-12 h-12 mb-4 flex items-center justify-center  dark:bg-primary-50 bg-primary-800 rounded-lg">
+          <Icon className="w-6 h-6 text-primary-200 dark:text-primary-600" />
+        </div>
+      }
+      // className="p-6 border border-primary-200 dark:border-primary-800 rounded-lg hover:shadow-lg transition-all"
+    >
+      {/* <h3 className="text-xl  font-semibold mb-3">{title}</h3>
+      <p className="text-primary-600 dark:text-primary-400 mb-4">
+        {description}
+      </p> */}
       <p className="text-primary-600 dark:text-primary-400 mb-4">
         {description}
       </p>
@@ -49,7 +59,7 @@ function ServiceCard({ title, description, icon: Icon, features }: Service) {
           </li>
         ))}
       </ul>
-    </div>
+    </Card>
   );
 }
 
@@ -73,16 +83,23 @@ function CategorySection({ title, description, services }: ServiceCategory) {
 
 function ContactCTA() {
   return (
-    <div className="bg-primary-900 dark:bg-primary-50  rounded-lg p-8 text-center">
-      <h3 className="text-2xl font-bold text-primary-50 dark:text-accent-950 mb-4">
+    <div className="bg-accent-400 dark:bg-accent-500 rounded-lg p-8 text-center">
+      <h3 className="text-2xl font-black text-primary-800 dark:text-white mb-4">
         Ready to Transform Your Digital Presence?
       </h3>
-      <p className="text-accent-50 dark:text-primary-800 mb-6">
+      <p className="text-primary-100 dark:text-primary-800 mb-6">
         Let's discuss how we can help you achieve your goals
       </p>
-      <button className="bg-primary-50 dark:bg-accent-950 text-primary-900 dark:text-accent-50 px-8 py-3 rounded-lg font-semibold hover:bg-primary-100 hover:dark:bg-accent-900  transition-colors">
+      {/* <button className="bg-primary-50 dark:bg-accent-950 text-primary-900 dark:text-accent-50 px-8 py-3 rounded-lg font-semibold hover:bg-primary-100 hover:dark:bg-accent-900  transition-colors">
         Contact Us
-      </button>
+      </button> */}
+      <Button
+        size="md"
+        className="bg-primary-800 dark:bg-white text-primary-50 dark:text-primary-800"
+      >
+        {" "}
+        Contact Us
+      </Button>
     </div>
   );
 }

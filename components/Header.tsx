@@ -21,8 +21,9 @@ const Header: FC = () => {
     <header>
       <Navbar
         theme={{
-          background: "bg-white dark:bg-[#0d0d0d]",
-          border: "border-[#dbdbdb] dark:border-[#242424] border-b",
+          background: "bg-white dark:bg-primary-950",
+          border: "border-b border-primary-200 dark:border-primary-800",
+          mobileMenu: "bg-white dark:bg-primary-950",
         }}
       >
         <Navbrand logo={<Logo />} href="/"></Navbrand>
@@ -394,10 +395,18 @@ const Header: FC = () => {
         </NavItem>
 
         <MobileNav>
-          <div className="space-y-2 py-1.5">
+          <div className="space-y-2 py-1.5 ">
             <Megamenu label="Services">
               <div className="space-y-2 py-1.5">
-                <Megamenu label="Web Development">
+                <Megamenu
+                  label="Web Development"
+                  theme={{
+                    text: "text-primary-800 dark:text-primary-100 text-base md:text-sm",
+                    states:
+                      "focus-within:opacity-100 active:opacity-100 md:hover:opacity-100",
+                    menu: "bg-white dark:bg-primary-950",
+                  }}
+                >
                   <div className="space-y-2 py-1.5">
                     <Navlink as={Link} href="/services" isDropdownItem>
                       Next.js Development
@@ -416,7 +425,15 @@ const Header: FC = () => {
                     </Navlink>
                   </div>
                 </Megamenu>
-                <Megamenu label="Digital Marketing">
+                <Megamenu
+                  label="Digital Marketing"
+                  theme={{
+                    text: "text-primary-800 dark:text-primary-100 text-base md:text-sm",
+                    states:
+                      "focus-within:opacity-100 active:opacity-100 md:hover:opacity-100",
+                    menu: "bg-white dark:bg-primary-950",
+                  }}
+                >
                   <div className="space-y-2 py-1.5">
                     <Navlink as={Link} href="/services" isDropdownItem>
                       SEO & Web Visibility
@@ -450,9 +467,25 @@ const Header: FC = () => {
               </div>
             </Megamenu>
 
-            <Megamenu label="Solutions">
+            <Megamenu
+              label="Solutions"
+              theme={{
+                text: "text-primary-800 dark:text-primary-100 text-base md:text-sm",
+                states:
+                  "focus-within:opacity-100 active:opacity-100 md:hover:opacity-100",
+                menu: "bg-white dark:bg-primary-950",
+              }}
+            >
               <div className="space-y-2 py-1.5">
-                <Megamenu label="Automation & Integration">
+                <Megamenu
+                  label="Automation & Integration"
+                  theme={{
+                    text: "text-primary-800 dark:text-primary-100 text-base md:text-sm",
+                    states:
+                      "focus-within:opacity-100 active:opacity-100 md:hover:opacity-100",
+                    menu: "bg-white dark:bg-primary-950",
+                  }}
+                >
                   <div className="space-y-2 py-1.5">
                     <Navlink as={Link} href="/solutions" isDropdownItem>
                       Form Integration
@@ -474,12 +507,28 @@ const Header: FC = () => {
                     </Navlink>
                   </div>
                 </Megamenu>
-                <Megamenu label="UI/UX">
+                <Megamenu
+                  label="UI/UX"
+                  theme={{
+                    text: "text-primary-800 dark:text-primary-100 text-base md:text-sm",
+                    states:
+                      "focus-within:opacity-100 active:opacity-100 md:hover:opacity-100",
+                    menu: "bg-white dark:bg-primary-950",
+                  }}
+                >
                   <div className="space-y-2 py-1.5">
                     <Navlink as={Link} href="/solutions" isDropdownItem>
                       Bracket UI
                     </Navlink>
-                    <Megamenu label="Templates">
+                    <Megamenu
+                      label="Templates"
+                      theme={{
+                        text: "text-primary-800 dark:text-primary-100 text-base md:text-sm",
+                        states:
+                          "focus-within:opacity-100 active:opacity-100 md:hover:opacity-100",
+                        menu: "bg-white dark:bg-primary-950",
+                      }}
+                    >
                       <div className="space-y-2 py-1.5">
                         <Navlink as={Link} href="/solutions" isDropdownItem>
                           Elementor Template
@@ -492,7 +541,15 @@ const Header: FC = () => {
                         </Navlink>
                       </div>
                     </Megamenu>
-                    <Megamenu label="Themes">
+                    <Megamenu
+                      label="Themes"
+                      theme={{
+                        text: "text-primary-800 dark:text-primary-100 text-base md:text-sm",
+                        states:
+                          "focus-within:opacity-100 active:opacity-100 md:hover:opacity-100",
+                        menu: "bg-white dark:bg-primary-950",
+                      }}
+                    >
                       <div className="space-y-2 py-1.5">
                         <Navlink as={Link} href="/solutions" isDropdownItem>
                           Nextjs Themes

@@ -8,21 +8,21 @@ function ContactForm() {
         <label className="block mb-2">Name</label>
         <input
           type="text"
-          className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800"
+          className="w-full px-4 py-2 rounded-lg border border-primary-300 dark:border-primary-700 bg-white dark:bg-primary-800"
         />
       </div>
       <div className="mb-6">
         <label className="block mb-2">Email</label>
         <input
           type="email"
-          className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800"
+          className="w-full px-4 py-2 rounded-lg border border-primary-300 dark:border-primary-700 bg-white dark:bg-primary-800"
         />
       </div>
       <div className="mb-6">
         <label className="block mb-2">Message</label>
         <textarea
           rows={6}
-          className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800"
+          className="w-full px-4 py-2 rounded-lg border border-primary-300 dark:border-primary-700 bg-white dark:bg-primary-800"
         ></textarea>
       </div>
       <button
@@ -37,7 +37,7 @@ function ContactForm() {
 
 export default function Contact() {
   return (
-    <main className="bg-white dark:bg-gray-950 text-gray-950 dark:text-white">
+    <main className="bg-white dark:bg-primary-950 text-primary-950 dark:text-white">
       <Bracket>
         <PageHeader
           title="Contact Us"

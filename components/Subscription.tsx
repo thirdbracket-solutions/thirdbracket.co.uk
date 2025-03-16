@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { Button, Form } from "@thirdbracket/bracketui";
+import { Button, Form, FormInput, FormLabel } from "@thirdbracket/bracketui";
 
 interface NewsletterState {
   email: string;
@@ -41,23 +41,23 @@ const Subscription = () => {
   };
 
   return (
-    <section className=" max-w-screen-xl  py-8   lg:py-16">
-      <div className="bg-gray-50 dark:bg-gray-900/30 border border-gray-100 dark:border-gray-800 rounded-lg p-4 md:p-8 lg:p-10">
+    <section className="   py-8 sm:py-12 md:py-16   ">
+      <div className="max-w-screen-xl bg-primary-50 dark:bg-primary-900 border border-primary-200 dark:border-primary-800 rounded-lg p-6 md:p-8 lg:p-10">
         {state.isSuccess ? (
           <div className="text-center space-y-4">
             <div className="text-5xl mb-4">🎉</div>
             <h3 className="text-2xl font-bold">Thank you for subscribing!</h3>
-            <p className="text-gray-600 dark:text-gray-400">
+            <p className="text-primary-600 dark:text-primary-400">
               We'll keep you updated with the latest news and updates.
             </p>
           </div>
         ) : (
-          <div className="flex flex-col lg:flex-row items-start justify-between gap-8 lg:gap-12 ">
+          <div className="flex flex-col lg:flex-row items-start justify-between gap-6 lg:gap-12 ">
             <div>
-              <h2 className="text-3xl lg:text-4xl font-bold  text-gray-950 dark:text-white tracking-wide mb-2">
+              <h2 className="text-3xl lg:text-4xl font-bold  text-primary-950 dark:text-white tracking-wide mb-2">
                 Stay Updated
               </h2>
-              <p className="text-gray-950/60 text-base md:text-lg lg:text-xl dark:text-gray-200/60 max-w-md font-light">
+              <p className="text-primary-950/60 text-base md:text-lg lg:text-xl dark:text-primary-200/60 max-w-md font-light">
                 Subscribe to our newsletter for updates and exclusive content
                 delivered straight to your inbox.
               </p>
@@ -66,8 +66,9 @@ const Subscription = () => {
             <div className="flex-1 max-w-xl">
               <Form onSubmit={handleSubmit}>
                 <div className="relative">
-                  <label className="sr-only">Email address</label>
-                  <input
+                  {/* <label className="sr-only">Email address</label> */}
+                  <FormLabel className="sr-only">Email address</FormLabel>
+                  {/* <input
                     type="email"
                     placeholder="Enter your email"
                     value={state.email}
@@ -77,8 +78,21 @@ const Subscription = () => {
                         email: e.target.value,
                       }))
                     }
-                    className="w-full pl-4 pr-32 h-14 text-base rounded-md border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-800"
-                  />
+                    className="w-full pl-4 pr-32 h-14 text-base rounded-md border border-primary-200 dark:border-primary-800 bg-white dark:bg-primary-800"
+                  /> */}
+
+                  <FormInput
+                    type="email"
+                    placeholder="Enter your email"
+                    value={state.email}
+                    onChange={(e) =>
+                      setState((prev) => ({
+                        ...prev,
+                        email: e.target.value,
+                      }))
+                    }
+                    className="w-full pl-4 pr-32 h-14 text-base rounded-md border border-primary-200 dark:border-primary-800 bg-white dark:bg-primary-950 focus:ring-primary-600 dark:focus:ring-primary-400"
+                  ></FormInput>
                   <div className="absolute right-1 top-1/2 -translate-y-1/2">
                     <Button
                       type="submit"
@@ -92,7 +106,7 @@ const Subscription = () => {
                 </div>
 
                 <div className="mt-3">
-                  <p className="text-sm text-gray-400 dark:text-gray-600">
+                  <p className="text-sm text-primary-400 dark:text-primary-600">
                     We respect your privacy. Unsubscribe at any time.
                   </p>
                   {state.error && (

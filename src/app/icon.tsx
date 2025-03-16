@@ -33,45 +33,44 @@ export default function Icon() {
         >
           <defs>
             <linearGradient
-              id="linearGradient10"
-              x1="-.51585"
-              x2="4.7596"
-              y1="2.3563"
-              y2="2.4056"
-              gradientTransform="matrix(.99999 0 0 .99999 216.43 211.14)"
+              id="a"
+              x1={461.64}
+              x2={505.25}
+              y1={144.91}
+              y2={144.91}
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#fff" offset=".77106" />
-              <stop stop-color="#fff" stop-opacity=".2" offset=".9999" />
-              <stop stop-color="#fff" stop-opacity="0" offset="1" />
+              <stop offset={0} stopColor="#1f2937" />
+              <stop offset={1} stopColor="#1f2937" />
+            </linearGradient>
+            <linearGradient
+              id="b"
+              x1={423.03}
+              x2={500.47}
+              y1={144.3}
+              y2={144.3}
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset={0} stopColor="#030712" />
+              <stop offset={1} stopColor="#1f2937" />
             </linearGradient>
           </defs>
-          <g transform="matrix(.97224 0 0 .97224 -210.35 -205.21)">
-            <g>
-              <rect
-                transform="translate(216.43 211.14)"
-                x="-4.8213"
-                y="-1.6938"
-                width="13.076"
-                height="9.2606"
-                display="none"
-                stroke-miterlimit="50"
-                stroke-width="0"
-              />
-              <path
-                d="m221.18 211.73-2.5161 0.85007-0.0202 1.9446 2.529 0.81596a0.61912 0.61912 0 0 0 8e-3 -0.0625v-3.5243a0.61912 0.61912 0 0 0-1e-3 -0.0238z"
-                fill="#24262b"
-                stroke-width=".99999"
-              />
-              <path
-                d="m220.82 215.84-2.8122-0.86661-0.01-2.7466 2.9156-0.98649a0.61912 0.61912 0 0 0-0.34365-0.10439h-3.5243a0.61912 0.61912 0 0 0-0.61908 0.61908v3.5243a0.61912 0.61912 0 0 0 0.61908 0.61908h3.5243a0.61912 0.61912 0 0 0 0.25011-0.0584z"
-                fill="#24262b"
-              />
-            </g>
+          <g strokeMiterlimit={50} strokeWidth={0}>
             <path
-              d="m220.91 211.24a0.61912 0.61912 0 0 0-5.2e-4 0l-2.9156 0.98649 0.01 2.7466 2.8122 0.86661a0.61912 0.61912 0 0 0 0.3607-0.49816l-2.529-0.81596 0.0202-1.9446 2.5161-0.85007a0.61912 0.61912 0 0 0-0.27389-0.49093z"
-              fill="url(#linearGradient10)"
-              stroke-width=".99999"
+              fill="url(#a)"
+              d="m505.21 113.81-43.225 14.605-.35 33.604 43.342 13.984a11.511 11.511 0 0 0 .272-2.068v-59.268a11.522 11.522 0 0 0-.04-.858z"
+              // style={{
+              //   fontVariationSettings: "&quot",
+              // }}
+              transform="translate(-23.73 -5.737) scale(.05626)"
+            />
+            <path
+              fill="url(#b)"
+              d="M434.54 103.15a11.511 11.511 0 0 0-11.51 11.51v59.268a11.522 11.522 0 0 0 11.521 11.523h59.188a11.511 11.511 0 0 0 4.445-1l-47.676-14.693-.174-47.465 50.127-16.959a11.522 11.522 0 0 0-6.734-2.184z"
+              // style={{
+              //   fontVariationSettings: "&quot",
+              // }}
+              transform="translate(-23.73 -5.737) scale(.05626)"
             />
           </g>
         </svg>

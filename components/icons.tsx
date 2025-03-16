@@ -364,7 +364,7 @@ export const LogoDark = (props: SVGProps<SVGSVGElement>) => (
 //         <stop offset={1} stopColor="#fff" stopOpacity={0} />
 //       </linearGradient>
 
-//       {/* Dark mode gradient (Gray-950 / Black) */}
+//       {/* Dark mode gradient (primary-950 / Black) */}
 //       <linearGradient
 //         id="gradient-dark"
 //         x1={1.57}
@@ -374,13 +374,13 @@ export const LogoDark = (props: SVGProps<SVGSVGElement>) => (
 //         gradientTransform="matrix(3.8 0 0 3.8 -206.57 .49)"
 //         gradientUnits="userSpaceOnUse"
 //       >
-//         <stop offset={0.77} stopColor="#0a0a0a" /> {/* Tailwind gray-950 */}
+//         <stop offset={0.77} stopColor="#0a0a0a" /> {/* Tailwind primary-950 */}
 //         <stop offset={1} stopColor="#0a0a0a" stopOpacity={0} />
 //       </linearGradient>
 //     </defs>
 //     <path
 //       // fill="#1f2937"
-//       className="fill-gray-950 dark:fill-white "
+//       className="fill-primary-950 dark:fill-white "
 //       d="m-188.61 2.73-9.51 3.21-.08 7.35 9.56 3.08a2.34 2.34 0 0 0 .03-.23V2.82a2.34 2.34 0 0 0 0-.1z"
 //       style={{
 //         fontVariationSettings: "&quot",
@@ -389,7 +389,7 @@ export const LogoDark = (props: SVGProps<SVGSVGElement>) => (
 //     />
 //     <path
 //       // fill="#1f2937"
-//       className="fill-gray-950 dark:fill-white"
+//       className="fill-primary-950 dark:fill-white"
 //       d="m-189.97 18.27-10.63-3.28-.04-10.38 11.02-3.73a2.34 2.34 0 0 0-1.3-.4h-13.31a2.34 2.34 0 0 0-2.34 2.35v13.32a2.34 2.34 0 0 0 2.34 2.34h13.32a2.34 2.34 0 0 0 .94-.23z"
 //       style={{
 //         fontVariationSettings: "&quot",
@@ -414,13 +414,13 @@ export const LogoDark = (props: SVGProps<SVGSVGElement>) => (
 
 //     <path
 //       // fill="#1f2937"
-//       className="fill-gray-950 dark:fill-white"
+//       className="fill-primary-950 dark:fill-white"
 //       d="M30.78 1.42v15.16H28.8V1.42zm4.87 0v1.64H23.93V1.42zm12.16 6.52v1.63h-8.2V7.94zm-7.9-6.52v15.16h-2V1.42zm9.65 0v15.16h-2V1.42zm5.72 0v15.16h-2.01V1.42zm3.64 0h5.03q1.7 0 2.88.52 1.19.52 1.8 1.54.63 1.01.63 2.49 0 1.04-.43 1.9-.42.86-1.2 1.46-.79.6-1.88.89l-.57.22h-4.71l-.02-1.64H64q1.08 0 1.8-.37.72-.39 1.08-1.03.37-.65.37-1.43 0-.88-.35-1.53-.34-.66-1.08-1.01-.73-.37-1.88-.37h-3.01v13.52h-2.02zm8.87 15.16L64.1 9.71l2.1-.01 3.73 6.76v.12zm8.38 0h-3.16l.02-1.63h3.14q1.63 0 2.71-.68 1.09-.69 1.63-1.92.55-1.24.55-2.9v-.92q0-1.3-.31-2.31-.32-1.02-.92-1.72-.6-.7-1.48-1.07-.86-.37-1.99-.37h-3.41V1.42h3.41q1.5 0 2.72.5 1.23.49 2.12 1.42.9.93 1.37 2.25.48 1.32.48 2.96v.9q0 1.65-.48 2.98-.48 1.31-1.39 2.24-.9.92-2.16 1.42-1.26.5-2.85.5zM74.08 1.42v15.16h-2.01V1.42z"
 //       aria-label="THIRD"
 //     />
 //     <path
 //       // fill="#1f2937"
-//       className="fill-gray-950 dark:fill-white"
+//       className="fill-primary-950 dark:fill-white"
 //       d="M93.69 9.75h-3.1V7.81h2.73q.64 0 1.08-.25t.68-.73q.24-.48.24-1.15 0-.75-.22-1.22-.2-.48-.64-.7-.44-.22-1.13-.22h-1.99v13.04h-2.53V1.42h4.52q1.06 0 1.9.24.83.24 1.41.75.6.5.9 1.28.31.77.31 1.83 0 .93-.4 1.7-.39.78-1.17 1.28-.77.49-1.92.58zm-.1 6.83h-3.83l1.17-2.11h2.66q.68 0 1.12-.3.43-.28.65-.8.22-.53.22-1.22 0-.73-.19-1.27-.18-.55-.6-.84-.42-.29-1.1-.29h-2.56l.02-1.94h3.27l.58.74q1.1.02 1.78.54.69.51 1.01 1.33.32.8.32 1.74 0 1.44-.54 2.43-.53.98-1.54 1.5-1.01.5-2.44.5zm8.7-15.16h4.58q1.5 0 2.55.52 1.04.52 1.58 1.54.55 1 .55 2.5 0 1.14-.34 2-.34.87-.97 1.47-.64.58-1.53.9l-.74.41h-3.88V8.64h2.72q.74 0 1.23-.33.49-.32.73-.9.25-.57.25-1.3 0-.78-.22-1.35-.22-.58-.69-.9-.47-.32-1.24-.32h-2.05v13.04h-2.53zm7.06 15.16-2.88-6.8 2.63-.02 2.96 6.69v.13zM120.94 3.5l-3.67 13.08h-2.65l4.82-15.16h1.64zm2.92 13.08L120.2 3.5l-.2-2.08h1.68l4.83 15.16zm.07-5.63v2.12h-7.07v-2.12zm13.17.69h2.52q-.08 1.64-.67 2.8-.6 1.14-1.7 1.75-1.11.6-2.7.6-1.22 0-2.17-.44-.95-.43-1.62-1.26-.66-.83-1.02-2.03-.34-1.2-.34-2.72V7.66q0-1.52.35-2.72.37-1.2 1.04-2.03t1.65-1.26q.98-.44 2.2-.44 1.58 0 2.65.6 1.08.6 1.66 1.77.58 1.17.68 2.85h-2.52q-.06-1.14-.32-1.82-.25-.68-.77-.98-.5-.3-1.37-.3-.72 0-1.24.26-.51.27-.85.82-.32.53-.49 1.34-.15.8-.15 1.89v2.7q0 1.05.13 1.85.14.8.44 1.36.3.55.8.85.5.28 1.25.28.9 0 1.43-.28.54-.29.8-.95.26-.67.33-1.81zm9.06-10.22v15.16h-2.53V1.42zm7.57 0-5.05 7.32-3.03 3.72-.48-2.65 2.1-3.1 3.4-5.3zm-2.78 15.16-3.84-7.16 1.74-1.8 5.09 8.96zm14.6-2.11v2.11h-6.58v-2.11zm-5.91-13.05v15.16h-2.53V1.42zm5.03 6.3v2.1h-5.7v-2.1zm.82-6.3v2.12h-6.52V1.42zm9.39 0v15.16h-2.52V1.42zm3.86 0v2.12h-10.2V1.42z"
 //       aria-label="BRACKET"
 //       style={{
@@ -604,13 +604,13 @@ export const BracketUIIcon = () => (
       width="120"
       height="120"
       rx="16"
-      className="fill-gray-100 dark:fill-gray-800"
+      className="fill-primary-100 dark:fill-primary-800"
     />
 
     {/* Left Bracket */}
     <path
       d="M45 40 L60 40 L60 50 L55 50 L55 110 L60 110 L60 120 L45 120"
-      className="stroke-gray-900 dark:stroke-gray-100"
+      className="stroke-primary-900 dark:stroke-primary-100"
       strokeWidth="4"
       fill="none"
       strokeLinecap="round"
@@ -620,7 +620,7 @@ export const BracketUIIcon = () => (
     {/* Right Bracket */}
     <path
       d="M115 40 L100 40 L100 50 L105 50 L105 110 L100 110 L100 120 L115 120"
-      className="stroke-gray-900 dark:stroke-gray-100"
+      className="stroke-primary-900 dark:stroke-primary-100"
       strokeWidth="4"
       fill="none"
       strokeLinecap="round"
@@ -628,7 +628,7 @@ export const BracketUIIcon = () => (
     />
 
     {/* Component Grid */}
-    <g className="fill-gray-200 dark:fill-gray-700">
+    <g className="fill-primary-200 dark:fill-primary-700">
       <rect x="65" y="45" width="30" height="20" rx="4" />
       <rect x="65" y="70" width="30" height="20" rx="4" />
       <rect x="65" y="95" width="30" height="20" rx="4" />
@@ -641,7 +641,7 @@ export const BracketUIIcon = () => (
       width="30"
       height="20"
       rx="4"
-      className="fill-gray-900 dark:fill-gray-100"
+      className="fill-primary-900 dark:fill-primary-100"
     />
 
     {/* Decorative Elements */}
@@ -649,17 +649,17 @@ export const BracketUIIcon = () => (
       cx="40"
       cy="80"
       r="3"
-      className="fill-gray-400 dark:fill-gray-500"
+      className="fill-primary-400 dark:fill-primary-500"
     />
     <circle
       cx="120"
       cy="80"
       r="3"
-      className="fill-gray-400 dark:fill-gray-500"
+      className="fill-primary-400 dark:fill-primary-500"
     />
 
     {/* Modern Dots Pattern */}
-    <g className="fill-gray-200 dark:fill-gray-700">
+    <g className="fill-primary-200 dark:fill-primary-700">
       <circle cx="35" cy="35" r="2" />
       <circle cx="125" cy="35" r="2" />
       <circle cx="35" cy="125" r="2" />
@@ -685,7 +685,7 @@ export const CardIcon = () => (
       width="120"
       height="120"
       rx="8"
-      className="fill-gray-100 dark:fill-gray-800"
+      className="fill-primary-100 dark:fill-primary-800"
     />
 
     {/* Image Card (Top Left) */}
@@ -694,7 +694,7 @@ export const CardIcon = () => (
         width="45"
         height="55"
         rx="4"
-        className="fill-gray-200 dark:fill-gray-700"
+        className="fill-primary-200 dark:fill-primary-700"
       />
       {/* Image Area */}
       <rect
@@ -703,7 +703,7 @@ export const CardIcon = () => (
         width="35"
         height="25"
         rx="2"
-        className="fill-gray-300 dark:fill-gray-600"
+        className="fill-primary-300 dark:fill-primary-600"
       />
       {/* Title */}
       <rect
@@ -712,7 +712,7 @@ export const CardIcon = () => (
         width="35"
         height="6"
         rx="1"
-        className="fill-gray-900 dark:fill-gray-100"
+        className="fill-primary-900 dark:fill-primary-100"
       />
       {/* Description */}
       <rect
@@ -721,7 +721,7 @@ export const CardIcon = () => (
         width="25"
         height="4"
         rx="1"
-        className="fill-gray-400 dark:fill-gray-500"
+        className="fill-primary-400 dark:fill-primary-500"
       />
     </g>
 
@@ -731,7 +731,7 @@ export const CardIcon = () => (
         width="45"
         height="35"
         rx="4"
-        className="fill-gray-200 dark:fill-gray-700"
+        className="fill-primary-200 dark:fill-primary-700"
       />
       {/* Title */}
       <rect
@@ -740,7 +740,7 @@ export const CardIcon = () => (
         width="35"
         height="6"
         rx="1"
-        className="fill-gray-900 dark:fill-gray-100"
+        className="fill-primary-900 dark:fill-primary-100"
       />
       {/* Description */}
       <rect
@@ -749,7 +749,7 @@ export const CardIcon = () => (
         width="35"
         height="4"
         rx="1"
-        className="fill-gray-400 dark:fill-gray-500"
+        className="fill-primary-400 dark:fill-primary-500"
       />
       <rect
         x="5"
@@ -757,7 +757,7 @@ export const CardIcon = () => (
         width="25"
         height="4"
         rx="1"
-        className="fill-gray-400 dark:fill-gray-500"
+        className="fill-primary-400 dark:fill-primary-500"
       />
     </g>
 
@@ -767,7 +767,7 @@ export const CardIcon = () => (
         width="45"
         height="35"
         rx="4"
-        className="fill-gray-200 dark:fill-gray-700"
+        className="fill-primary-200 dark:fill-primary-700"
       />
       {/* Title */}
       <rect
@@ -776,7 +776,7 @@ export const CardIcon = () => (
         width="35"
         height="6"
         rx="1"
-        className="fill-gray-900 dark:fill-gray-100"
+        className="fill-primary-900 dark:fill-primary-100"
       />
       {/* Button */}
       <rect
@@ -785,7 +785,7 @@ export const CardIcon = () => (
         width="35"
         height="8"
         rx="4"
-        className="fill-gray-900 dark:fill-gray-100"
+        className="fill-primary-900 dark:fill-primary-100"
       />
     </g>
 
@@ -795,14 +795,14 @@ export const CardIcon = () => (
         width="45"
         height="55"
         rx="4"
-        className="fill-gray-200 dark:fill-gray-700"
+        className="fill-primary-200 dark:fill-primary-700"
       />
       {/* Icon Circle */}
       <circle
         cx="22.5"
         cy="20"
         r="12"
-        className="fill-gray-300 dark:fill-gray-600"
+        className="fill-primary-300 dark:fill-primary-600"
       />
       {/* Title */}
       <rect
@@ -811,7 +811,7 @@ export const CardIcon = () => (
         width="35"
         height="6"
         rx="1"
-        className="fill-gray-900 dark:fill-gray-100"
+        className="fill-primary-900 dark:fill-primary-100"
       />
       {/* Description */}
       <rect
@@ -820,7 +820,7 @@ export const CardIcon = () => (
         width="35"
         height="4"
         rx="1"
-        className="fill-gray-400 dark:fill-gray-500"
+        className="fill-primary-400 dark:fill-primary-500"
       />
     </g>
   </svg>
@@ -842,7 +842,7 @@ export const ButtonIcon = () => (
       width="120"
       height="80"
       rx="8"
-      className="fill-gray-100 dark:fill-gray-800"
+      className="fill-primary-100 dark:fill-primary-800"
     />
     <g transform="translate(30, 55)">
       {/* Primary Button */}
@@ -850,7 +850,7 @@ export const ButtonIcon = () => (
         width="60"
         height="24"
         rx="12"
-        className="fill-gray-900 dark:fill-gray-100"
+        className="fill-primary-900 dark:fill-primary-100"
       />
       {/* Secondary Button */}
       <rect
@@ -858,7 +858,7 @@ export const ButtonIcon = () => (
         width="30"
         height="24"
         rx="12"
-        className="fill-gray-200 dark:fill-gray-700 stroke-gray-400 dark:stroke-gray-500"
+        className="fill-primary-200 dark:fill-primary-700 stroke-primary-400 dark:stroke-primary-500"
       />
       {/* Text Button Group */}
       <rect
@@ -866,7 +866,7 @@ export const ButtonIcon = () => (
         width="40"
         height="20"
         rx="4"
-        className="fill-gray-200 dark:fill-gray-700"
+        className="fill-primary-200 dark:fill-primary-700"
       />
       <rect
         x="45"
@@ -874,7 +874,7 @@ export const ButtonIcon = () => (
         width="40"
         height="20"
         rx="4"
-        className="fill-gray-200 dark:fill-gray-700"
+        className="fill-primary-200 dark:fill-primary-700"
       />
     </g>
   </svg>
@@ -897,13 +897,13 @@ export const NavbarIcon = () => (
       width="120"
       height="35"
       rx="4"
-      className="fill-gray-100 dark:fill-gray-800"
+      className="fill-primary-100 dark:fill-primary-800"
     />
     <circle
       cx="35"
       cy="37"
       r="8"
-      className="fill-gray-900 dark:fill-gray-100"
+      className="fill-primary-900 dark:fill-primary-100"
     />
     <rect
       x="50"
@@ -911,7 +911,7 @@ export const NavbarIcon = () => (
       width="20"
       height="6"
       rx="3"
-      className="fill-gray-400 dark:fill-gray-500"
+      className="fill-primary-400 dark:fill-primary-500"
     />
     <rect
       x="80"
@@ -919,7 +919,7 @@ export const NavbarIcon = () => (
       width="20"
       height="6"
       rx="3"
-      className="fill-gray-400 dark:fill-gray-500"
+      className="fill-primary-400 dark:fill-primary-500"
     />
 
     {/* Complex Navbar */}
@@ -929,13 +929,13 @@ export const NavbarIcon = () => (
       width="120"
       height="45"
       rx="4"
-      className="fill-gray-100 dark:fill-gray-800"
+      className="fill-primary-100 dark:fill-primary-800"
     />
     <circle
       cx="35"
       cy="87"
       r="8"
-      className="fill-gray-900 dark:fill-gray-100"
+      className="fill-primary-900 dark:fill-primary-100"
     />
     <rect
       x="50"
@@ -943,7 +943,7 @@ export const NavbarIcon = () => (
       width="30"
       height="20"
       rx="3"
-      className="fill-gray-200 dark:fill-gray-700"
+      className="fill-primary-200 dark:fill-primary-700"
     />
     <rect
       x="90"
@@ -951,7 +951,7 @@ export const NavbarIcon = () => (
       width="30"
       height="20"
       rx="3"
-      className="fill-gray-200 dark:fill-gray-700"
+      className="fill-primary-200 dark:fill-primary-700"
     />
 
     {/* Mobile Navbar */}
@@ -961,7 +961,7 @@ export const NavbarIcon = () => (
       width="120"
       height="25"
       rx="4"
-      className="fill-gray-100 dark:fill-gray-800"
+      className="fill-primary-100 dark:fill-primary-800"
     />
     <rect
       x="110"
@@ -969,7 +969,7 @@ export const NavbarIcon = () => (
       width="20"
       height="10"
       rx="2"
-      className="fill-gray-400 dark:fill-gray-500"
+      className="fill-primary-400 dark:fill-primary-500"
     />
   </svg>
 );
@@ -991,7 +991,7 @@ export const HeaderIcon = () => (
       width="120"
       height="35"
       rx="8"
-      className="fill-gray-100 dark:fill-gray-800"
+      className="fill-primary-100 dark:fill-primary-800"
     />
     <rect
       x="30"
@@ -999,7 +999,7 @@ export const HeaderIcon = () => (
       width="60"
       height="10"
       rx="2"
-      className="fill-gray-900 dark:fill-gray-100"
+      className="fill-primary-900 dark:fill-primary-100"
     />
 
     {/* Hero Header */}
@@ -1009,7 +1009,7 @@ export const HeaderIcon = () => (
       width="120"
       height="45"
       rx="8"
-      className="fill-gray-100 dark:fill-gray-800"
+      className="fill-primary-100 dark:fill-primary-800"
     />
     <rect
       x="30"
@@ -1017,7 +1017,7 @@ export const HeaderIcon = () => (
       width="80"
       height="10"
       rx="2"
-      className="fill-gray-900 dark:fill-gray-100"
+      className="fill-primary-900 dark:fill-primary-100"
     />
     <rect
       x="30"
@@ -1025,7 +1025,7 @@ export const HeaderIcon = () => (
       width="40"
       height="8"
       rx="4"
-      className="fill-gray-400 dark:fill-gray-500"
+      className="fill-primary-400 dark:fill-primary-500"
     />
 
     {/* Complex Header */}
@@ -1035,7 +1035,7 @@ export const HeaderIcon = () => (
       width="120"
       height="25"
       rx="8"
-      className="fill-gray-100 dark:fill-gray-800"
+      className="fill-primary-100 dark:fill-primary-800"
     />
     <rect
       x="30"
@@ -1043,13 +1043,13 @@ export const HeaderIcon = () => (
       width="40"
       height="10"
       rx="2"
-      className="fill-gray-900 dark:fill-gray-100"
+      className="fill-primary-900 dark:fill-primary-100"
     />
     <circle
       cx="120"
       cy="132"
       r="6"
-      className="fill-gray-400 dark:fill-gray-500"
+      className="fill-primary-400 dark:fill-primary-500"
     />
   </svg>
 );
@@ -1071,7 +1071,7 @@ export const FooterIcon = () => (
       width="120"
       height="35"
       rx="8"
-      className="fill-gray-100 dark:fill-gray-800"
+      className="fill-primary-100 dark:fill-primary-800"
     />
     <rect
       x="30"
@@ -1079,7 +1079,7 @@ export const FooterIcon = () => (
       width="100"
       height="6"
       rx="2"
-      className="fill-gray-400 dark:fill-gray-500"
+      className="fill-primary-400 dark:fill-primary-500"
     />
 
     {/* Multi-Column Footer */}
@@ -1089,7 +1089,7 @@ export const FooterIcon = () => (
       width="120"
       height="75"
       rx="8"
-      className="fill-gray-100 dark:fill-gray-800"
+      className="fill-primary-100 dark:fill-primary-800"
     />
     {/* Column 1 */}
     <rect
@@ -1098,7 +1098,7 @@ export const FooterIcon = () => (
       width="25"
       height="8"
       rx="2"
-      className="fill-gray-900 dark:fill-gray-100"
+      className="fill-primary-900 dark:fill-primary-100"
     />
     <rect
       x="30"
@@ -1106,7 +1106,7 @@ export const FooterIcon = () => (
       width="20"
       height="6"
       rx="2"
-      className="fill-gray-400 dark:fill-gray-500"
+      className="fill-primary-400 dark:fill-primary-500"
     />
     <rect
       x="30"
@@ -1114,7 +1114,7 @@ export const FooterIcon = () => (
       width="20"
       height="6"
       rx="2"
-      className="fill-gray-400 dark:fill-gray-500"
+      className="fill-primary-400 dark:fill-primary-500"
     />
     {/* Column 2 */}
     <rect
@@ -1123,7 +1123,7 @@ export const FooterIcon = () => (
       width="25"
       height="8"
       rx="2"
-      className="fill-gray-900 dark:fill-gray-100"
+      className="fill-primary-900 dark:fill-primary-100"
     />
     <rect
       x="70"
@@ -1131,7 +1131,7 @@ export const FooterIcon = () => (
       width="20"
       height="6"
       rx="2"
-      className="fill-gray-400 dark:fill-gray-500"
+      className="fill-primary-400 dark:fill-primary-500"
     />
     <rect
       x="70"
@@ -1139,7 +1139,7 @@ export const FooterIcon = () => (
       width="20"
       height="6"
       rx="2"
-      className="fill-gray-400 dark:fill-gray-500"
+      className="fill-primary-400 dark:fill-primary-500"
     />
     {/* Copyright */}
     <rect
@@ -1148,7 +1148,7 @@ export const FooterIcon = () => (
       width="100"
       height="6"
       rx="2"
-      className="fill-gray-300 dark:fill-gray-600"
+      className="fill-primary-300 dark:fill-primary-600"
     />
   </svg>
 );
@@ -1170,17 +1170,17 @@ export const ThemeToggleIcon = () => (
       width="120"
       height="120"
       rx="60"
-      className="fill-gray-100 dark:fill-gray-800"
+      className="fill-primary-100 dark:fill-primary-800"
     />
 
     {/* Light Mode (Left) */}
     <g transform="translate(40, 60)">
-      <circle cx="20" cy="20" r="15" className="fill-gray-900" />
+      <circle cx="20" cy="20" r="15" className="fill-primary-900" />
       <path
         d="M20 0L20 10M0 20L10 20M20 30L20 40M30 20L40 20"
         stroke="currentColor"
         strokeWidth="2"
-        className="stroke-gray-900"
+        className="stroke-primary-900"
       />
     </g>
 
@@ -1188,11 +1188,11 @@ export const ThemeToggleIcon = () => (
     <g transform="translate(90, 60)">
       <path
         d="M25 20C25 28.2843 18.2843 35 10 35C1.71573 35 -5 28.2843 -5 20C-5 11.7157 1.71573 5 10 5C18.2843 5 25 11.7157 25 20Z"
-        className="fill-gray-100 dark:fill-gray-900"
+        className="fill-primary-100 dark:fill-primary-900"
       />
       <path
         d="M23 15C23 23.2843 16.2843 30 8 30C-0.284271 30 -7 23.2843 -7 15"
-        className="fill-gray-800 dark:fill-gray-100"
+        className="fill-primary-800 dark:fill-primary-100"
       />
     </g>
 
@@ -1201,7 +1201,7 @@ export const ThemeToggleIcon = () => (
       cx="80"
       cy="80"
       r="5"
-      className="fill-gray-400 dark:fill-gray-500"
+      className="fill-primary-400 dark:fill-primary-500"
     />
   </svg>
 );

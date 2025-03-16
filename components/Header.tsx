@@ -19,7 +19,12 @@ import { Logo, LogoDark } from "./icons";
 const Header: FC = () => {
   return (
     <header>
-      <Navbar>
+      <Navbar
+        theme={{
+          background: "bg-white dark:bg-[#0d0d0d]",
+          border: "border-[#dbdbdb] dark:border-[#242424] border-b",
+        }}
+      >
         <Navbrand logo={<Logo />} href="/"></Navbrand>
 
         <NavItem>
@@ -27,7 +32,7 @@ const Header: FC = () => {
             <div className="grid w-full grid-flow-col gap-x-8 grid-cols-[repeat(4,minmax(0,220px))_250px]">
               <div className="flex flex-col h-full ">
                 <div className="mb-6">
-                  <h3 className="text-xs leading-none text-gray-500">
+                  <h3 className="text-xs leading-none text-primary-500">
                     Explore Our Services
                   </h3>
                 </div>
@@ -63,7 +68,7 @@ const Header: FC = () => {
               </div>
               <div className="flex flex-col h-full">
                 <div className="mb-6">
-                  <h3 className="text-xs leading-none text-gray-500">
+                  <h3 className="text-xs leading-none text-primary-500">
                     Web Development
                   </h3>
                 </div>
@@ -108,7 +113,7 @@ const Header: FC = () => {
 
               <div className="flex flex-col h-full ">
                 <div className="mb-6">
-                  <h3 className="text-xs leading-none text-gray-500">
+                  <h3 className="text-xs leading-none text-primary-500">
                     Digital Marketing
                   </h3>{" "}
                 </div>
@@ -153,7 +158,7 @@ const Header: FC = () => {
 
               <div className="flex flex-col h-full ">
                 <div className="mb-6">
-                  <h3 className="text-xs leading-none text-gray-500">
+                  <h3 className="text-xs leading-none text-primary-500">
                     Other Services
                   </h3>
                 </div>
@@ -193,7 +198,7 @@ const Header: FC = () => {
                     alt=""
                     width={500}
                     height={600}
-                    className="w-full h-[250pxpx] dark:opacity-90 bg-gray-50  dark:bg-gray-800/50   rounded-3xl"
+                    className="w-full h-[250pxpx] dark:opacity-90 bg-primary-50  dark:bg-primary-800/50   rounded-3xl"
                   ></Image>
                 </div>
               </div>
@@ -203,7 +208,7 @@ const Header: FC = () => {
             <div className="grid w-full grid-flow-col gap-x-8 grid-cols-[repeat(4,minmax(0,220px))_250px]">
               <div className="flex flex-col h-full ">
                 <div className="mb-6">
-                  <h3 className="text-xs leading-none text-gray-500">
+                  <h3 className="text-xs leading-none text-primary-500">
                     Explore Our Solutions
                   </h3>
                 </div>
@@ -236,7 +241,7 @@ const Header: FC = () => {
               </div>
               <div className="flex flex-col h-full">
                 <div className="mb-6">
-                  <h3 className="text-xs leading-none text-gray-500">
+                  <h3 className="text-xs leading-none text-primary-500">
                     Automation & Integration
                   </h3>
                 </div>
@@ -281,7 +286,9 @@ const Header: FC = () => {
 
               <div className="flex flex-col h-full ">
                 <div className="mb-6">
-                  <h3 className="text-xs leading-none text-gray-500">UI/UX</h3>{" "}
+                  <h3 className="text-xs leading-none text-primary-500">
+                    UI/UX
+                  </h3>{" "}
                 </div>
                 <div className="flex flex-col space-y-1.5">
                   <Navlink as={Link} href="#" isDropdownItem>
@@ -324,7 +331,7 @@ const Header: FC = () => {
 
               <div className="flex flex-col h-full ">
                 <div className="mb-6">
-                  <h3 className="text-xs leading-none text-gray-500">
+                  <h3 className="text-xs leading-none text-primary-500">
                     Other Solutions
                   </h3>
                 </div>
@@ -364,7 +371,7 @@ const Header: FC = () => {
                     alt=""
                     width={500}
                     height={600}
-                    className="w-full h-[250pxpx] dark:opacity-90 bg-gray-50  dark:bg-gray-800/50   rounded-3xl"
+                    className="w-full h-[250pxpx] dark:opacity-90 bg-primary-50  dark:bg-primary-800/50   rounded-3xl"
                   ></Image>
                 </div>
               </div>

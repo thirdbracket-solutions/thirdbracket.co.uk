@@ -128,7 +128,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${roboto.className} antialiased dark:bg-gray-950 dark:text-white`}
+      className={`${roboto.className} antialiased dark:bg-primary-950 dark:text-white`}
       suppressHydrationWarning
     >
       <head>
@@ -147,7 +147,7 @@ export default function RootLayout({
 
         <Header />
 
-        <main className="min-h-screen pt-16 lg:pt-20 dark:bg-gray-950 dark:text-white">
+        <main className="min-h-screen pt-16 lg:pt-20 dark:bg-primary-950 dark:text-white">
           {children}
         </main>
         <SiteFooter />

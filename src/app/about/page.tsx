@@ -16,7 +16,7 @@ function BlogCard({
   image: string;
 }) {
   return (
-    <div className="border border-gray-200 dark:border-gray-800 rounded-lg overflow-hidden">
+    <div className="border border-primary-200 dark:border-primary-800 rounded-lg overflow-hidden">
       <Image
         src={image}
         alt={title}
@@ -26,8 +26,8 @@ function BlogCard({
       />
       <div className="p-6">
         <h3 className="text-xl font-semibold mb-2">{title}</h3>
-        <p className="text-gray-600 dark:text-gray-400 mb-4">{excerpt}</p>
-        <div className="flex items-center text-sm text-gray-500 dark:text-gray-400">
+        <p className="text-primary-600 dark:text-primary-400 mb-4">{excerpt}</p>
+        <div className="flex items-center text-sm text-primary-500 dark:text-primary-400">
           <span>{date}</span>
           <span className="mx-2">•</span>
           <span>{author}</span>
@@ -50,7 +50,7 @@ export default function Blog() {
   ];
 
   return (
-    <main className="bg-white dark:bg-gray-950 text-gray-950 dark:text-white">
+    <main className="bg-white dark:bg-primary-950 text-primary-950 dark:text-white">
       <Bracket>
         <PageHeader
           title="Blog"

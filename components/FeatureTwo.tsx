@@ -13,10 +13,10 @@ export function FeatureTwo() {
     <section className="py-8 sm:py-12 md:py-16">
       <div className="mx-auto max-w-screen-xl  ">
         <div className="mx-auto mb-8 md:mb-12 lg:mb-16 xl:max-w-6xl lg:max-w-6xl  md:max-w-3xl max-w-lg sm:max-w-xl">
-          <h2 className="mb-4 md:mb-6  text-3xl lg:text-4xl font-extrabold  text-gray-950 dark:text-white  px-4 lg:px-0 text-center tracking-wide">
+          <h2 className="mb-4 md:mb-6  text-3xl lg:text-4xl font-extrabold  text-primary-950 dark:text-white  px-4 lg:px-0 text-center tracking-wide">
             Best of Both Worlds- The Perfect Middle&nbsp;Ground
           </h2>
-          <p className="text-gray-950/60 text-base md:text-lg lg:text-xl dark:text-gray-200/60 text-center px-4 lg:px-0 font-light  ">
+          <p className="text-primary-950/60 text-base md:text-lg lg:text-xl dark:text-primary-200/60 text-center px-4 lg:px-0 font-light  ">
             Freelancers can be unreliable. Agencies charge a premium. We offer
             the expertise, structure, and execution of an agency—without the
             overhead cost.
@@ -27,7 +27,7 @@ export function FeatureTwo() {
             size="lg"
             isIcon
             cover={
-              <IoMedalOutline className="h-12 w-12 text-gray-600 dark:text-gray-300   fill-current" />
+              <IoMedalOutline className="h-12 w-12 text-primary-600 dark:text-primary-300   fill-current" />
             }
             header="Expertise & Flexibility"
           >
@@ -41,7 +41,7 @@ export function FeatureTwo() {
             size="lg"
             isIcon
             cover={
-              <GoStack className="h-12 w-12 text-gray-600 dark:text-gray-300  fill-current" />
+              <GoStack className="h-12 w-12 text-primary-600 dark:text-primary-300  fill-current" />
             }
             header="Modern Stack"
           >
@@ -54,7 +54,7 @@ export function FeatureTwo() {
             size="lg"
             isIcon
             cover={
-              <MdOutlineAutoGraph className="h-12 w-12 text-gray-600 dark:text-gray-300   fill-current" />
+              <MdOutlineAutoGraph className="h-12 w-12 text-primary-600 dark:text-primary-300   fill-current" />
             }
             header="Built for Growth"
           >
@@ -68,7 +68,7 @@ export function FeatureTwo() {
             size="lg"
             isIcon
             cover={
-              <TiGroupOutline className="h-12 w-12 text-gray-600 dark:text-gray-300  fill-current" />
+              <TiGroupOutline className="h-12 w-12 text-primary-600 dark:text-primary-300  fill-current" />
             }
             header="Seamless Collaboration"
           >
@@ -82,7 +82,7 @@ export function FeatureTwo() {
             size="lg"
             isIcon
             cover={
-              <RiLockUnlockLine className="h-12 w-12 text-gray-600 dark:text-gray-300  fill-current" />
+              <RiLockUnlockLine className="h-12 w-12 text-primary-600 dark:text-primary-300  fill-current" />
             }
             header="No Lock-in, No Bloat"
           >
@@ -92,13 +92,13 @@ export function FeatureTwo() {
             </span>
           </Card>
           <Card
-            className=" bg-white dark:bg-gray-950 bg-[url(/pattern.svg)]"
+            className=" bg-white dark:bg-primary-950 bg-[url(/pattern.svg)]"
             size="lg"
             isExternal
             isIcon
             href="#"
             cover={
-              <GrActions className="h-12 w-12 text-gray-600 dark:text-gray-300   fill-current" />
+              <GrActions className="h-12 w-12 text-primary-600 dark:text-primary-300   fill-current" />
             }
             header="Get Started Today"
           >

@@ -16,7 +16,7 @@ function CaseStudyCard({
   image: string;
 }) {
   return (
-    <div className="border border-gray-200 dark:border-gray-800 rounded-lg overflow-hidden">
+    <div className="border border-primary-200 dark:border-primary-800 rounded-lg overflow-hidden">
       <Image
         src={image}
         alt={title}
@@ -26,10 +26,12 @@ function CaseStudyCard({
       />
       <div className="p-6">
         <h3 className="text-xl font-semibold mb-2">{title}</h3>
-        <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
+        <p className="text-sm text-primary-600 dark:text-primary-400 mb-4">
           {client}
         </p>
-        <p className="text-gray-600 dark:text-gray-400 mb-4">{description}</p>
+        <p className="text-primary-600 dark:text-primary-400 mb-4">
+          {description}
+        </p>
         <p className="font-medium">Result: {result}</p>
       </div>
     </div>
@@ -49,7 +51,7 @@ export default function CaseStudies() {
   ];
 
   return (
-    <main className="bg-white dark:bg-gray-950 text-gray-950 dark:text-white">
+    <main className="bg-white dark:bg-primary-950 text-primary-950 dark:text-white">
       <Bracket>
         <PageHeader
           title="Case Studies"

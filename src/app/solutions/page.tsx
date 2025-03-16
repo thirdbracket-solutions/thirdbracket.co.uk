@@ -15,7 +15,7 @@
 //     <div className="flex flex-col md:flex-row gap-8 items-center py-16">
 //       <div className="w-full md:w-1/2">
 //         <h3 className="text-2xl font-semibold mb-4">{title}</h3>
-//         <p className="text-gray-600 dark:text-gray-400">{description}</p>
+//         <p className="text-primary-600 dark:text-primary-400">{description}</p>
 //       </div>
 //       <div className="w-full md:w-1/2">
 //         <Image src={image} alt={title} className="rounded-lg shadow-lg" />
@@ -35,7 +35,7 @@
 //   ];
 
 //   return (
-//     <main className="bg-white dark:bg-gray-950 text-gray-950 dark:text-white">
+//     <main className="bg-white dark:bg-primary-950 text-primary-950 dark:text-white">
 //       <Bracket>
 //         <PageHeader
 //           title="Solutions"
@@ -191,7 +191,7 @@ function CaseStudyHighlight() {
               <div className="text-3xl font-bold text-accent-600 dark:text-accent-400 mb-2">
                 {stat.metric}
               </div>
-              <div className="text-gray-600 dark:text-gray-400">
+              <div className="text-primary-600 dark:text-primary-400">
                 {stat.label}
               </div>
             </div>
@@ -348,7 +348,7 @@ export default function Solutions() {
   ];
 
   return (
-    <main className="bg-white dark:bg-gray-950 text-gray-950 dark:text-white">
+    <main className="bg-white dark:bg-primary-950 text-primary-950 dark:text-white">
       <Bracket>
         <PageHeader
           title="Solutions"

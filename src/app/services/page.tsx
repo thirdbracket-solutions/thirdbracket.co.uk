@@ -30,17 +30,19 @@ interface Service {
 
 function ServiceCard({ title, description, icon: Icon, features }: Service) {
   return (
-    <div className="p-6 border border-gray-200 dark:border-gray-800 rounded-lg hover:shadow-lg transition-all">
+    <div className="p-6 border border-primary-200 dark:border-primary-800 rounded-lg hover:shadow-lg transition-all">
       <div className="w-12 h-12 mb-4 flex items-center justify-center  dark:bg-primary-50 bg-primary-900 rounded-lg">
         <Icon className="w-6 h-6 text-accent-50 dark:text-accent-950" />
       </div>
       <h3 className="text-xl  font-semibold mb-3">{title}</h3>
-      <p className="text-gray-600 dark:text-gray-400 mb-4">{description}</p>
+      <p className="text-primary-600 dark:text-primary-400 mb-4">
+        {description}
+      </p>
       <ul className="space-y-2">
         {features.map((feature, index) => (
           <li
             key={index}
-            className="flex items-center text-sm text-gray-600 dark:text-gray-400"
+            className="flex items-center text-sm text-primary-600 dark:text-primary-400"
           >
             <span className="w-1.5 h-1.5 bg-primary-900 dark:bg-accent-50 rounded-full mr-2"></span>
             {feature}
@@ -219,7 +221,7 @@ export default function Services() {
   ];
 
   return (
-    <main className="bg-white dark:bg-gray-950 text-gray-950 dark:text-white">
+    <main className="bg-white dark:bg-primary-950 text-primary-950 dark:text-white">
       <Bracket>
         <PageHeader
           title="Our Services"
@@ -264,7 +266,7 @@ export default function Services() {
                     {phase.step}
                   </div>
                   <h3 className="text-xl font-semibold mb-2">{phase.title}</h3>
-                  <p className="text-gray-600 dark:text-gray-400">
+                  <p className="text-primary-600 dark:text-primary-400">
                     {phase.description}
                   </p>
                 </div>

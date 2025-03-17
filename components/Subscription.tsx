@@ -42,7 +42,7 @@ const Subscription = () => {
 
   return (
     <section className="   py-8 sm:py-12 md:py-16   ">
-      <div className="max-w-screen-xl bg-accent-400 dark:bg-accent-600 border border-primary-200 dark:border-primary-800 rounded-lg p-6 md:p-8 lg:p-10">
+      <div className="max-w-screen-xl bg-accent-50 dark:bg-accent-950 border border-accent-300 dark:border-accent-800 rounded-lg p-6 md:p-8 lg:p-10">
         {state.isSuccess ? (
           <div className="text-center space-y-4">
             <div className="text-5xl mb-4">🎉</div>
@@ -91,7 +91,7 @@ const Subscription = () => {
                         email: e.target.value,
                       }))
                     }
-                    className="w-full pl-4 pr-32 h-14 text-base rounded-md border border-primary-200 dark:border-primary-800 bg-white dark:bg-primary-950 focus:ring-primary-600 dark:focus:ring-primary-400"
+                    className="w-full pl-4 pr-32 h-14 text-base rounded-md border border-primary-400 dark:border-primary-600 bg-primary-100 dark:bg-primary-950 focus:ring-primary-400 dark:focus:ring-primary-600"
                   ></FormInput>
                   <div className="absolute right-1 top-1/2 -translate-y-1/2">
                     <Button
@@ -99,6 +99,7 @@ const Subscription = () => {
                       disabled={state.isSubmitting}
                       isLoading={state.isSubmitting}
                       size="md"
+                      // className="border-transparent !bg-accent-500 dark:!bg-accent-400 !text-white dark:!text-primary-950 [@media(hover:hover)]:hover:opacity-90 active:opacity-80"
                     >
                       Subscribe
                     </Button>

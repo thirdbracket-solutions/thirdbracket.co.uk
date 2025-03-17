@@ -21,7 +21,7 @@ const Header: FC = () => {
     <header>
       <Navbar
         theme={{
-          background: "bg-white dark:bg-primary-950",
+          background: "bg-white dark:bg-black",
           border: "border-b border-primary-200 dark:border-primary-800",
           mobileMenu: "bg-white dark:bg-primary-950",
         }}

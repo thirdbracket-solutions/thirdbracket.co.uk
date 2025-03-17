@@ -8,7 +8,7 @@ import Subscription from "../../components/Subscription";
 
 export default function Home() {
   return (
-    <main className="bg-white dark:bg-primary-950 text-primary-950 dark:text-white">
+    <main className="min-h-screen pt-16 lg:pt-20 dark:bg-black dark:text-white">
       <Bracket>
         <HeroSection />
 

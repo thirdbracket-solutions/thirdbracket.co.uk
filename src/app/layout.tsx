@@ -147,9 +147,8 @@ export default function RootLayout({
 
         <Header />
 
-        <main className="min-h-screen pt-16 lg:pt-20 dark:bg-primary-950 dark:text-white">
-          {children}
-        </main>
+        {children}
+
         <SiteFooter />
       </body>
     </html>

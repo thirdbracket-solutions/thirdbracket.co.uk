@@ -18,7 +18,7 @@ import {
 
 const SiteFooter = () => {
   return (
-    <Footer className="dark:!bg-[#0d0d0d] bg-white">
+    <Footer className="dark:!bg-black">
       <FooterSection className="col-span-2">
         <FooterBrand logo="/logo.svg">
           Making the web a better place with Third Bracket Solutions.

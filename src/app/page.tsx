@@ -8,15 +8,13 @@ import Subscription from "../../components/Subscription";
 
 export default function Home() {
   return (
-    <main className="min-h-screen pt-16 lg:pt-20 dark:bg-black dark:text-white">
-      <Bracket>
-        <HeroSection />
+    <Bracket>
+      <HeroSection />
 
-        <FeatureOne />
-        <FeatureTwo />
+      <FeatureOne />
+      <FeatureTwo />
 
-        <Subscription />
-      </Bracket>
-    </main>
+      <Subscription />
+    </Bracket>
   );
 }

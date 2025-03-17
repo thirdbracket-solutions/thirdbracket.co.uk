@@ -5,49 +5,94 @@ import { SVGProps } from "react";
 export const TBIcon = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
+    width={24}
+    height={24}
     viewBox="0 0 4.763 4.763"
-    className="dark:invert"
-    {...props}
   >
-    <defs>
+    <defs className="dark:hidden">
       <linearGradient
         id="a"
-        x1={-0.516}
-        x2={4.76}
-        y1={2.356}
-        y2={2.406}
-        gradientTransform="translate(216.43 211.14) scale(.99999)"
+        x1={459.53}
+        x2={549.76}
+        y1={149.45}
+        y2={147.91}
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset={0.771} stopColor="#fff" />
-        <stop offset={1} stopColor="#fff" stopOpacity={0.2} />
-        <stop offset={1} stopColor="#fff" stopOpacity={0} />
+        <stop offset={0} stopColor="#1a1a1a" />
+        <stop offset={1} stopColor="#111" />
+      </linearGradient>
+      <linearGradient
+        id="b"
+        x1={414.9}
+        x2={514.77}
+        y1={147.88}
+        y2={147.84}
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop offset={0} stopColor="#1a1a1a" />
+        <stop offset={1} stopColor="#111" />
       </linearGradient>
     </defs>
-    <g fill="#24262b">
+    <defs className="hidden dark:block">
+      <linearGradient
+        id="c"
+        x1={459.53}
+        x2={549.76}
+        y1={149.45}
+        y2={147.91}
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop offset={0} stopColor="#e6e6e6" />
+        <stop offset={1} stopColor="#f7f7f7" />
+      </linearGradient>
+      <linearGradient
+        id="d"
+        x1={414.9}
+        x2={514.77}
+        y1={147.88}
+        y2={147.84}
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop offset={0} stopColor="#e6e6e6" />
+        <stop offset={1} stopColor="#f7f7f7" />
+      </linearGradient>
+    </defs>
+    <g strokeMiterlimit={50} strokeWidth={0} className="dark:hidden">
       <path
-        d="m221.18 211.73-2.516.85-.02 1.945 2.529.816a.62.62 0 0 0 .008-.063v-3.524a.62.62 0 0 0-.001-.024z"
+        fill="url(#a)"
+        d="m505.21 113.81-43.225 14.605-.35 33.604 43.342 13.984a11.511 11.511 0 0 0 .272-2.068v-59.268a11.522 11.522 0 0 0-.04-.858z"
         style={{
           fontVariationSettings: "&quot",
         }}
-        transform="translate(-210.35 -205.21) scale(.97224)"
+        transform="translate(-23.73 -5.737) scale(.05626)"
       />
       <path
-        d="m220.82 215.84-2.812-.867-.01-2.746 2.915-.987a.62.62 0 0 0-.343-.104h-3.525a.62.62 0 0 0-.619.619v3.524a.62.62 0 0 0 .62.62h3.524a.62.62 0 0 0 .25-.059z"
+        fill="url(#b)"
+        d="M434.54 103.15a11.511 11.511 0 0 0-11.51 11.51v59.268a11.522 11.522 0 0 0 11.521 11.523h59.188a11.511 11.511 0 0 0 4.445-1l-47.676-14.693-.174-47.465 50.127-16.959a11.522 11.522 0 0 0-6.734-2.184z"
         style={{
           fontVariationSettings: "&quot",
         }}
-        transform="translate(-210.35 -205.21) scale(.97224)"
+        transform="translate(-23.73 -5.737) scale(.05626)"
       />
     </g>
-    <path
-      fill="url(#a)"
-      d="m220.91 211.24-2.916.986.01 2.747 2.812.867a.62.62 0 0 0 .36-.498l-2.528-.816.02-1.945 2.516-.85a.62.62 0 0 0-.274-.491z"
-      style={{
-        fontVariationSettings: "&quot",
-      }}
-      transform="translate(-210.35 -205.21) scale(.97224)"
-    />
+    <g strokeMiterlimit={50} strokeWidth={0} className="hidden dark:block">
+      <path
+        fill="url(#c)"
+        d="m505.21 113.81-43.225 14.605-.35 33.604 43.342 13.984a11.511 11.511 0 0 0 .272-2.068v-59.268a11.522 11.522 0 0 0-.04-.858z"
+        style={{
+          fontVariationSettings: "&quot",
+        }}
+        transform="translate(-23.73 -5.737) scale(.05626)"
+      />
+      <path
+        fill="url(#d)"
+        d="M434.54 103.15a11.511 11.511 0 0 0-11.51 11.51v59.268a11.522 11.522 0 0 0 11.521 11.523h59.188a11.511 11.511 0 0 0 4.445-1l-47.676-14.693-.174-47.465 50.127-16.959a11.522 11.522 0 0 0-6.734-2.184z"
+        style={{
+          fontVariationSettings: "&quot",
+        }}
+        transform="translate(-23.73 -5.737) scale(.05626)"
+      />
+    </g>
   </svg>
 );
 

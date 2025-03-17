@@ -19,8 +19,8 @@ const HeroSection: React.FC = () => {
         <span
           className="mr-2 lg:mr-3 rounded-full 
    text-[10px] md:text-xs 
-    px-2 py-0.5 
-    text-white dark:text-primary-950 bg-primary-800 dark:bg-primary-200"
+    px-2 py-0.5 text-accent-200 
+     bg-primary-700"
         >
           New
         </span>
@@ -53,7 +53,7 @@ const HeroSection: React.FC = () => {
       <p className="text-primary-950/60 text-base md:text-lg lg:text-xl dark:text-primary-200/60 font-light text-center px-4  backdrop-blur-sm">
         Everything you'd expect from an agency; resources, expertise, and
         strategy; at a price you'd normally pay a freelancer. Get{" "}
-        <span className="font-bold">custom web development</span> and digital
+        <span className="font-bold ">custom web development</span> and digital
         marketing designed for startups and growing businesses.
       </p>
 

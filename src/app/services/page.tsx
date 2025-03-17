@@ -34,9 +34,10 @@ function ServiceCard({ title, description, icon: Icon, features }: Service) {
       isIcon
       size="lg"
       header={title}
+      className="dark:bg-primary-900 bg-primary-50/20"
       cover={
-        <div className="w-12 h-12 mb-4 flex items-center justify-center  dark:bg-primary-50 bg-primary-800 rounded-lg">
-          <Icon className="w-6 h-6 text-primary-200 dark:text-primary-600" />
+        <div className="w-12 h-12 mb-4 flex items-center bg-white justify-center   border border-primary-200 dark:bg-primary-950 dark:border-primary-700/70  rounded-lg">
+          <Icon className="w-6 h-6 text-primary-900 dark:text-primary-100" />
         </div>
       }
       // className="p-6 border border-primary-200 dark:border-primary-800 rounded-lg hover:shadow-lg transition-all"
@@ -54,7 +55,7 @@ function ServiceCard({ title, description, icon: Icon, features }: Service) {
             key={index}
             className="flex items-center text-sm text-primary-600 dark:text-primary-400"
           >
-            <span className="w-1.5 h-1.5 bg-primary-900 dark:bg-accent-50 rounded-full mr-2"></span>
+            <span className="w-1.5 h-1.5 bg-primary-900 dark:bg-primary-100 rounded-full mr-2"></span>
             {feature}
           </li>
         ))}
@@ -83,23 +84,17 @@ function CategorySection({ title, description, services }: ServiceCategory) {
 
 function ContactCTA() {
   return (
-    <div className="bg-accent-400 dark:bg-accent-500 rounded-lg p-8 text-center">
-      <h3 className="text-2xl font-black text-primary-800 dark:text-white mb-4">
+    <div className="bg-accent-100 dark:bg-accent-300 rounded-lg p-8 text-center border border-accent-300 dark:border-accent-100">
+      <h3 className="text-2xl lg:text-4xl font-bold  text-primary-900 mb-4">
         Ready to Transform Your Digital Presence?
       </h3>
-      <p className="text-primary-100 dark:text-primary-800 mb-6">
+      <p className="text-primary-800 text-base md:text-lg lg:text-xl   font-light mb-6">
         Let's discuss how we can help you achieve your goals
       </p>
       {/* <button className="bg-primary-50 dark:bg-accent-950 text-primary-900 dark:text-accent-50 px-8 py-3 rounded-lg font-semibold hover:bg-primary-100 hover:dark:bg-accent-900  transition-colors">
         Contact Us
       </button> */}
-      <Button
-        size="md"
-        className="bg-primary-800 dark:bg-white text-primary-50 dark:text-primary-800"
-      >
-        {" "}
-        Contact Us
-      </Button>
+      <Button size="md"> Contact Us</Button>
     </div>
   );
 }
@@ -238,7 +233,7 @@ export default function Services() {
   ];
 
   return (
-    <main className="bg-white dark:bg-primary-950 text-primary-950 dark:text-white">
+    <main className="dark:text-white">
       <Bracket>
         <PageHeader
           title="Our Services"
@@ -279,7 +274,7 @@ export default function Services() {
                 },
               ].map((phase, index) => (
                 <div key={index} className="text-center">
-                  <div className="w-12 h-12 rounded-full bg-primary-900 dark:bg-primary-50  text-accent-50 dark:text-accent-950 flex items-center justify-center mx-auto mb-4">
+                  <div className="w-12 h-12 rounded-full bg-primary-900 dark:bg-primary-50  text-white dark:text-primary-950 flex items-center justify-center mx-auto mb-4">
                     {phase.step}
                   </div>
                   <h3 className="text-xl font-semibold mb-2">{phase.title}</h3>

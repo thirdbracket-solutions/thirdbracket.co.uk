@@ -42,7 +42,7 @@ const Subscription = () => {
 
   return (
     <section className="   py-8 sm:py-12 md:py-16   ">
-      <div className="max-w-screen-xl bg-accent-50 dark:bg-accent-950 border border-accent-300 dark:border-accent-800 rounded-lg p-6 md:p-8 lg:p-10">
+      <div className="max-w-screen-xl bg-accent-50 dark:bg-accent-300 border border-accent-300 dark:border-accent-100 rounded-lg p-6 md:p-8 lg:p-10">
         {state.isSuccess ? (
           <div className="text-center space-y-4">
             <div className="text-5xl mb-4">🎉</div>
@@ -54,10 +54,10 @@ const Subscription = () => {
         ) : (
           <div className="flex flex-col lg:flex-row items-start justify-between gap-6 lg:gap-12 ">
             <div>
-              <h2 className="text-3xl lg:text-4xl font-bold  text-primary-900 dark:text-white tracking-wide mb-2">
+              <h2 className="text-3xl lg:text-4xl font-bold  text-primary-900   mb-4">
                 Stay Updated
               </h2>
-              <p className="text-primary-800 text-base md:text-lg lg:text-xl dark:text-primary-100 max-w-md font-light">
+              <p className="text-primary-800 text-base md:text-lg lg:text-xl  max-w-md font-light">
                 Subscribe to our newsletter for updates and exclusive content
                 delivered straight to your inbox.
               </p>
@@ -91,7 +91,7 @@ const Subscription = () => {
                         email: e.target.value,
                       }))
                     }
-                    className="w-full pl-4 pr-32 h-14 text-base rounded-md border border-primary-400 dark:border-primary-600 bg-primary-100 dark:bg-primary-950 focus:ring-primary-400 dark:focus:ring-primary-600"
+                    className="w-full pl-4 pr-32 h-14 text-base rounded-md border border-primary-400 dark:border-primary-200  bg-primary-100 dark:bg-primary-950 focus:ring-primary-400 dark:focus:ring-primary-200"
                   ></FormInput>
                   <div className="absolute right-1 top-1/2 -translate-y-1/2">
                     <Button
@@ -107,7 +107,7 @@ const Subscription = () => {
                 </div>
 
                 <div className="mt-3">
-                  <p className="text-sm text-primary-800 dark:text-primary-200 font-light">
+                  <p className="text-sm text-primary-700  font-light">
                     We respect your privacy. Unsubscribe at any time.
                   </p>
                   {state.error && (

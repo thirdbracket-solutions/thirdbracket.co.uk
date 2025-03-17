@@ -24,7 +24,7 @@ export function FeatureOne() {
             <Card
               size="lg"
               href="#"
-              className="w-full h-full" // Added full width and height
+              className="w-full h-full " // Added full width and height
               cover={
                 <div className="relative  h-52 w-full lg:h-80">
                   <Image

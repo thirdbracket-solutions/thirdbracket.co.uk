@@ -28,14 +28,11 @@ const Header: FC = () => {
       >
         {/* <Navbrand logo={<Logo />} href="/"></Navbrand> */}
         <Navbrand logo={<TBIcon />} href="/">
-          <span className="bg-gradient-to-r from-primary-900 via-primary-950 to-primary-900 dark:from-primary-100 dark:via-primary-50 dark:to-primary-100 text-transparent bg-clip-text text-2xl tracking-tighter">
+          <span className=" bg-gradient-to-r from-primary-900 via-primary-950 to-primary-900 dark:from-primary-100 dark:via-primary-50 dark:to-primary-100 text-transparent bg-clip-text tracking-tight text-2xl leading-loose">
             THIRD
-            <span className="text-accent-500 dark:text-accent-600  font-bold">
-              B
-            </span>
-            RACKET
-            {/* <span className="font-normal ml-1">BRACKET</span> */}
+            <span className="font-semibold ml-1 tracking-normal">BRACKET</span>
           </span>
+          {/* <span className="font-normal ml-1">BRACKET</span> */}
         </Navbrand>
 
         <NavItem>

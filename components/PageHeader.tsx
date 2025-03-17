@@ -16,7 +16,7 @@ PageHeaderProps) {
     <section
       // className={`lg:py-24 py-16 md:py-20  px-6 text-center ${backgroundColor} bg-[url(/pattern.svg)]` #374151}
 
-      className=" h-full w-full  bg-[radial-gradient(#f0f0f0_1px,transparent_1px)] dark:bg-[radial-gradient(#1c1c1c_1px,transparent_1px)]  [background-size:16px_16px] lg:py-24 py-16 md:py-20  px-6 text-center"
+      className=" h-full w-full  bg-[radial-gradient(#f0f0f0_1px,transparent_1px)] dark:bg-[radial-gradient(#1c1c1c_1px,transparent_1px)]  [background-size:16px_16px] lg:py-24 py-16 md:py-20  px-6 text-center "
     >
       <h1 className="text-5xl font-extrabold md:text-6xl lg:text-7xl bg-gradient-to-r from-primary-800 via-primary-900 to-primary-800 dark:from-primary-200 dark:via-primary-100 dark:to-primary-200 text-transparent bg-clip-text  text-center mb-6">
         {title}

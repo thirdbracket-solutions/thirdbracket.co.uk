@@ -28,9 +28,9 @@ const Header: FC = () => {
       >
         {/* <Navbrand logo={<Logo />} href="/"></Navbrand> */}
         <Navbrand logo={<TBIcon />} href="/">
-          <span className="bg-gradient-to-r from-primary-900 via-primary-950 to-primary-900 dark:from-primary-100 dark:via-primary-50 dark:to-primary-100 text-transparent bg-clip-text text-2xl ">
+          <span className="bg-gradient-to-r from-primary-900 via-primary-950 to-primary-900 dark:from-primary-100 dark:via-primary-50 dark:to-primary-100 text-transparent bg-clip-text text-2xl tracking-tighter">
             THIRD
-            <span className="text-accent-500 dark:text-accent-600  font-semibold">
+            <span className="text-accent-500 dark:text-accent-600  font-bold">
               B
             </span>
             RACKET

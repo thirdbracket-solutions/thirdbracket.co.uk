@@ -19,7 +19,7 @@ const HeroSection: React.FC = () => {
         <span
           className="mr-2 lg:mr-3 rounded-full 
    text-[10px] md:text-xs 
-    px-2 py-0.5 text-accent-200 
+    px-2 py-0.5 text-accent-50 
      bg-primary-700"
         >
           New

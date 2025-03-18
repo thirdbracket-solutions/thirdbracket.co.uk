@@ -34,9 +34,9 @@ function ServiceCard({ title, description, icon: Icon, features }: Service) {
       isIcon
       size="lg"
       header={title}
-      className="dark:bg-primary-900 bg-primary-50/20"
+      className="dark:bg-primary-950 bg-primary-50/20"
       cover={
-        <div className="w-12 h-12 mb-4 flex items-center bg-white justify-center   border border-primary-200 dark:bg-primary-950 dark:border-primary-700/70  rounded-lg">
+        <div className="w-12 h-12 mb-4 flex items-center bg-white justify-center   border border-primary-200 dark:bg-primary-900 dark:border-primary-700/70  rounded-lg">
           <Icon className="w-6 h-6 text-primary-900 dark:text-primary-100" />
         </div>
       }
@@ -84,7 +84,7 @@ function CategorySection({ title, description, services }: ServiceCategory) {
 
 function ContactCTA() {
   return (
-    <div className="bg-accent-100 dark:bg-accent-300 rounded-lg p-8 text-center border border-accent-300 dark:border-accent-100">
+    <div className="bg-accent-100 dark:bg-accent-300 rounded-lg p-8 text-center border border-accent-200 dark:border-accent-200">
       <h3 className="text-2xl lg:text-4xl font-bold  text-primary-900 mb-4">
         Ready to Transform Your Digital Presence?
       </h3>
@@ -94,7 +94,7 @@ function ContactCTA() {
       {/* <button className="bg-primary-50 dark:bg-accent-950 text-primary-900 dark:text-accent-50 px-8 py-3 rounded-lg font-semibold hover:bg-primary-100 hover:dark:bg-accent-900  transition-colors">
         Contact Us
       </button> */}
-      <Button size="md"> Contact Us</Button>
+      <Button size="lg"> Contact Us</Button>
     </div>
   );
 }

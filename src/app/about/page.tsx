@@ -53,10 +53,10 @@ export default function Blog() {
     <main className="bg-white dark:bg-primary-950 text-primary-950 dark:text-white">
       <Bracket>
         <PageHeader
-          title="Blog"
+          title="About"
           description="Insights and updates from our team"
         />
-        <div className="max-w-7xl mx-auto px-6 py-20">
+        <div className="max-w-7xl mx-auto  py-20">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {posts.map((post, index) => (
               <BlogCard key={index} {...post} />

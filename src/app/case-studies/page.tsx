@@ -57,7 +57,7 @@ export default function CaseStudies() {
           title="Case Studies"
           description="Real results for real businesses"
         />
-        <div className="max-w-7xl mx-auto px-6 py-20">
+        <div className="max-w-7xl mx-auto  py-20">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {caseStudies.map((study, index) => (
               <CaseStudyCard key={index} {...study} />

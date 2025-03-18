@@ -52,7 +52,7 @@
 // }
 
 // src/app/solutions/page.tsx
-import { Bracket, Card } from "@thirdbracket/bracketui";
+import { Bracket, Button, Card } from "@thirdbracket/bracketui";
 import PageHeader from "../../../components/PageHeader";
 import Image from "next/image";
 import { IconType } from "react-icons";
@@ -348,7 +348,7 @@ export default function Solutions() {
   ];
 
   return (
-    <main className="bg-white dark:bg-primary-950 text-primary-950 dark:text-white">
+    <main className="bg-white dark:bg-black text-primary-950 dark:text-white">
       <Bracket>
         <PageHeader
           title="Solutions"
@@ -380,16 +380,15 @@ export default function Solutions() {
           </div> */}
 
           {/* CTA Section */}
-          <div className="bg-primary-900 dark:bg-primary-800 rounded-lg p-8 text-center">
-            <h3 className="text-2xl font-bold text-white mb-4">
-              Ready to Transform Your Business?
+          <div className="bg-accent-100 dark:bg-accent-300 rounded-lg p-8 text-center border border-accent-200 dark:border-accent-200">
+            <h3 className="text-2xl lg:text-4xl font-bold  text-primary-900 mb-4">
+              Ready to Transform Your Digital Presence?
             </h3>
-            <p className="text-primary-50 mb-6">
+            <p className="text-primary-800 text-base md:text-lg lg:text-xl   font-light mb-6">
               Let's discuss how our solutions can help you achieve your goals
             </p>
-            <button className="bg-white text-primary-900 px-8 py-3 rounded-lg font-semibold hover:bg-primary-50 transition-colors">
-              Schedule a Consultation
-            </button>
+
+            <Button size="lg"> Schedule a Consultation</Button>
           </div>
         </div>
       </Bracket>

@@ -12,7 +12,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
 import { BiChevronRight } from "react-icons/bi";
-import { Logo, LogoDark, TBIcon } from "./icons";
+import { Logo } from "./icons";
 
 // import { RiArrowRightUpLine, RiRecycleLine } from "react-icons/ri";
 
@@ -27,11 +27,7 @@ const Header: FC = () => {
         }}
       >
         {/* <Navbrand logo={<Logo />} href="/"></Navbrand> */}
-        <Navbrand logo={<TBIcon />} href="/">
-          <span className=" bg-gradient-to-r from-primary-900 via-primary-950 to-primary-900 dark:from-primary-100 dark:via-primary-50 dark:to-primary-100 text-transparent bg-clip-text tracking-tight text-2xl leading-loose">
-            THIRD
-            <span className="font-semibold ml-1 tracking-normal">BRACKET</span>
-          </span>
+        <Navbrand logo={<Logo />} href="/">
           {/* <span className="font-normal ml-1">BRACKET</span> */}
         </Navbrand>
 

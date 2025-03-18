@@ -42,7 +42,7 @@ const Subscription = () => {
 
   return (
     <section className="   py-8 sm:py-12 md:py-16   ">
-      <div className="max-w-screen-xl bg-accent-50 dark:bg-accent-300 border border-accent-300 dark:border-accent-100 rounded-lg p-6 md:p-8 lg:p-10">
+      <div className="max-w-screen-xl bg-accent-100 dark:bg-accent-300 border border-accent-200 dark:border-accent-200 rounded-lg p-6 md:p-8 lg:p-10">
         {state.isSuccess ? (
           <div className="text-center space-y-4">
             <div className="text-5xl mb-4">🎉</div>

@@ -146,7 +146,7 @@ export default function RootLayout({
         {/* <MegaHeader /> */}
 
         <Header />
-        <main className="min-h-screen pt-16 lg:pt-20 bg-white dark:bg-black">
+        <main className="min-h-screen pb-8 sm:pb-12 md:pb-16 pt-16 lg:pt-20 bg-white dark:bg-black">
           {children}
         </main>
         <SiteFooter />

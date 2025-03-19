@@ -57,7 +57,7 @@ const Subscription = () => {
               <h2 className="text-3xl lg:text-4xl font-extrabold  text-primary-950 dark:text-white   mb-2 lg:mb-6">
                 Stay Updated
               </h2>
-              <p className="text-primary-800/75 dark:text-primary-200/70 text-base md:text-lg lg:text-xl  max-w-md font-light">
+              <p className="text-primary-800/60 dark:text-primary-200/40 text-base md:text-lg lg:text-xl  max-w-md font-light">
                 Subscribe to our newsletter for updates and exclusive content
                 delivered straight to your inbox.
               </p>
@@ -108,7 +108,7 @@ const Subscription = () => {
                 </div>
 
                 <div className="mt-3">
-                  <p className="text-sm text-primary-800/60 dark:text-primary-200/60  font-light">
+                  <p className="text-sm text-primary-800/60 dark:text-primary-200/40  font-light">
                     We respect your privacy. Unsubscribe at any time.
                   </p>
                   {state.error && (

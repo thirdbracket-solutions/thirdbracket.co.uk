@@ -18,7 +18,7 @@ const HeroSection: React.FC = () => {
       >
         <span
           className="mr-2 lg:mr-3 rounded-full 
-   text-[8px] lg:text-[10px] 
+    
     px-2 py-0.5  text-white 
      bg-primary-700"
         >

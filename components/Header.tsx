@@ -23,7 +23,7 @@ const Header: FC = () => {
         theme={{
           background: "bg-white dark:bg-black",
           border: "border-b border-primary-200 dark:border-primary-800",
-          mobileMenu: "bg-white dark:bg-primary-950",
+          mobileMenu: "bg-white dark:bg-black",
         }}
       >
         {/* <Navbrand logo={<Logo />} href="/"></Navbrand> */}
@@ -32,7 +32,15 @@ const Header: FC = () => {
         </Navbrand>
 
         <NavItem>
-          <Megamenu label="Services">
+          <Megamenu
+            label="Services"
+            theme={{
+              text: "text-primary-900 dark:text-primary-50 text-base md:text-sm",
+              states:
+                "focus-within:opacity-100 active:opacity-100 md:hover:opacity-100",
+              menu: "bg-white dark:bg-black",
+            }}
+          >
             <div className="grid w-full grid-flow-col gap-x-8 grid-cols-[repeat(4,minmax(0,220px))_250px]">
               <div className="flex flex-col h-full ">
                 <div className="mb-6">
@@ -208,7 +216,15 @@ const Header: FC = () => {
               </div>
             </div>
           </Megamenu>
-          <Megamenu label="Solutions">
+          <Megamenu
+            label="Solutions"
+            theme={{
+              text: "text-primary-900 dark:text-primary-50 text-base md:text-sm",
+              states:
+                "focus-within:opacity-100 active:opacity-100 md:hover:opacity-100",
+              menu: "bg-white dark:bg-black",
+            }}
+          >
             <div className="grid w-full grid-flow-col gap-x-8 grid-cols-[repeat(4,minmax(0,220px))_250px]">
               <div className="flex flex-col h-full ">
                 <div className="mb-6">
@@ -399,15 +415,23 @@ const Header: FC = () => {
 
         <MobileNav>
           <div className="space-y-2 py-1.5 ">
-            <Megamenu label="Services">
+            <Megamenu
+              label="Services"
+              theme={{
+                text: "text-primary-900 dark:text-primary-50 text-base md:text-sm",
+                states:
+                  "focus-within:opacity-100 active:opacity-100 md:hover:opacity-100",
+                menu: "bg-white dark:bg-black",
+              }}
+            >
               <div className="space-y-2 py-1.5">
                 <Megamenu
                   label="Web Development"
                   theme={{
-                    text: "text-primary-800 dark:text-primary-100 text-base md:text-sm",
+                    text: "text-primary-900 dark:text-primary-50 text-base md:text-sm",
                     states:
                       "focus-within:opacity-100 active:opacity-100 md:hover:opacity-100",
-                    menu: "bg-white dark:bg-primary-950",
+                    menu: "bg-white dark:bg-black",
                   }}
                 >
                   <div className="space-y-2 py-1.5">
@@ -431,10 +455,10 @@ const Header: FC = () => {
                 <Megamenu
                   label="Digital Marketing"
                   theme={{
-                    text: "text-primary-800 dark:text-primary-100 text-base md:text-sm",
+                    text: "text-primary-900 dark:text-primary-50 text-base md:text-sm",
                     states:
                       "focus-within:opacity-100 active:opacity-100 md:hover:opacity-100",
-                    menu: "bg-white dark:bg-primary-950",
+                    menu: "bg-white dark:bg-black",
                   }}
                 >
                   <div className="space-y-2 py-1.5">
@@ -473,20 +497,20 @@ const Header: FC = () => {
             <Megamenu
               label="Solutions"
               theme={{
-                text: "text-primary-800 dark:text-primary-100 text-base md:text-sm",
+                text: "text-primary-900 dark:text-primary-50 text-base md:text-sm",
                 states:
                   "focus-within:opacity-100 active:opacity-100 md:hover:opacity-100",
-                menu: "bg-white dark:bg-primary-950",
+                menu: "bg-white dark:bg-black",
               }}
             >
               <div className="space-y-2 py-1.5">
                 <Megamenu
                   label="Automation & Integration"
                   theme={{
-                    text: "text-primary-800 dark:text-primary-100 text-base md:text-sm",
+                    text: "text-primary-900 dark:text-primary-50 text-base md:text-sm",
                     states:
                       "focus-within:opacity-100 active:opacity-100 md:hover:opacity-100",
-                    menu: "bg-white dark:bg-primary-950",
+                    menu: "bg-white dark:bg-black",
                   }}
                 >
                   <div className="space-y-2 py-1.5">
@@ -513,10 +537,10 @@ const Header: FC = () => {
                 <Megamenu
                   label="UI/UX"
                   theme={{
-                    text: "text-primary-800 dark:text-primary-100 text-base md:text-sm",
+                    text: "text-primary-900 dark:text-primary-50 text-base md:text-sm",
                     states:
                       "focus-within:opacity-100 active:opacity-100 md:hover:opacity-100",
-                    menu: "bg-white dark:bg-primary-950",
+                    menu: "bg-white dark:bg-black",
                   }}
                 >
                   <div className="space-y-2 py-1.5">
@@ -547,10 +571,10 @@ const Header: FC = () => {
                     <Megamenu
                       label="Themes"
                       theme={{
-                        text: "text-primary-800 dark:text-primary-100 text-base md:text-sm",
+                        text: "text-primary-900 dark:text-primary-50 text-base md:text-sm",
                         states:
                           "focus-within:opacity-100 active:opacity-100 md:hover:opacity-100",
-                        menu: "bg-white dark:bg-primary-950",
+                        menu: "bg-white dark:bg-black",
                       }}
                     >
                       <div className="space-y-2 py-1.5">

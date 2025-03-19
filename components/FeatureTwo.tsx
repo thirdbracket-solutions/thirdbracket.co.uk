@@ -39,10 +39,12 @@ export function FeatureTwo() {
           <Card
             size="lg"
             isIcon
+            className="dark:!border-primary-800/70 dark:hover:!border-primary-700"
             cover={
               <RiMedal2Line className="h-14 w-14 border border-primary-100 dark:border-primary-900   rounded-lg p-2.5 text-primary-900 dark:text-primary-100   fill-current" />
             }
             header="Expertise & Flexibility"
+            href="/solutions"
           >
             <span className="text-primary-950/60 dark:text-primary-200/60 font-light">
               Experience agency expertise with freelancer flexibility. Access a
@@ -52,7 +54,9 @@ export function FeatureTwo() {
           </Card>
           <Card
             size="lg"
+            className="dark:!border-primary-800/70 dark:hover:!border-primary-700"
             isIcon
+            href="/solutions"
             cover={
               <RiStackLine className="h-14 w-14 border border-primary-100 dark:border-primary-900   rounded-lg p-2.5 text-primary-900 dark:text-primary-100   fill-current" />
             }
@@ -66,6 +70,8 @@ export function FeatureTwo() {
           <Card
             size="lg"
             isIcon
+            href="/services"
+            className="dark:!border-primary-800/70 dark:hover:!border-primary-700"
             cover={
               <MdOutlineAutoGraph className="h-14 w-14 border border-primary-100 dark:border-primary-900   rounded-lg p-2.5 text-primary-900 dark:text-primary-100   fill-current" />
             }
@@ -80,6 +86,8 @@ export function FeatureTwo() {
           <Card
             size="lg"
             isIcon
+            href="/services"
+            className="dark:!border-primary-800/70 dark:hover:!border-primary-700"
             cover={
               <RiUserCommunityLine className="h-14 w-14 border border-primary-100 dark:border-primary-900   rounded-lg p-2.5 text-primary-900 dark:text-primary-100   fill-current" />
             }
@@ -94,6 +102,8 @@ export function FeatureTwo() {
           <Card
             size="lg"
             isIcon
+            href="/services"
+            className="dark:!border-primary-800/70 dark:hover:!border-primary-700"
             cover={
               <VscUnlock className="h-14 w-14 border border-primary-100 dark:border-primary-900   rounded-lg p-2.5 text-primary-900 dark:text-primary-100   fill-current" />
             }
@@ -105,11 +115,11 @@ export function FeatureTwo() {
             </span>
           </Card>
           <Card
-            className="  bg-[url(/pattern.svg)]"
+            className="dark:!border-primary-800/70 dark:hover:!border-primary-700  bg-[url(/pattern.svg)]"
             size="lg"
             isExternal
             isIcon
-            href="#"
+            href="/services"
             cover={
               <RiRunLine className="h-14 w-14 border border-primary-100 dark:border-primary-900   rounded-lg p-2.5 text-primary-900 dark:text-primary-100   fill-current" />
             }

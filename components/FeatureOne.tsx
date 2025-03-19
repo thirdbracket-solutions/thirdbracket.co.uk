@@ -23,8 +23,8 @@ export function FeatureOne() {
           <div className="grid gap-8 md:grid-cols-2">
             <Card
               size="lg"
-              href="#"
-              className="w-full h-full " // Added full width and height
+              href="/solutions"
+              className="w-full h-full dark:!border-primary-800/70 dark:hover:!border-primary-700" // Added full width and height
               cover={
                 <div className="relative  h-52 w-full lg:h-80">
                   <Image
@@ -46,8 +46,8 @@ export function FeatureOne() {
 
             <Card
               size="lg"
-              href="#"
-              className="w-full h-full" // Added full width and height
+              href="/services"
+              className="w-full h-full dark:!border-primary-800/70 dark:hover:!border-primary-700" // Added full width and height
               cover={
                 <div className="relative  h-52 w-full lg:h-80">
                   <Image
@@ -72,8 +72,9 @@ export function FeatureOne() {
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <Card
               size="lg"
-              className="w-full h-full" // Added full width and height
+              className="w-full h-full dark:!border-primary-800/70 dark:hover:!border-primary-700" // Added full width and height
               header="Missing Modern Features?"
+              href="/solutions"
             >
               <span className="text-primary-950/60 dark:text-primary-200/60 font-light">
                 Now, experience essential features like image optimization, edge
@@ -84,8 +85,9 @@ export function FeatureOne() {
 
             <Card
               size="lg"
-              className="w-full h-full" // Added full width and height
+              className="w-full h-full dark:!border-primary-800/70 dark:hover:!border-primary-700" // Added full width and height
               header="Tired of Searching for Marketers?"
+              href="/solutions"
             >
               <span className="text-primary-950/60 dark:text-primary-200/60 font-light">
                 Get the Whole Team. Our integrated team of marketers,developers,
@@ -96,8 +98,9 @@ export function FeatureOne() {
 
             <Card
               size="lg"
-              className="w-full h-full" // Added full width and height
+              className="w-full h-full dark:!border-primary-800/70 dark:hover:!border-primary-700" // Added full width and height
               header="SEO Takes Too Long!"
+              href="/solutions"
             >
               <span className="text-primary-950/60 dark:text-primary-200/60 font-light">
                 SEO can be slow and unpredictable. Our AI-driven strategies and

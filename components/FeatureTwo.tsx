@@ -1,12 +1,25 @@
 import { Card } from "@thirdbracket/bracketui";
+import { GiTeamIdea, GiTeamUpgrade } from "react-icons/gi";
 
 import { GoStack } from "react-icons/go";
 import { GrActions } from "react-icons/gr";
 
 import { IoMedalOutline } from "react-icons/io5";
 import { MdOutlineAutoGraph } from "react-icons/md";
-import { RiLockUnlockLine } from "react-icons/ri";
+import {
+  RiLock2Line,
+  RiLockLine,
+  RiLockUnlockLine,
+  RiMedal2Line,
+  RiMedalLine,
+  RiRunLine,
+  RiStackLine,
+  RiTeamLine,
+  RiUserCommunityLine,
+} from "react-icons/ri";
+import { TbBrandTeams } from "react-icons/tb";
 import { TiGroupOutline } from "react-icons/ti";
+import { VscUnlock } from "react-icons/vsc";
 
 export function FeatureTwo() {
   return (
@@ -27,7 +40,7 @@ export function FeatureTwo() {
             size="lg"
             isIcon
             cover={
-              <IoMedalOutline className="h-12 w-12 text-primary-800 dark:text-primary-200   fill-current" />
+              <RiMedal2Line className="h-14 w-14 border border-primary-100 dark:border-primary-900   rounded-lg p-2.5 text-primary-900 dark:text-primary-100   fill-current" />
             }
             header="Expertise & Flexibility"
           >
@@ -41,7 +54,7 @@ export function FeatureTwo() {
             size="lg"
             isIcon
             cover={
-              <GoStack className="h-12 w-12 text-primary-800 dark:text-primary-200  fill-current" />
+              <RiStackLine className="h-14 w-14 border border-primary-100 dark:border-primary-900   rounded-lg p-2.5 text-primary-900 dark:text-primary-100   fill-current" />
             }
             header="Modern Stack"
           >
@@ -54,7 +67,7 @@ export function FeatureTwo() {
             size="lg"
             isIcon
             cover={
-              <MdOutlineAutoGraph className="h-12 w-12 text-primary-800 dark:text-primary-200   fill-current" />
+              <MdOutlineAutoGraph className="h-14 w-14 border border-primary-100 dark:border-primary-900   rounded-lg p-2.5 text-primary-900 dark:text-primary-100   fill-current" />
             }
             header="Built for Growth"
           >
@@ -68,7 +81,7 @@ export function FeatureTwo() {
             size="lg"
             isIcon
             cover={
-              <TiGroupOutline className="h-12 w-12 text-primary-800 dark:text-primary-200  fill-current" />
+              <RiUserCommunityLine className="h-14 w-14 border border-primary-100 dark:border-primary-900   rounded-lg p-2.5 text-primary-900 dark:text-primary-100   fill-current" />
             }
             header="Seamless Collaboration"
           >
@@ -82,7 +95,7 @@ export function FeatureTwo() {
             size="lg"
             isIcon
             cover={
-              <RiLockUnlockLine className="h-12 w-12 text-primary-800 dark:text-primary-200  fill-current" />
+              <VscUnlock className="h-14 w-14 border border-primary-100 dark:border-primary-900   rounded-lg p-2.5 text-primary-900 dark:text-primary-100   fill-current" />
             }
             header="No Lock-in, No Bloat"
           >
@@ -92,13 +105,13 @@ export function FeatureTwo() {
             </span>
           </Card>
           <Card
-            className=" bg-white dark:bg-black bg-[url(/pattern.svg)]"
+            className="  bg-[url(/pattern.svg)]"
             size="lg"
             isExternal
             isIcon
             href="#"
             cover={
-              <GrActions className="h-12 w-12 text-primary-600 dark:text-primary-300   fill-current" />
+              <RiRunLine className="h-14 w-14 border border-primary-100 dark:border-primary-900   rounded-lg p-2.5 text-primary-900 dark:text-primary-100   fill-current" />
             }
             header="Get Started Today"
           >

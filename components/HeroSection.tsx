@@ -8,7 +8,7 @@ const HeroSection: React.FC = () => {
       <a
         href="#"
         className="flex items-center justify-between rounded-full  
-    pr-3 py-0.5 pl-0.5  text-xs md:text-sm 
+    pr-3 py-0.5 pl-0.5  text-[10px] lg:text-xs 
      bg-gradient-to-r from-slate-500/10 to-primary-500/10
     backdrop-filter backdrop-blur-md
     text-primary-700 dark:text-primary-300 
@@ -18,8 +18,8 @@ const HeroSection: React.FC = () => {
       >
         <span
           className="mr-2 lg:mr-3 rounded-full 
-   text-[10px] md:text-xs 
-    px-2 py-0.5 text-white 
+   text-[8px] lg:text-[10px] 
+    px-2 py-0.5  text-white 
      bg-primary-700"
         >
           New
@@ -44,13 +44,13 @@ const HeroSection: React.FC = () => {
 
       {/* Heading */}
       <div className="px-4">
-        <h1 className="text-5xl font-extrabold md:text-6xl lg:text-7xl bg-gradient-to-r from-primary-900 via-primary-950 to-primary-900 dark:from-primary-200 dark:via-primary-100 dark:to-primary-200 text-transparent bg-clip-text  text-center  tracking-normal ">
+        <h1 className="text-5xl font-extrabold md:text-6xl lg:text-7xl bg-gradient-to-r from-primary-900 via-primary-950 to-primary-900 dark:from-primary-100 dark:via-primary-50 dark:to-primary-100 text-transparent bg-clip-text  text-center   ">
           Enterprise Solutions Without&nbsp;the Overhead&nbsp;Cost
         </h1>
       </div>
       {/* 800-#1f2937,900- #111827, 200-#e5e7eb, 100-#f3f4f6  #030712 #f9fafb*/}
       {/* Paragraph */}
-      <p className="text-primary-950/60 text-base md:text-lg lg:text-xl dark:text-primary-200/60 font-light text-center px-4  backdrop-blur-sm">
+      <p className="text-primary-900/60 text-base/[1.6rem] md:text-lg/[1.85rem] lg:text-xl/8 dark:text-primary-200/60 font-light text-center px-4  backdrop-blur-sm">
         Everything you'd expect from an agency; resources, expertise, and
         strategy; at a price you'd normally pay a freelancer. Get{" "}
         <span className="font-bold ">custom web development</span> and digital
@@ -61,7 +61,7 @@ const HeroSection: React.FC = () => {
       <div className="flex justify-center gap-3 md:gap-4 backdrop-blur-sm">
         <Button
           size="lg"
-          className="hidden  md:flex bg-primary-900 dark:bg-primary-100 text-gray-100 dark:text-primary-900"
+          className="hidden  md:flex !bg-primary-950 dark:!bg-primary-50 !text-white dark:!text-primary-950  [@media(hover:hover)]:hover:opacity-90 active:opacity-80"
         >
           Let's Grow
           <svg
@@ -80,7 +80,7 @@ const HeroSection: React.FC = () => {
         <Button
           outline
           size="lg"
-          className="hidden  md:flex border-primary-500/40   text-primary-900 dark:text-primary-100  [@media(hover:hover)]:hover:bg-primary-100/40 [@media(hover:hover)]:dark:hover:bg-zinc-800/70 active:bg-primary-200 dark:active:bg-primary-800"
+          className="hidden  md:flex !border-primary-200/70 dark:!border-primary-800/70   !text-primary-900 dark:!text-primary-50  [@media(hover:hover)]:hover:!bg-primary-50 [@media(hover:hover)]:dark:hover:!bg-primary-900 active:!bg-primary-100 dark:active:!bg-primary-800"
         >
           <svg
             className="size-4 mr-2"
@@ -94,7 +94,7 @@ const HeroSection: React.FC = () => {
         </Button>
         <Button
           size="md"
-          className="md:hidden flex  bg-primary-900 dark:bg-primary-100 text-gray-100 dark:text-primary-900"
+          className="md:hidden flex  border-transparent !bg-primary-950 dark:!bg-primary-50 !text-white dark:!text-primary-950  [@media(hover:hover)]:hover:opacity-90 active:opacity-80"
         >
           Let's Grow
           <svg
@@ -113,7 +113,7 @@ const HeroSection: React.FC = () => {
         <Button
           outline
           size="md"
-          className="md:hidden flex border-primary-500/40   text-primary-800 dark:text-primary-200  [@media(hover:hover)]:hover:bg-primary-100/40 [@media(hover:hover)]:dark:hover:bg-zinc-800/70 active:bg-primary-200 dark:active:bg-primary-800"
+          className="md:hidden flex !border-primary-200/70 dark:!border-primary-800/70   !text-primary-900 dark:!text-primary-50  [@media(hover:hover)]:hover:!bg-primary-50 [@media(hover:hover)]:dark:hover:!bg-primary-900 active:!bg-primary-100 dark:active:!bg-primary-800"
         >
           <svg
             className="size-4 mr-2"

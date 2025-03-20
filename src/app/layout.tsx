@@ -146,7 +146,7 @@ export default function RootLayout({
         {/* <MegaHeader /> */}
 
         <Header />
-        <main className="min-h-screen pb-8 sm:pb-12 md:pb-16 pt-16 lg:pt-20 bg-white dark:bg-black">
+        <main className="min-h-screen py-8 sm:py-12 md:py-16  bg-white dark:bg-black">
           {children}
         </main>
         <SiteFooter />

@@ -50,20 +50,18 @@ export default function Blog() {
   ];
 
   return (
-    <main className="bg-white dark:bg-primary-950 text-primary-950 dark:text-white">
-      <Bracket>
-        <PageHeader
-          title="Blog"
-          description="Insights and updates from our team"
-        />
-        <div className="max-w-7xl mx-auto  py-20">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {posts.map((post, index) => (
-              <BlogCard key={index} {...post} />
-            ))}
-          </div>
+    <Bracket>
+      <PageHeader
+        title="Blog"
+        description="Insights and updates from our team"
+      />
+      <div className="max-w-7xl mx-auto  py-8 sm:py-12 md:py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {posts.map((post, index) => (
+            <BlogCard key={index} {...post} />
+          ))}
         </div>
-      </Bracket>
-    </main>
+      </div>
+    </Bracket>
   );
 }

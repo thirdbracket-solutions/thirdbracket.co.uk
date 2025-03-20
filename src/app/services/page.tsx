@@ -34,7 +34,7 @@ function ServiceCard({ title, description, icon: Icon, features }: Service) {
       isIcon
       size="lg"
       header={title}
-      className="dark:bg-primary-950 bg-primary-50/20"
+      className="rounded-lg border border-primary-500  border-opacity-30 overflow-hidden flex flex-col transition-all duration-300 ease-in-out focus-within:border-opacity-100 active:border-opacity-100 md:hover:border-opacity-100 "
       cover={
         <div className="w-12 h-12 mb-4 flex items-center bg-white justify-center   border border-primary-200 dark:bg-primary-900 dark:border-primary-700/70  rounded-lg">
           <Icon className="w-6 h-6 text-primary-900 dark:text-primary-100" />
@@ -68,7 +68,9 @@ function CategorySection({ title, description, services }: ServiceCategory) {
   return (
     <div className="mb-20">
       <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold mb-4">{title}</h2>
+        <h2 className="text-3xl text-primary-800 dark:text-primary-200 font-bold mb-4">
+          {title}
+        </h2>
         <p className="text-primary-600 dark:text-primary-400 max-w-3xl mx-auto">
           {description}
         </p>
@@ -84,17 +86,23 @@ function CategorySection({ title, description, services }: ServiceCategory) {
 
 function ContactCTA() {
   return (
-    <div className="bg-accent-100 dark:bg-accent-300 rounded-lg p-8 text-center border border-accent-200 dark:border-accent-200">
-      <h3 className="text-2xl lg:text-4xl font-bold  text-primary-900 mb-4">
+    <div className="rounded-lg p-8 lg:p-12 text-center bg-accent-50 dark:bg-accent-950 border border-primary-100 dark:border-primary-800">
+      <h3 className="text-2xl lg:text-4xl font-extrabold  text-primary-950 dark:text-white mb-4">
         Ready to Transform Your Digital Presence?
       </h3>
-      <p className="text-primary-800 text-base md:text-lg lg:text-xl   font-light mb-6">
+      <p className="text-primary-800/70 dark:text-primary-200/60 text-base md:text-lg lg:text-xl   font-light mb-6">
         Let's discuss how we can help you achieve your goals
       </p>
       {/* <button className="bg-primary-50 dark:bg-accent-950 text-primary-900 dark:text-accent-50 px-8 py-3 rounded-lg font-semibold hover:bg-primary-100 hover:dark:bg-accent-900  transition-colors">
         Contact Us
       </button> */}
-      <Button size="lg"> Contact Us</Button>
+      <Button
+        size="md"
+        className="border-transparent !bg-primary-900  !text-white dark:!bg-white  dark:!text-primary-950  [@media(hover:hover)]:hover:opacity-90 active:opacity-80 "
+      >
+        {" "}
+        Contact Us
+      </Button>
     </div>
   );
 }
@@ -233,63 +241,61 @@ export default function Services() {
   ];
 
   return (
-    <main className="dark:text-white">
-      <Bracket>
-        <PageHeader
-          title="Our Services"
-          description="Comprehensive digital solutions tailored to your needs"
-        />
+    <Bracket>
+      <PageHeader
+        title="Our Services"
+        description="Comprehensive digital solutions tailored to your needs"
+      />
 
-        <div className="max-w-7xl mx-auto py-20">
-          {serviceCategories.map((category, index) => (
-            <CategorySection key={index} {...category} />
-          ))}
+      <div className="max-w-7xl mx-auto py-8 sm:py-12 md:py-16">
+        {serviceCategories.map((category, index) => (
+          <CategorySection key={index} {...category} />
+        ))}
 
-          {/* Process Section */}
-          <div className="mb-20">
-            <h2 className="text-3xl font-bold text-center mb-12">
-              Our Process
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-              {[
-                {
-                  step: "1",
-                  title: "Discovery",
-                  description: "Understanding your needs",
-                },
-                {
-                  step: "2",
-                  title: "Planning",
-                  description: "Creating the roadmap",
-                },
-                {
-                  step: "3",
-                  title: "Execution",
-                  description: "Building your solution",
-                },
-                {
-                  step: "4",
-                  title: "Support",
-                  description: "Ongoing maintenance",
-                },
-              ].map((phase, index) => (
-                <div key={index} className="text-center">
-                  <div className="w-12 h-12 rounded-full bg-primary-900 dark:bg-primary-50  text-white dark:text-primary-950 flex items-center justify-center mx-auto mb-4">
-                    {phase.step}
-                  </div>
-                  <h3 className="text-xl font-semibold mb-2">{phase.title}</h3>
-                  <p className="text-primary-600 dark:text-primary-400">
-                    {phase.description}
-                  </p>
+        {/* Process Section */}
+        <div className="mb-20">
+          <h2 className="text-3xl font-bold text-center mb-12 text-primary-800 dark:text-primary-200">
+            Our Process
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            {[
+              {
+                step: "1",
+                title: "Discovery",
+                description: "Understanding your needs",
+              },
+              {
+                step: "2",
+                title: "Planning",
+                description: "Creating the roadmap",
+              },
+              {
+                step: "3",
+                title: "Execution",
+                description: "Building your solution",
+              },
+              {
+                step: "4",
+                title: "Support",
+                description: "Ongoing maintenance",
+              },
+            ].map((phase, index) => (
+              <div key={index} className="text-center">
+                <div className="w-12 h-12 rounded-full bg-primary-900 dark:bg-primary-50  text-white dark:text-primary-950 flex items-center justify-center mx-auto mb-4">
+                  {phase.step}
                 </div>
-              ))}
-            </div>
+                <h3 className="text-xl font-semibold mb-2">{phase.title}</h3>
+                <p className="text-primary-600 dark:text-primary-400">
+                  {phase.description}
+                </p>
+              </div>
+            ))}
           </div>
-
-          {/* CTA Section */}
-          <ContactCTA />
         </div>
-      </Bracket>
-    </main>
+
+        {/* CTA Section */}
+        <ContactCTA />
+      </div>
+    </Bracket>
   );
 }

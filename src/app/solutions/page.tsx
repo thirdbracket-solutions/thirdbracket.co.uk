@@ -81,47 +81,59 @@ interface SolutionCategory {
   solutions: Solution[];
 }
 
+interface Technologies {
+  title: string;
+  cto: string;
+}
+
 interface Solution {
   title: string;
-  description: string;
-  icon: IconType;
+  description?: string;
+  icon?: IconType;
   features: string[];
-  technologies?: string[];
+  technologies?: Technologies[];
+
   image?: string;
 }
 
 function SolutionCard({
   title,
   description,
-  icon: Icon,
+  // icon: Icon,
   features,
+
   technologies,
   image,
 }: Solution) {
   return (
     <Card
       size="lg"
+      className="rounded-lg border border-primary-500  border-opacity-30 overflow-hidden flex flex-col transition-all duration-300 ease-in-out focus-within:border-opacity-100 active:border-opacity-100 md:hover:border-opacity-100 "
       cover={
         image && (
-          <div className="relative h-48 w-full">
-            <Image src={image} alt={title} fill className="object-cover" />
+          <div className="relative h-full w-full">
+            <Image
+              src={image}
+              alt={title}
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="w-auto h-auto max-w-full max-h-full"
+            />
           </div>
         )
       }
       header={
-        <div className="flex items-center mb-4">
-          <div className="w-10 h-10 flex items-center justify-center bg-primary-100 dark:bg-primary-900 rounded-lg mr-3">
-            <Icon className="w-5 h-5 text-accent-600 dark:text-accent-400" />
-          </div>
-          <h3 className="text-xl font-semibold">{title}</h3>
+        <div className="flex items-center mb-2">
+          {/* <div className="w-10 h-10 flex items-center justify-center bg-primary-100 dark:bg-primary-900 rounded-lg mr-3"> */}
+          {/* <Icon className="w-5 h-5 text-accent-600 dark:text-accent-400 mr-3" /> */}
+          {/* </div> */}
+          <h3 className="text-2xl font-semibold max-w-md">{title}</h3>
         </div>
       }
     >
       <div>
-        <p className="text-primary-600 dark:text-primary-400 mb-4">
-          {description}
-        </p>
-        <div className="mb-4">
+        {/* <div className="mb-4">
           <h4 className="font-semibold mb-2">Key Features:</h4>
           <ul className="space-y-2">
             {features.map((feature, index) => (
@@ -134,17 +146,26 @@ function SolutionCard({
               </li>
             ))}
           </ul>
-        </div>
+        </div> */}
+
+        {description && (
+          <p className="text-primary-600 dark:text-primary-400 mb-2 text-lg">
+            {description}
+          </p>
+        )}
         {technologies && (
-          <div className="pt-4 border-t border-primary-200 dark:border-primary-800">
-            <h4 className="font-semibold mb-2">Technologies:</h4>
+          <div className="pt-4  dark:border-primary-800">
+            {/* <h4 className="font-semibold mb-2">Technologies:</h4> */}
             <div className="flex flex-wrap gap-2">
               {technologies.map((tech, index) => (
                 <span
                   key={index}
-                  className="px-3 py-1 text-sm bg-primary-100 dark:bg-primary-800 rounded-full"
+                  className="px-3 py-1 text-lg text-primary-800 dark:text-primary-200  border-primary-500/20   rounded-lg border flex flex-col space-y-1 font-semibold"
                 >
-                  {tech}
+                  {tech.cto}
+                  <span className="text-xs font-normal text-primary-500">
+                    {tech.title}
+                  </span>
                 </span>
               ))}
             </div>
@@ -159,7 +180,9 @@ function CategorySection({ title, description, solutions }: SolutionCategory) {
   return (
     <div className="mb-20">
       <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold mb-4">{title}</h2>
+        <h2 className="text-3xl font-bold mb-4 text-primary-800 dark:text-primary-200">
+          {title}
+        </h2>
         <p className="text-primary-600 dark:text-primary-400 max-w-3xl mx-auto">
           {description}
         </p>
@@ -220,8 +243,14 @@ export default function Solutions() {
             "Automated responses",
             "Analytics tracking",
           ],
-          technologies: ["React", "Node.js", "Firebase", "Zapier"],
-          image: "/solutions/form-integration.webp",
+          // technologies: ["React", "Node.js", "Firebase", "Zapier"],
+          // ],
+          technologies: [
+            { title: "React", cto: "Latest" },
+            { title: "Node.js", cto: "100%" },
+          ],
+
+          image: "/solutions/1.svg",
         },
         {
           title: "Marketing Automation",
@@ -234,8 +263,14 @@ export default function Solutions() {
             "Campaign tracking",
             "Analytics integration",
           ],
-          technologies: ["Mailchimp", "HubSpot", "Zapier", "Google Analytics"],
-          image: "/solutions/marketing.webp",
+          // technologies: ["Mailchimp", "HubSpot", "Zapier", "Google Analytics"],
+          technologies: [
+            { title: "Mailchimp", cto: "Latest" },
+            { title: "HubSpot", cto: "100%" },
+            { title: "Zapier", cto: "Automation" },
+            { title: "Google Analytics", cto: "Analytics" },
+          ],
+          image: "/solutions/2.svg",
         },
         {
           title: "CI/CD & Release Automation",
@@ -248,8 +283,14 @@ export default function Solutions() {
             "Version control",
             "Environment management",
           ],
-          technologies: ["GitHub Actions", "Jenkins", "Docker", "AWS"],
-          image: "/solutions/ci-cd.webp",
+          // technologies: ["GitHub Actions", "Jenkins", "Docker", "AWS"],
+          technologies: [
+            { title: "GitHub Actions", cto: "Latest" },
+            { title: "Jenkins", cto: "100%" },
+            { title: "Docker", cto: "Automation" },
+            { title: "AWS", cto: "Release" },
+          ],
+          image: "/solutions/3.svg",
         },
       ],
     },
@@ -270,7 +311,14 @@ export default function Solutions() {
             "Accessibility features",
             "Performance optimized",
           ],
-          technologies: ["React", "TypeScript", "Tailwind CSS"],
+          // technologies: ["React", "TypeScript", "Tailwind CSS"],
+          technologies: [
+            { title: "GitHub Actions", cto: "Latest" },
+            { title: "Jenkins", cto: "100%" },
+            { title: "Docker", cto: "Automation" },
+            { title: "AWS", cto: "Release" },
+          ],
+          image: "/solutions/4.svg",
         },
         {
           title: "Next.js Themes",
@@ -283,7 +331,14 @@ export default function Solutions() {
             "Easy customization",
             "Built-in components",
           ],
-          technologies: ["Next.js", "React", "Tailwind CSS"],
+          // technologies: ["Next.js", "React", "Tailwind CSS"],
+          technologies: [
+            { title: "Mailchimp", cto: "Latest" },
+            { title: "HubSpot", cto: "100%" },
+            { title: "Zapier", cto: "Automation" },
+            { title: "Google Analytics", cto: "Analytics" },
+          ],
+          image: "/solutions/5.svg",
         },
         {
           title: "WordPress Solutions",
@@ -296,7 +351,14 @@ export default function Solutions() {
             "Performance optimized",
             "SEO friendly",
           ],
-          technologies: ["WordPress", "PHP", "Elementor", "WooCommerce"],
+          // technologies: ["WordPress", "PHP", "Elementor", "WooCommerce"],
+          technologies: [
+            { title: "Mailchimp", cto: "Latest" },
+            { title: "HubSpot", cto: "100%" },
+            { title: "Zapier", cto: "Automation" },
+            { title: "Google Analytics", cto: "Analytics" },
+          ],
+          image: "/solutions/6.svg",
         },
       ],
     },
@@ -315,7 +377,14 @@ export default function Solutions() {
             "Performance optimization",
             "Maintenance & support",
           ],
-          technologies: ["WordPress", "PHP", "MySQL", "Redis"],
+          // technologies: ["WordPress", "PHP", "MySQL", "Redis"],
+          technologies: [
+            { title: "Mailchimp", cto: "Latest" },
+            { title: "HubSpot", cto: "100%" },
+            { title: "Zapier", cto: "Automation" },
+            { title: "Google Analytics", cto: "Analytics" },
+          ],
+          image: "/solutions/1.svg",
         },
         {
           title: "Notion Blog",
@@ -328,7 +397,14 @@ export default function Solutions() {
             "Analytics integration",
             "Automated publishing",
           ],
-          technologies: ["Next.js", "Notion API", "React", "Vercel"],
+          // technologies: ["Next.js", "Notion API", "React", "Vercel"],
+          technologies: [
+            { title: "Mailchimp", cto: "Latest" },
+            { title: "HubSpot", cto: "100%" },
+            { title: "Zapier", cto: "Automation" },
+            { title: "Google Analytics", cto: "Analytics" },
+          ],
+          image: "/solutions/2.svg",
         },
         {
           title: "Business 360",
@@ -341,33 +417,39 @@ export default function Solutions() {
             "Analytics setup",
             "Maintenance & support",
           ],
-          technologies: ["Next.js", "WordPress", "Google Analytics", "AWS"],
+          // technologies: ["Next.js", "WordPress", "Google Analytics", "AWS"],
+          technologies: [
+            { title: "Mailchimp", cto: "Latest" },
+            { title: "HubSpot", cto: "100%" },
+            { title: "Zapier", cto: "Automation" },
+            { title: "Google Analytics", cto: "Analytics" },
+          ],
+          image: "/solutions/3.svg",
         },
       ],
     },
   ];
 
   return (
-    <main className="bg-white dark:bg-black text-primary-950 dark:text-white">
-      <Bracket>
-        <PageHeader
-          title="Solutions"
-          description="Comprehensive digital solutions for modern businesses"
-        />
+    <Bracket>
+      <PageHeader
+        title="Solutions"
+        description="Comprehensive digital solutions for modern businesses"
+      />
 
-        <div className="max-w-7xl mx-auto  py-20">
-          {/* Solutions Categories */}
-          {solutionCategories.map((category, index) => (
-            <CategorySection key={index} {...category} />
-          ))}
+      <div className="max-w-7xl mx-auto  py-8 sm:py-12 md:py-16">
+        {/* Solutions Categories */}
+        {solutionCategories.map((category, index) => (
+          <CategorySection key={index} {...category} />
+        ))}
 
-          {/* Case Study Highlight */}
-          {/* <div className="mb-20">
+        {/* Case Study Highlight */}
+        {/* <div className="mb-20">
             <CaseStudyHighlight />
           </div> */}
 
-          {/* Integration Partners */}
-          {/* <div className="text-center mb-20">
+        {/* Integration Partners */}
+        {/* <div className="text-center mb-20">
             <h2 className="text-3xl font-bold mb-12">Integration Partners</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-12 justify-between mx-auto">
            
@@ -379,19 +461,24 @@ export default function Solutions() {
             </div>
           </div> */}
 
-          {/* CTA Section */}
-          <div className="bg-accent-100 dark:bg-accent-300 rounded-lg p-8 text-center border border-accent-200 dark:border-accent-200">
-            <h3 className="text-2xl lg:text-4xl font-bold  text-primary-900 mb-4">
-              Ready to Transform Your Digital Presence?
-            </h3>
-            <p className="text-primary-800 text-base md:text-lg lg:text-xl   font-light mb-6">
-              Let's discuss how our solutions can help you achieve your goals
-            </p>
+        {/* CTA Section */}
+        <div className=" rounded-lg p-8 lg:p-12 text-center bg-accent-50 dark:bg-accent-950 border border-primary-100 dark:border-primary-800">
+          <h3 className="text-2xl lg:text-4xl font-extrabold  text-primary-950 dark:text-white mb-4">
+            Ready to Transform Your Digital Presence?
+          </h3>
+          <p className="text-primary-800/70 dark:text-primary-200/60 text-base md:text-lg lg:text-xl   font-light mb-6">
+            Let's discuss how our solutions can help you achieve your goals
+          </p>
 
-            <Button size="lg"> Schedule a Consultation</Button>
-          </div>
+          <Button
+            size="md"
+            className="border-transparent !bg-primary-900  !text-white dark:!bg-white  dark:!text-primary-950  [@media(hover:hover)]:hover:opacity-90 active:opacity-80 "
+          >
+            {" "}
+            Schedule a Consultation
+          </Button>
         </div>
-      </Bracket>
-    </main>
+      </div>
+    </Bracket>
   );
 }

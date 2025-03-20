@@ -37,16 +37,11 @@ function ContactForm() {
 
 export default function Contact() {
   return (
-    <main className="bg-white dark:bg-primary-950 text-primary-950 dark:text-white">
-      <Bracket>
-        <PageHeader
-          title="Contact Us"
-          description="Get in touch with our team"
-        />
-        <div className="max-w-7xl mx-auto  py-20">
-          <ContactForm />
-        </div>
-      </Bracket>
-    </main>
+    <Bracket>
+      <PageHeader title="Contact Us" description="Get in touch with our team" />
+      <div className="max-w-7xl mx-auto py-8 sm:py-12 md:py-16">
+        <ContactForm />
+      </div>
+    </Bracket>
   );
 }

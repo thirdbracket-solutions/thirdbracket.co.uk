@@ -51,20 +51,18 @@ export default function CaseStudies() {
   ];
 
   return (
-    <main className="bg-white dark:bg-primary-950 text-primary-950 dark:text-white">
-      <Bracket>
-        <PageHeader
-          title="Case Studies"
-          description="Real results for real businesses"
-        />
-        <div className="max-w-7xl mx-auto  py-20">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {caseStudies.map((study, index) => (
-              <CaseStudyCard key={index} {...study} />
-            ))}
-          </div>
+    <Bracket>
+      <PageHeader
+        title="Case Studies"
+        description="Real results for real businesses"
+      />
+      <div className="max-w-7xl mx-auto  py-8 sm:py-12 md:py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {caseStudies.map((study, index) => (
+            <CaseStudyCard key={index} {...study} />
+          ))}
         </div>
-      </Bracket>
-    </main>
+      </div>
+    </Bracket>
   );
 }

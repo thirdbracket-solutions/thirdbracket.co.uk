@@ -4,7 +4,7 @@ import { Nextjs, Tailwind, Vercel } from "./icons";
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="flex flex-col items-center  py-8 sm:py-12 md:py-16  space-y-8  md:space-y-12 mx-auto xl:max-w-6xl lg:max-w-4xl  md:max-w-3xl max-w-md sm:max-w-2xl   bg-[radial-gradient(#f0f0f0_1px,transparent_1px)] dark:bg-[radial-gradient(#1c1c1c_1px,transparent_1px)]  [background-size:16px_16px] ">
+    <section className="flex flex-col items-center  pb-8 sm:pb-12 md:pb-16 pt-20  lg:pt-24  space-y-8  md:space-y-12 mx-auto xl:max-w-6xl lg:max-w-4xl  md:max-w-3xl max-w-md sm:max-w-2xl   bg-[radial-gradient(#f0f0f0_1px,transparent_1px)] dark:bg-[radial-gradient(#1c1c1c_1px,transparent_1px)]  [background-size:16px_16px] ">
       <a
         href="#"
         className="flex items-center justify-between rounded-full  

@@ -39,9 +39,9 @@ export function FeatureTwo() {
           <Card
             size="lg"
             isIcon
-            className="dark:!border-primary-800/70 dark:hover:!border-primary-700"
+            className="rounded-lg border border-primary-500  border-opacity-30 overflow-hidden flex flex-col transition-all duration-300 ease-in-out focus-within:border-opacity-100 active:border-opacity-100 md:hover:border-opacity-100"
             cover={
-              <RiMedal2Line className="h-14 w-14 border border-primary-100 dark:border-primary-900   rounded-lg p-2.5 text-primary-900 dark:text-primary-100   fill-current" />
+              <RiMedal2Line className="h-14 w-14 border border-primary-500/40    rounded-lg p-2.5 text-primary-900 dark:text-primary-100   fill-current" />
             }
             header="Expertise & Flexibility"
             href="/solutions"
@@ -54,11 +54,11 @@ export function FeatureTwo() {
           </Card>
           <Card
             size="lg"
-            className="dark:!border-primary-800/70 dark:hover:!border-primary-700"
+            className="rounded-lg border border-primary-500  border-opacity-30 overflow-hidden flex flex-col transition-all duration-300 ease-in-out focus-within:border-opacity-100 active:border-opacity-100 md:hover:border-opacity-100"
             isIcon
             href="/solutions"
             cover={
-              <RiStackLine className="h-14 w-14 border border-primary-100 dark:border-primary-900   rounded-lg p-2.5 text-primary-900 dark:text-primary-100   fill-current" />
+              <RiStackLine className="h-14 w-14 border border-primary-500/40   rounded-lg p-2.5 text-primary-900 dark:text-primary-100   fill-current" />
             }
             header="Modern Stack"
           >
@@ -71,9 +71,9 @@ export function FeatureTwo() {
             size="lg"
             isIcon
             href="/services"
-            className="dark:!border-primary-800/70 dark:hover:!border-primary-700"
+            className="rounded-lg border border-primary-500  border-opacity-30 overflow-hidden flex flex-col transition-all duration-300 ease-in-out focus-within:border-opacity-100 active:border-opacity-100 md:hover:border-opacity-100"
             cover={
-              <MdOutlineAutoGraph className="h-14 w-14 border border-primary-100 dark:border-primary-900   rounded-lg p-2.5 text-primary-900 dark:text-primary-100   fill-current" />
+              <MdOutlineAutoGraph className="h-14 w-14 border border-primary-500/40   rounded-lg p-2.5 text-primary-900 dark:text-primary-100   fill-current" />
             }
             header="Built for Growth"
           >
@@ -87,9 +87,9 @@ export function FeatureTwo() {
             size="lg"
             isIcon
             href="/services"
-            className="dark:!border-primary-800/70 dark:hover:!border-primary-700"
+            className="rounded-lg border border-primary-500  border-opacity-30 overflow-hidden flex flex-col transition-all duration-300 ease-in-out focus-within:border-opacity-100 active:border-opacity-100 md:hover:border-opacity-100"
             cover={
-              <RiUserCommunityLine className="h-14 w-14 border border-primary-100 dark:border-primary-900   rounded-lg p-2.5 text-primary-900 dark:text-primary-100   fill-current" />
+              <RiUserCommunityLine className="h-14 w-14 border border-primary-500/40   rounded-lg p-2.5 text-primary-900 dark:text-primary-100   fill-current" />
             }
             header="Seamless Collaboration"
           >
@@ -103,9 +103,9 @@ export function FeatureTwo() {
             size="lg"
             isIcon
             href="/services"
-            className="dark:!border-primary-800/70 dark:hover:!border-primary-700"
+            className="rounded-lg border border-primary-500  border-opacity-30 overflow-hidden flex flex-col transition-all duration-300 ease-in-out focus-within:border-opacity-100 active:border-opacity-100 md:hover:border-opacity-100"
             cover={
-              <VscUnlock className="h-14 w-14 border border-primary-100 dark:border-primary-900   rounded-lg p-2.5 text-primary-900 dark:text-primary-100   fill-current" />
+              <VscUnlock className="h-14 w-14 border border-primary-500/40   rounded-lg p-2.5 text-primary-900 dark:text-primary-100   fill-current" />
             }
             header="No Lock-in, No Bloat"
           >
@@ -115,13 +115,13 @@ export function FeatureTwo() {
             </span>
           </Card>
           <Card
-            className="dark:!border-primary-800/70 dark:hover:!border-primary-700  bg-[url(/pattern.svg)]"
+            className="rounded-lg border border-primary-500  border-opacity-30 overflow-hidden flex flex-col transition-all duration-300 ease-in-out focus-within:border-opacity-100 active:border-opacity-100 md:hover:border-opacity-100  bg-[url(/pattern.svg)]"
             size="lg"
             isExternal
             isIcon
             href="/services"
             cover={
-              <RiRunLine className="h-14 w-14 border border-primary-100 dark:border-primary-900   rounded-lg p-2.5 text-primary-900 dark:text-primary-100   fill-current" />
+              <RiRunLine className="h-14 w-14 border border-primary-500/40   rounded-lg p-2.5 text-primary-900 dark:text-primary-100   fill-current" />
             }
             header="Get Started Today"
           >

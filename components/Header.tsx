@@ -22,7 +22,7 @@ const Header: FC = () => {
       <Navbar
         theme={{
           background: "bg-white dark:bg-black",
-          border: "border-b border-primary-200 dark:border-primary-800",
+          border: "border-b !border-primary-200/60 dark:!border-primary-800/60",
           mobileMenu: "bg-white dark:bg-black",
         }}
       >
@@ -387,11 +387,11 @@ const Header: FC = () => {
               <div className="w-full flex flex-col items-center justify-center h-full">
                 <div className="p-2">
                   <Image
-                    src="megamenu.svg"
+                    src="megamenu1.svg"
                     alt=""
-                    width={500}
-                    height={600}
-                    className="w-full h-[250pxpx] dark:opacity-90 bg-primary-50  dark:bg-primary-800/50   rounded-3xl"
+                    width={168}
+                    height={250}
+                    className="w-full h-[250px] dark:opacity-90 bg-primary-50  dark:bg-primary-800/50   rounded-3xl"
                   ></Image>
                 </div>
               </div>

@@ -42,7 +42,7 @@ const Subscription = () => {
 
   return (
     <section className="   py-8 sm:py-12 md:py-16   ">
-      <div className="max-w-screen-xl bg-gradient-to-r from-accent-300/70 via-accent-400/70  to-accent-300/70 dark:from-accent-900/60 dark:via-accent-800/60 dark:to-accent-900/60 border border-primary-200/50 dark:border-primary-700/60 rounded-lg p-8 lg:p-12">
+      <div className="max-w-screen-xl bg-gradient-to-r from-accent-300/80 via-accent-300/90  to-accent-300 dark:from-accent-800/80 dark:via-accent-800/90 dark:to-accent-800 border border-accent-400 dark:border-accent-700 rounded-lg p-8 lg:p-12">
         {state.isSuccess ? (
           <div className="text-center space-y-4">
             <div className="text-5xl mb-4">🎉</div>
@@ -93,7 +93,7 @@ const Subscription = () => {
                         email: e.target.value,
                       }))
                     }
-                    className="w-full pl-4 pr-32 h-14 text-base rounded-md border !border-primary-200   !bg-white  focus:!ring-primary-200 text-primary-700 dark:!border-primary-700   dark:!bg-primary-900  dark:focus:!ring-primary-600 dark:!text-primary-200"
+                    className="w-full pl-4 pr-32 h-14 text-base rounded-md border !border-primary-200   !bg-white  focus:!ring-primary-200 text-primary-700 dark:!border-primary-700   dark:!bg-black  dark:focus:!ring-primary-600 dark:!text-primary-200"
                   ></FormInput>
                   <div className="absolute right-1 top-1/2 -translate-y-1/2">
                     <Button
@@ -101,7 +101,7 @@ const Subscription = () => {
                       disabled={state.isSubmitting}
                       isLoading={state.isSubmitting}
                       size="md"
-                      className="border-transparent !bg-primary-900  !text-white dark:!bg-white  dark:!text-primary-950  [@media(hover:hover)]:hover:opacity-90 active:opacity-80 "
+                      className="bg-gradient-to-l from-accent-950 via-primary-950 to-accent-950 dark:from-accent-50 dark:via-primary-100 dark:to-accent-50 !text-white dark:!text-primary-950 [@media(hover:hover)]:hover:opacity-90 active:opacity-85 "
                       // className="border-transparent !bg-accent-500 dark:!bg-accent-400 !text-white dark:!text-primary-950 [@media(hover:hover)]:hover:opacity-90 active:opacity-80"
                     >
                       Subscribe

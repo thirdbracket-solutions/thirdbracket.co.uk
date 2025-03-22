@@ -4,12 +4,12 @@ import { Nextjs, Tailwind, Vercel } from "./icons";
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="flex flex-col items-center  pb-8 sm:pb-12 md:pb-16 pt-20  lg:pt-24  space-y-8  md:space-y-12 mx-auto xl:max-w-6xl lg:max-w-4xl  md:max-w-3xl max-w-md sm:max-w-2xl   bg-[radial-gradient(#f0f0f0_1px,transparent_1px)] dark:bg-[radial-gradient(#1c1c1c_1px,transparent_1px)]  [background-size:16px_16px] ">
+    <section className="flex flex-col items-center  pb-8 sm:pb-12 md:pb-16 pt-20  lg:pt-24  space-y-8  md:space-y-12 mx-auto xl:max-w-6xl lg:max-w-4xl  md:max-w-3xl max-w-md sm:max-w-2xl   bg-[radial-gradient(#f0f0f0_1px,transparent_1px)] dark:bg-[radial-gradient(#1e2026_1px,transparent_1px)]  [background-size:16px_16px] ">
       <a
         href="#"
         className="flex items-center justify-between rounded-full  
     pr-3 py-0.5 pl-0.5  text-[10px] lg:text-xs 
-     bg-gradient-to-r from-slate-500/10 to-primary-500/10
+     bg-gradient-to-r from-accent-500/10 to-accent-500/15
     backdrop-filter backdrop-blur-md
     text-primary-700 dark:text-primary-300 
     transition-opacity duration-200 ease-in-out text-nowrap
@@ -19,8 +19,8 @@ const HeroSection: React.FC = () => {
         <span
           className="mr-2 lg:mr-3 rounded-full 
     
-    px-2 py-0.5  text-white 
-     bg-gradient-to-bl from-primary-700 via-primary-600 to-primary-700"
+    px-2 py-0.5  text-white dark:text-primary-950 
+     bg-gradient-to-l from-accent-900 via-primary-900 to-accent-900 dark:from-accent-100 dark:via-primary-100 dark:to-accent-100"
         >
           New
         </span>
@@ -44,7 +44,7 @@ const HeroSection: React.FC = () => {
 
       {/* Heading */}
       <div className="px-4">
-        <h1 className="text-5xl font-extrabold md:text-6xl lg:text-7xl bg-gradient-to-r from-primary-900 via-primary-950 to-primary-900 dark:from-primary-100 dark:via-primary-50 dark:to-primary-100 text-transparent bg-clip-text  text-center   ">
+        <h1 className="text-5xl font-extrabold md:text-6xl lg:text-7xl bg-gradient-to-r from-accent-950 via-primary-950 to-accent-950 dark:from-accent-50 dark:via-primary-100 dark:to-accent-50 text-transparent bg-clip-text  text-center   ">
           Enterprise Solutions Without&nbsp;the Overhead&nbsp;Cost
         </h1>
       </div>
@@ -61,7 +61,7 @@ const HeroSection: React.FC = () => {
       <div className="flex justify-center gap-3 md:gap-4 backdrop-blur-sm">
         <Button
           size="lg"
-          className="hidden  md:flex !bg-gradient-to-l from-primary-900 via-black to-primary-900 dark:from-primary-100 dark:via-white dark:to-primary-100 !text-white dark:!text-primary-950  [@media(hover:hover)]:hover:opacity-90 active:opacity-80"
+          className="hidden  md:flex !bg-gradient-to-l from-accent-950 via-primary-950 to-accent-950 dark:from-accent-50 dark:via-primary-100 dark:to-accent-50 !text-white dark:!text-primary-950  [@media(hover:hover)]:hover:opacity-90 active:opacity-80"
         >
           Let's Grow
           <svg
@@ -80,7 +80,7 @@ const HeroSection: React.FC = () => {
         <Button
           outline
           size="lg"
-          className="hidden  md:flex !border-primary-200/70 dark:!border-primary-800/70   !text-primary-900 dark:!text-primary-50  [@media(hover:hover)]:hover:!bg-primary-50 [@media(hover:hover)]:dark:hover:!bg-primary-900 active:!bg-primary-100 dark:active:!bg-primary-800"
+          className="hidden  md:flex !border-accent-200/70 dark:!border-accent-900/70   !text-primary-900 dark:!text-primary-50  [@media(hover:hover)]:hover:!bg-accent-100 [@media(hover:hover)]:dark:hover:!bg-accent-950 active:!bg-accent-200 dark:active:!bg-accentr-900"
         >
           <svg
             className="size-4 mr-2"
@@ -94,7 +94,7 @@ const HeroSection: React.FC = () => {
         </Button>
         <Button
           size="md"
-          className="md:hidden flex  border-transparent !bg-gradient-to-l from-primary-900 via-black to-primary-900 dark:from-primary-100 dark:via-white dark:to-primary-100 !text-white dark:!text-primary-950  [@media(hover:hover)]:hover:opacity-90 active:opacity-80"
+          className="md:hidden flex  !bg-gradient-to-l from-accent-950 via-primary-950 to-accent-950 dark:from-accent-50 dark:via-primary-100 dark:to-accent-50 !text-white dark:!text-primary-950 [@media(hover:hover)]:hover:opacity-90 active:opacity-85"
         >
           Let's Grow
           <svg
@@ -113,7 +113,7 @@ const HeroSection: React.FC = () => {
         <Button
           outline
           size="md"
-          className="md:hidden flex !border-primary-200/70 dark:!border-primary-800/70   !text-primary-900 dark:!text-primary-50  [@media(hover:hover)]:hover:!bg-primary-50 [@media(hover:hover)]:dark:hover:!bg-primary-900 active:!bg-primary-100 dark:active:!bg-primary-800"
+          className="md:hidden flex !border-accent-200/70 dark:!border-accent-900/70   !text-primary-900 dark:!text-primary-50  [@media(hover:hover)]:hover:!bg-accent-100 [@media(hover:hover)]:dark:hover:!bg-accent-950 active:!bg-accent-200 dark:active:!bg-accentr-900"
         >
           <svg
             className="size-4 mr-2"
@@ -134,19 +134,19 @@ const HeroSection: React.FC = () => {
         <div className="mt-6 sm:mt-8 flex flex-wrap items-center justify-center text-primary-500 sm:justify-between ">
           <a
             href="#"
-            className="mb-5 mr-5 text-primary-500 hover:text-primary-800 dark:hover:text-primary-400 lg:mb-0"
+            className="mb-5 mr-5 hover:text-accent-800 dark:hover:text-accent-400 lg:mb-0"
           >
             <Tailwind />
           </a>
           <a
             href="#"
-            className="mb-5 mr-5 hover:text-primary-800 text-primary-500 dark:hover:text-primary-400 lg:mb-0"
+            className="mb-5 mr-5 hover:text-accent-800 dark:hover:text-accent-400 lg:mb-0"
           >
             <Nextjs />
           </a>
           <a
             href="#"
-            className="mb-5 mr-5 text-primary-500 hover:text-primary-800 dark:hover:text-primary-400 lg:mb-0"
+            className="mb-5 mr-5  hover:text-accent-800 dark:hover:text-accent-400 lg:mb-0"
           >
             <Vercel />
           </a>

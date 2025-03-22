@@ -20,7 +20,7 @@ const HeroSection: React.FC = () => {
           className="mr-2 lg:mr-3 rounded-full 
     
     px-2 py-0.5  text-white 
-     bg-primary-700"
+     bg-gradient-to-bl from-primary-700 via-primary-600 to-primary-700"
         >
           New
         </span>
@@ -61,7 +61,7 @@ const HeroSection: React.FC = () => {
       <div className="flex justify-center gap-3 md:gap-4 backdrop-blur-sm">
         <Button
           size="lg"
-          className="hidden  md:flex !bg-primary-950 dark:!bg-primary-50 !text-white dark:!text-primary-950  [@media(hover:hover)]:hover:opacity-90 active:opacity-80"
+          className="hidden  md:flex !bg-gradient-to-l from-primary-900 via-black to-primary-900 dark:from-primary-100 dark:via-white dark:to-primary-100 !text-white dark:!text-primary-950  [@media(hover:hover)]:hover:opacity-90 active:opacity-80"
         >
           Let's Grow
           <svg
@@ -94,7 +94,7 @@ const HeroSection: React.FC = () => {
         </Button>
         <Button
           size="md"
-          className="md:hidden flex  border-transparent !bg-primary-950 dark:!bg-primary-50 !text-white dark:!text-primary-950  [@media(hover:hover)]:hover:opacity-90 active:opacity-80"
+          className="md:hidden flex  border-transparent !bg-gradient-to-l from-primary-900 via-black to-primary-900 dark:from-primary-100 dark:via-white dark:to-primary-100 !text-white dark:!text-primary-950  [@media(hover:hover)]:hover:opacity-90 active:opacity-80"
         >
           Let's Grow
           <svg

@@ -36,7 +36,7 @@ function ServiceCard({ title, description, icon: Icon, features }: Service) {
       header={title}
       className="rounded-lg border border-primary-500  border-opacity-30 overflow-hidden flex flex-col transition-all duration-300 ease-in-out focus-within:border-opacity-100 active:border-opacity-100 md:hover:border-opacity-100 "
       cover={
-        <div className="w-12 h-12 mb-4 flex items-center bg-white justify-center   border border-primary-200 dark:bg-primary-900 dark:border-primary-700/70  rounded-lg">
+        <div className="w-12 h-12 mb-4 flex items-center  justify-center   border border-primary-200  dark:border-primary-700/70  rounded-lg">
           <Icon className="w-6 h-6 text-primary-900 dark:text-primary-100" />
         </div>
       }
@@ -86,7 +86,7 @@ function CategorySection({ title, description, services }: ServiceCategory) {
 
 function ContactCTA() {
   return (
-    <div className="rounded-lg p-8 lg:p-12 text-center bg-accent-50 dark:bg-accent-950 border border-primary-100 dark:border-primary-800">
+    <div className="rounded-lg p-8 lg:p-12 text-center bg-gradient-to-r from-accent-300/70 via-accent-400/70  to-accent-300/70 dark:from-accent-900/60 dark:via-accent-800/60 dark:to-accent-900/60 border border-primary-200/50 dark:border-primary-700/60 ">
       <h3 className="text-2xl lg:text-4xl font-extrabold  text-primary-950 dark:text-white mb-4">
         Ready to Transform Your Digital Presence?
       </h3>

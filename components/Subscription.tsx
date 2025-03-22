@@ -42,22 +42,24 @@ const Subscription = () => {
 
   return (
     <section className="   py-8 sm:py-12 md:py-16   ">
-      <div className="max-w-screen-xl bg-accent-50 dark:bg-accent-950 border border-primary-100 dark:border-primary-800 rounded-lg p-8 lg:p-12">
+      <div className="max-w-screen-xl bg-gradient-to-r from-accent-300/70 via-accent-400/70  to-accent-300/70 dark:from-accent-900/60 dark:via-accent-800/60 dark:to-accent-900/60 border border-primary-200/50 dark:border-primary-700/60 rounded-lg p-8 lg:p-12">
         {state.isSuccess ? (
           <div className="text-center space-y-4">
             <div className="text-5xl mb-4">🎉</div>
-            <h3 className="text-2xl font-bold">Thank you for subscribing!</h3>
-            <p className="text-primary-600 dark:text-primary-400">
+            <h3 className="text-3xl font-extrabold  text-primary-950 dark:text-white   mb-2 lg:mb-6">
+              Thank you for subscribing!
+            </h3>
+            <p className="text-primary-800/90 dark:text-primary-100 text-base md:text-lg lg:text-xl  max-w-md font-light">
               We'll keep you updated with the latest news and updates.
             </p>
           </div>
         ) : (
           <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 lg:gap-12 ">
             <div>
-              <h2 className="text-3xl lg:text-4xl font-extrabold  text-primary-950 dark:text-white   mb-2 lg:mb-6">
+              <h2 className="text-3xl font-extrabold  text-primary-900 dark:text-white   mb-2 lg:mb-6">
                 Stay Updated
               </h2>
-              <p className="text-primary-800/70 dark:text-primary-200/60 text-base md:text-lg lg:text-xl  max-w-md font-light">
+              <p className="text-primary-800/70 dark:text-primary-100 text-base md:text-lg lg:text-xl  max-w-md font-light">
                 Subscribe to our newsletter for updates and exclusive content
                 delivered straight to your inbox.
               </p>
@@ -108,7 +110,7 @@ const Subscription = () => {
                 </div>
 
                 <div className="mt-3">
-                  <p className="text-sm text-primary-800/60 dark:text-primary-200/40  font-light">
+                  <p className="text-sm text-primary-800/80 dark:text-primary-100/90  font-light">
                     We respect your privacy. Unsubscribe at any time.
                   </p>
                   {state.error && (

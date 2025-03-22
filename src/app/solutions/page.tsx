@@ -72,8 +72,9 @@ import {
   SiElementor,
 } from "react-icons/si";
 import { MdAutorenew, MdDesignServices, MdBusiness } from "react-icons/md";
-import { TbBrandReact } from "react-icons/tb";
+import { TbArrowForwardUp, TbBrandReact } from "react-icons/tb";
 import { Nextjs, Tailwind, Vercel } from "../../../components/icons";
+import { BsArrowUpRight } from "react-icons/bs";
 
 interface SolutionCategory {
   title: string;
@@ -111,15 +112,8 @@ function SolutionCard({
       className="rounded-lg border border-primary-500  border-opacity-30 overflow-hidden flex flex-col transition-all duration-300 ease-in-out focus-within:border-opacity-100 active:border-opacity-100 md:hover:border-opacity-100 "
       cover={
         image && (
-          <div className="relative h-full w-full">
-            <Image
-              src={image}
-              alt={title}
-              width={0}
-              height={0}
-              sizes="100vw"
-              className="w-auto h-auto max-w-full max-h-full"
-            />
+          <div className="relative  h-72 w-full lg:h-80">
+            <Image src={image} alt={title} fill className="object-cover " />
           </div>
         )
       }
@@ -128,7 +122,7 @@ function SolutionCard({
           {/* <div className="w-10 h-10 flex items-center justify-center bg-primary-100 dark:bg-primary-900 rounded-lg mr-3"> */}
           {/* <Icon className="w-5 h-5 text-accent-600 dark:text-accent-400 mr-3" /> */}
           {/* </div> */}
-          <h3 className="text-2xl font-semibold max-w-md">{title}</h3>
+          <h3 className=" max-w-md">{title}</h3>
         </div>
       }
     >
@@ -148,19 +142,14 @@ function SolutionCard({
           </ul>
         </div> */}
 
-        {description && (
-          <p className="text-primary-600 dark:text-primary-400 mb-2 text-lg">
-            {description}
-          </p>
-        )}
         {technologies && (
-          <div className="pt-4  dark:border-primary-800">
+          <div className="  dark:border-primary-800 pb-4">
             {/* <h4 className="font-semibold mb-2">Technologies:</h4> */}
             <div className="flex flex-wrap gap-2">
               {technologies.map((tech, index) => (
                 <span
                   key={index}
-                  className="px-3 py-1 text-lg text-primary-800 dark:text-primary-200  border-primary-500/20   rounded-lg border flex flex-col space-y-1 font-semibold"
+                  className="px-3 py-1 text-base text-primary-800 dark:text-primary-200  border-primary-500/20   rounded-lg border flex flex-col space-y-1 font-semibold"
                 >
                   {tech.cto}
                   <span className="text-xs font-normal text-primary-500">
@@ -170,6 +159,17 @@ function SolutionCard({
               ))}
             </div>
           </div>
+        )}
+        {description && (
+          <a
+            href="#"
+            className="text-primary-600 dark:text-primary-400 mb-2 text-base underline"
+          >
+            {description}
+            <span className="inline-flex ml-2 items-center">
+              <BsArrowUpRight />
+            </span>
+          </a>
         )}
       </div>
     </Card>
@@ -250,7 +250,7 @@ export default function Solutions() {
             { title: "Node.js", cto: "100%" },
           ],
 
-          image: "/solutions/1.svg",
+          image: "/solutions/form.svg",
         },
         {
           title: "Marketing Automation",
@@ -384,7 +384,7 @@ export default function Solutions() {
             { title: "Zapier", cto: "Automation" },
             { title: "Google Analytics", cto: "Analytics" },
           ],
-          image: "/solutions/1.svg",
+          image: "/solutions/6.svg",
         },
         {
           title: "Notion Blog",
@@ -404,7 +404,7 @@ export default function Solutions() {
             { title: "Zapier", cto: "Automation" },
             { title: "Google Analytics", cto: "Analytics" },
           ],
-          image: "/solutions/2.svg",
+          image: "/solutions/notion.svg",
         },
         {
           title: "Business 360",
@@ -462,7 +462,7 @@ export default function Solutions() {
           </div> */}
 
         {/* CTA Section */}
-        <div className=" rounded-lg p-8 lg:p-12 text-center bg-accent-50 dark:bg-accent-950 border border-primary-100 dark:border-primary-800">
+        <div className=" rounded-lg p-8 lg:p-12 text-center bg-gradient-to-r from-accent-300/70 via-accent-400/70  to-accent-300/70 dark:from-accent-900/60 dark:via-accent-800/60 dark:to-accent-900/60 border border-primary-200/50 dark:border-primary-700/60">
           <h3 className="text-2xl lg:text-4xl font-extrabold  text-primary-950 dark:text-white mb-4">
             Ready to Transform Your Digital Presence?
           </h3>

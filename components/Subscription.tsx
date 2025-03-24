@@ -42,9 +42,9 @@ const Subscription = () => {
 
   return (
     <section className="   py-8 sm:py-12 md:py-16   ">
-      <div className="max-w-screen-xl bg-gradient-to-r from-accent-300/80 via-accent-300/90  to-accent-300 dark:from-accent-800/80 dark:via-accent-800/90 dark:to-accent-800 border border-accent-400 dark:border-accent-700 rounded-lg p-8 lg:p-12">
+      <div className="max-w-screen-xl bg-gradient-accent dark:bg-gradient-accent-dark   border border-secondary-200 dark:border-secondary-800 rounded-lg p-8 lg:p-12">
         {state.isSuccess ? (
-          <div className="text-center space-y-4">
+          <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 lg:gap-12">
             <div className="text-5xl mb-4">🎉</div>
             <h3 className="text-3xl font-extrabold  text-primary-950 dark:text-white   mb-2 lg:mb-6">
               Thank you for subscribing!
@@ -56,9 +56,9 @@ const Subscription = () => {
         ) : (
           <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 lg:gap-12 ">
             <div>
-              <h2 className="text-3xl font-extrabold  text-primary-900 dark:text-white   mb-2 lg:mb-6">
+              <h3 className="text-3xl font-extrabold  text-primary-900 dark:text-white   mb-2 lg:mb-6">
                 Stay Updated
-              </h2>
+              </h3>
               <p className="text-primary-800/70 dark:text-primary-100 text-base md:text-lg lg:text-xl  max-w-md font-light">
                 Subscribe to our newsletter for updates and exclusive content
                 delivered straight to your inbox.
@@ -101,7 +101,7 @@ const Subscription = () => {
                       disabled={state.isSubmitting}
                       isLoading={state.isSubmitting}
                       size="md"
-                      className="bg-gradient-to-l from-accent-950 via-primary-950 to-accent-950 dark:from-accent-50 dark:via-primary-100 dark:to-accent-50 !text-white dark:!text-primary-950 [@media(hover:hover)]:hover:opacity-90 active:opacity-85 "
+                      className="bg-gradient-primary dark:bg-gradient-primary-dark !text-white dark:!text-primary-950 [@media(hover:hover)]:hover:opacity-90 active:opacity-85 "
                       // className="border-transparent !bg-accent-500 dark:!bg-accent-400 !text-white dark:!text-primary-950 [@media(hover:hover)]:hover:opacity-90 active:opacity-80"
                     >
                       Subscribe

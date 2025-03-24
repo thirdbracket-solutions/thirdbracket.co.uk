@@ -9,8 +9,7 @@ const HeroSection: React.FC = () => {
         href="#"
         className="flex items-center justify-between rounded-full  
     pr-3 py-0.5 pl-0.5  text-[10px] lg:text-xs 
-     bg-gradient-to-r from-accent-500/10 to-accent-500/15
-    backdrop-filter backdrop-blur-md
+     bg-gradient-secondary-dark dark:bg-gradient-secondary backdrop-blur-md
     text-primary-700 dark:text-primary-300 
     transition-opacity duration-200 ease-in-out text-nowrap
     motion-reduce:transition-none motion-reduce:hover:transform-none 
@@ -20,7 +19,7 @@ const HeroSection: React.FC = () => {
           className="mr-2 lg:mr-3 rounded-full 
     
     px-2 py-0.5  text-white dark:text-primary-950 
-     bg-gradient-to-l from-accent-900 via-primary-900 to-accent-900 dark:from-accent-100 dark:via-primary-100 dark:to-accent-100"
+     bg-gradient-secondary dark:bg-gradient-secondary-dark"
         >
           New
         </span>
@@ -44,7 +43,7 @@ const HeroSection: React.FC = () => {
 
       {/* Heading */}
       <div className="px-4">
-        <h1 className="text-5xl font-extrabold md:text-6xl lg:text-7xl bg-gradient-to-r from-accent-950 via-primary-950 to-accent-950 dark:from-accent-50 dark:via-primary-100 dark:to-accent-50 text-transparent bg-clip-text  text-center   ">
+        <h1 className="text-5xl font-extrabold md:text-6xl lg:text-7xl bg-gradient-primary dark:bg-gradient-primary-dark text-transparent bg-clip-text  text-center   ">
           Enterprise Solutions Without&nbsp;the Overhead&nbsp;Cost
         </h1>
       </div>
@@ -61,7 +60,7 @@ const HeroSection: React.FC = () => {
       <div className="flex justify-center gap-3 md:gap-4 backdrop-blur-sm">
         <Button
           size="lg"
-          className="hidden  md:flex !bg-gradient-to-l from-accent-950 via-primary-950 to-accent-950 dark:from-accent-50 dark:via-primary-100 dark:to-accent-50 !text-white dark:!text-primary-950  [@media(hover:hover)]:hover:opacity-90 active:opacity-80"
+          className="hidden  md:flex !bg-gradient-primary dark:!bg-gradient-primary-dark !text-white dark:!text-primary-950  [@media(hover:hover)]:hover:opacity-90 active:opacity-80"
         >
           Let's Grow
           <svg
@@ -80,7 +79,7 @@ const HeroSection: React.FC = () => {
         <Button
           outline
           size="lg"
-          className="hidden  md:flex !border-accent-200/70 dark:!border-accent-900/70   !text-primary-900 dark:!text-primary-50  [@media(hover:hover)]:hover:!bg-accent-100 [@media(hover:hover)]:dark:hover:!bg-accent-950 active:!bg-accent-200 dark:active:!bg-accentr-900"
+          className="hidden  md:flex !border-secondary-100 dark:!border-secondary-950   !text-primary-900 dark:!text-primary-50  [@media(hover:hover)]:hover:!bg-secondary-100 [@media(hover:hover)]:dark:hover:!bg-secondary-950 active:!bg-secondary-200 dark:active:!bg-secondary-900"
         >
           <svg
             className="size-4 mr-2"
@@ -94,7 +93,7 @@ const HeroSection: React.FC = () => {
         </Button>
         <Button
           size="md"
-          className="md:hidden flex  !bg-gradient-to-l from-accent-950 via-primary-950 to-accent-950 dark:from-accent-50 dark:via-primary-100 dark:to-accent-50 !text-white dark:!text-primary-950 [@media(hover:hover)]:hover:opacity-90 active:opacity-85"
+          className="md:hidden flex  !bg-gradient-primary dark:!bg-gradient-primary-dark !text-white dark:!text-primary-950 [@media(hover:hover)]:hover:opacity-90 active:opacity-85"
         >
           Let's Grow
           <svg

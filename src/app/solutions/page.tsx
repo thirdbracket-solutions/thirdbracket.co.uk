@@ -109,7 +109,11 @@ function SolutionCard({
   return (
     <Card
       size="lg"
-      className="rounded-lg border border-primary-500  border-opacity-30 overflow-hidden flex flex-col transition-all duration-300 ease-in-out focus-within:border-opacity-100 active:border-opacity-100 md:hover:border-opacity-100 "
+      className="rounded-lg border border-secondary-500  border-opacity-30 overflow-hidden flex flex-col transition-all duration-300 ease-in-out focus-within:border-opacity-100 active:border-opacity-100 md:hover:border-opacity-70  [background:radial-gradient(125%_125%_at_50%_10%,#fff_50%,#fbf4f7_100%)] dark:[background:radial-gradient(125%_125%_at_50%_10%,#000_50%,#260d15_100%)]"
+      // style={{
+      //   backgroundImage:
+      //     "linear-gradient(to top, rgb(243, 215, 229) 0%, transparent)",
+      // }}
       cover={
         image && (
           <div className="relative  h-72 w-full lg:h-80">
@@ -125,6 +129,8 @@ function SolutionCard({
           <h3 className=" max-w-md">{title}</h3>
         </div>
       }
+
+      //style="background-image: linear-gradient(to top, rgb(243, 215, 229) 0%, transparent);"
     >
       <div>
         {/* <div className="mb-4">
@@ -143,13 +149,13 @@ function SolutionCard({
         </div> */}
 
         {technologies && (
-          <div className="  dark:border-primary-800 pb-4">
+          <div className="  dark:border-primary-800 pb-4 ">
             {/* <h4 className="font-semibold mb-2">Technologies:</h4> */}
             <div className="flex flex-wrap gap-2">
               {technologies.map((tech, index) => (
                 <span
                   key={index}
-                  className="px-3 py-1 text-base text-secondary-900 dark:text-secondary-200  border-secondary-500/20   rounded-lg border flex flex-col space-y-1 font-semibold"
+                  className="px-3 py-1 text-sm text-secondary-900 dark:text-secondary-200  border-secondary-500/20   rounded-lg border flex flex-col space-y-1 font-semibold"
                 >
                   {tech.cto}
                   <span className="text-xs font-normal text-primary-500">
@@ -174,6 +180,16 @@ function SolutionCard({
       </div>
     </Card>
   );
+}
+
+{
+  /* <div
+className="absolute bottom-0 left-0 right-0 top-24 opacity-100 "
+style={{
+  backgroundImage:
+    "linear-gradient(to top, rgb(243, 215, 229) 0%, transparent)",
+}}
+> */
 }
 
 function CategorySection({ title, description, solutions }: SolutionCategory) {
@@ -462,7 +478,7 @@ export default function Solutions() {
           </div> */}
 
         {/* CTA Section */}
-        <div className=" rounded-lg p-8 lg:p-12 text-center bg-gradient-accent dark:bg-gradient-accent-dark border  border-secondary-300 dark:border-secondary-400">
+        <div className=" rounded-lg p-8 lg:p-12 text-center bg-gradient-accent dark:bg-gradient-accent-dark border  border-secondary-300 dark:border-secondary-900">
           <h3 className="text-2xl lg:text-4xl font-extrabold  text-primary-950 dark:text-white mb-4">
             Ready to Transform Your Digital Presence?
           </h3>

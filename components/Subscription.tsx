@@ -42,7 +42,7 @@ const Subscription = () => {
 
   return (
     <section className="   py-8 sm:py-12 md:py-16   ">
-      <div className="max-w-screen-xl bg-gradient-accent dark:bg-gradient-accent-dark  border border-secondary-300 dark:border-secondary-400 rounded-lg p-8 lg:p-12">
+      <div className="max-w-screen-xl bg-gradient-accent dark:bg-gradient-accent-dark  border border-secondary-500  border-opacity-30 rounded-lg p-8 lg:p-12">
         {state.isSuccess ? (
           <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 lg:gap-12">
             <div className="text-5xl mb-4">🎉</div>
@@ -93,7 +93,7 @@ const Subscription = () => {
                         email: e.target.value,
                       }))
                     }
-                    className="w-full pl-4 pr-32 h-14 text-base rounded-md border !border-secondary-400   !bg-white  focus:!ring-primary-400 text-primary-700 dark:!border-secondary-400   dark:!bg-black  dark:focus:!ring-primary-400 dark:!text-primary-400"
+                    className="w-full pl-4 pr-32 h-14 text-base rounded-md border border-secondary-500  border-opacity-30    !bg-white  focus:!ring-primary-400 text-primary-700   dark:!bg-black  dark:focus:!ring-primary-400 dark:!text-primary-400"
                   ></FormInput>
                   <div className="absolute right-1 top-1/2 -translate-y-1/2">
                     <Button

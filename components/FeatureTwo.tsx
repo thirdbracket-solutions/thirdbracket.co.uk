@@ -39,7 +39,7 @@ export function FeatureTwo() {
           <Card
             size="lg"
             isIcon
-            className="rounded-lg border border-primary-500  border-opacity-30 overflow-hidden flex flex-col transition-all duration-300 ease-in-out focus-within:border-opacity-100 active:border-opacity-100 md:hover:border-opacity-100"
+            className="rounded-lg border border-primary-500  border-opacity-30 overflow-hidden flex flex-col transition-all duration-300 ease-in-out focus-within:border-opacity-100 active:border-opacity-100 md:hover:border-opacity-100 [background:radial-gradient(125%_125%_at_50%_10%,#fff_50%,#fbf4f7_100%)] dark:[background:radial-gradient(125%_125%_at_50%_10%,#000_50%,#260d15_100%)]"
             cover={
               <RiMedal2Line className="h-12 w-12     text-secondary-900 dark:text-secondary-200 " />
             }
@@ -54,7 +54,7 @@ export function FeatureTwo() {
           </Card>
           <Card
             size="lg"
-            className="rounded-lg border border-primary-500  border-opacity-30 overflow-hidden flex flex-col transition-all duration-300 ease-in-out focus-within:border-opacity-100 active:border-opacity-100 md:hover:border-opacity-100"
+            className="rounded-lg border border-primary-500  border-opacity-30 overflow-hidden flex flex-col transition-all duration-300 ease-in-out focus-within:border-opacity-100 active:border-opacity-100 md:hover:border-opacity-100 [background:radial-gradient(125%_125%_at_50%_10%,#fff_50%,#fbf4f7_100%)] dark:[background:radial-gradient(125%_125%_at_50%_10%,#000_50%,#260d15_100%)]"
             isIcon
             href="/solutions"
             cover={
@@ -71,7 +71,7 @@ export function FeatureTwo() {
             size="lg"
             isIcon
             href="/services"
-            className="rounded-lg border border-primary-500  border-opacity-30 overflow-hidden flex flex-col transition-all duration-300 ease-in-out focus-within:border-opacity-100 active:border-opacity-100 md:hover:border-opacity-100"
+            className="rounded-lg border border-primary-500  border-opacity-30 overflow-hidden flex flex-col transition-all duration-300 ease-in-out focus-within:border-opacity-100 active:border-opacity-100 md:hover:border-opacity-100 [background:radial-gradient(125%_125%_at_50%_10%,#fff_50%,#fbf4f7_100%)] dark:[background:radial-gradient(125%_125%_at_50%_10%,#000_50%,#260d15_100%)]"
             cover={
               <MdOutlineAutoGraph className="h-12 w-12     text-secondary-900 dark:text-secondary-200" />
             }
@@ -87,7 +87,7 @@ export function FeatureTwo() {
             size="lg"
             isIcon
             href="/services"
-            className="rounded-lg border border-primary-500  border-opacity-30 overflow-hidden flex flex-col transition-all duration-300 ease-in-out focus-within:border-opacity-100 active:border-opacity-100 md:hover:border-opacity-100"
+            className="rounded-lg border border-primary-500  border-opacity-30 overflow-hidden flex flex-col transition-all duration-300 ease-in-out focus-within:border-opacity-100 active:border-opacity-100 md:hover:border-opacity-100 [background:radial-gradient(125%_125%_at_50%_10%,#fff_50%,#fbf4f7_100%)] dark:[background:radial-gradient(125%_125%_at_50%_10%,#000_50%,#260d15_100%)]"
             cover={
               <RiUserCommunityLine className="h-12 w-12     text-secondary-900 dark:text-secondary-200" />
             }
@@ -103,7 +103,7 @@ export function FeatureTwo() {
             size="lg"
             isIcon
             href="/services"
-            className="rounded-lg border border-primary-500  border-opacity-30 overflow-hidden flex flex-col transition-all duration-300 ease-in-out focus-within:border-opacity-100 active:border-opacity-100 md:hover:border-opacity-100"
+            className="rounded-lg border border-primary-500  border-opacity-30 overflow-hidden flex flex-col transition-all duration-300 ease-in-out focus-within:border-opacity-100 active:border-opacity-100 md:hover:border-opacity-100 [background:radial-gradient(125%_125%_at_50%_10%,#fff_50%,#fbf4f7_100%)] dark:[background:radial-gradient(125%_125%_at_50%_10%,#000_50%,#260d15_100%)]"
             cover={
               <VscUnlock className="h-12 w-12     text-secondary-900 dark:text-secondary-200" />
             }
@@ -115,7 +115,7 @@ export function FeatureTwo() {
             </span>
           </Card>
           <Card
-            className="rounded-lg border border-primary-500  border-opacity-30 overflow-hidden flex flex-col transition-all duration-300 ease-in-out focus-within:border-opacity-100 active:border-opacity-100 md:hover:border-opacity-100  "
+            className="rounded-lg border border-primary-500  border-opacity-30 overflow-hidden flex flex-col transition-all duration-300 ease-in-out focus-within:border-opacity-100 active:border-opacity-100 md:hover:border-opacity-100  [background:radial-gradient(125%_125%_at_50%_10%,#fff_50%,#fbf4f7_100%)] dark:[background:radial-gradient(125%_125%_at_50%_10%,#000_50%,#260d15_100%)]"
             size="lg"
             isExternal
             isIcon

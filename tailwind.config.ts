@@ -18,9 +18,9 @@ const config: Config = {
         // "gradient-accent":
 
         "gradient-accent":
-          "conic-gradient(at bottom right, #dc8aae, #eab7cf, #e9eff6 )",
+          "conic-gradient(at bottom right,  #f3d7e5, #f3f7fa, #f3d7e5 )",
         "gradient-accent-dark":
-          "conic-gradient(at bottom left, #ba4872, #dc8aae, #bfcee2)",
+          "conic-gradient(at bottom right, #3a121f,  #292d3d, #3a121f)",
         "gradient-primary-dark":
           "conic-gradient(at bottom left, #e8ecef, #f3f7fa, #f6fafb)",
         "gradient-primary":

@@ -163,7 +163,7 @@ function SolutionCard({
         {description && (
           <a
             href="#"
-            className="text-secondary-900 dark:text-secondary-200 mb-2 text-base underline"
+            className="text-secondary-900 tracking-wide dark:text-secondary-200 mb-2 text-base underline"
           >
             {description}
             <span className="inline-flex ml-2 items-center">
@@ -270,7 +270,7 @@ export default function Solutions() {
             { title: "Zapier", cto: "Automation" },
             { title: "Google Analytics", cto: "Analytics" },
           ],
-          image: "/solutions/2.svg",
+          image: "/solutions/marketing.svg",
         },
         {
           title: "CI/CD & Release Automation",
@@ -290,7 +290,7 @@ export default function Solutions() {
             { title: "Docker", cto: "Automation" },
             { title: "AWS", cto: "Release" },
           ],
-          image: "/solutions/3.svg",
+          image: "/solutions/cicd.svg",
         },
       ],
     },
@@ -318,7 +318,7 @@ export default function Solutions() {
             { title: "Docker", cto: "Automation" },
             { title: "AWS", cto: "Release" },
           ],
-          image: "/solutions/4.svg",
+          image: "/solutions/bracket.svg",
         },
         {
           title: "Next.js Themes",
@@ -338,7 +338,7 @@ export default function Solutions() {
             { title: "Zapier", cto: "Automation" },
             { title: "Google Analytics", cto: "Analytics" },
           ],
-          image: "/solutions/5.svg",
+          image: "/solutions/cicd.svg",
         },
         {
           title: "WordPress Solutions",
@@ -358,7 +358,7 @@ export default function Solutions() {
             { title: "Zapier", cto: "Automation" },
             { title: "Google Analytics", cto: "Analytics" },
           ],
-          image: "/solutions/6.svg",
+          image: "/solutions/marketing.svg",
         },
       ],
     },
@@ -384,7 +384,7 @@ export default function Solutions() {
             { title: "Zapier", cto: "Automation" },
             { title: "Google Analytics", cto: "Analytics" },
           ],
-          image: "/solutions/6.svg",
+          image: "/solutions/cicd.svg",
         },
         {
           title: "Notion Blog",
@@ -404,7 +404,7 @@ export default function Solutions() {
             { title: "Zapier", cto: "Automation" },
             { title: "Google Analytics", cto: "Analytics" },
           ],
-          image: "/solutions/notion.svg",
+          image: "/solutions/bracket.svg",
         },
         {
           title: "Business 360",
@@ -424,7 +424,7 @@ export default function Solutions() {
             { title: "Zapier", cto: "Automation" },
             { title: "Google Analytics", cto: "Analytics" },
           ],
-          image: "/solutions/3.svg",
+          image: "/solutions/cicd.svg",
         },
       ],
     },

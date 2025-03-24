@@ -15,10 +15,12 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
+        // "gradient-accent":
+
         "gradient-accent":
-          "conic-gradient(at bottom right, #eab7cfb2, #f3d7e5, #f3f7fa)",
+          "conic-gradient(at bottom left, #dc8aae, #eab7cf, #e9eff6 )",
         "gradient-accent-dark":
-          "conic-gradient(at bottom left, #ba4872, #dc8aae, #d7e2ee)",
+          "conic-gradient(at bottom left, #ba4872, #dc8aae, #bfcee2)",
         "gradient-primary-dark":
           "conic-gradient(at bottom left, #e8ecef, #f3f7fa, #f6fafb)",
         "gradient-primary":

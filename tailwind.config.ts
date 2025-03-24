@@ -16,7 +16,7 @@ const config: Config = {
     extend: {
       backgroundImage: {
         "gradient-accent":
-          "conic-gradient(at bottom left, #dc8aae, #f3d7e5, #f3f7fa)",
+          "conic-gradient(at bottom right, #eab7cfb2, #f3d7e5, #f3f7fa)",
         "gradient-accent-dark":
           "conic-gradient(at bottom left, #ba4872, #dc8aae, #d7e2ee)",
         "gradient-primary-dark":
@@ -26,7 +26,7 @@ const config: Config = {
         "gradient-secondary-dark":
           "conic-gradient(at bottom left, #e9eff6, #f6fafb, #f3f7fa)",
         "gradient-secondary":
-          "conic-gradient(at bottom left, #292d3d, #212429, #353942)",
+          "conic-gradient(at bottom left, #292d3d, #212429, #212429)",
       },
       colors: {
         accent: {

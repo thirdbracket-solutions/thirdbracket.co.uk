@@ -86,7 +86,7 @@ function CategorySection({ title, description, services }: ServiceCategory) {
 
 function ContactCTA() {
   return (
-    <div className="rounded-lg p-8 lg:p-12 text-center bg-gradient-to-r from-accent-300/80 via-accent-300/90  to-accent-300 dark:from-accent-800/80 dark:via-accent-800/90 dark:to-accent-800 border border-accent-400 dark:border-accent-700 ">
+    <div className="rounded-lg p-8 lg:p-12 text-center bg-gradient-accent dark:bg-gradient-accent-dark border  border-secondary-300 dark:border-secondary-400 ">
       <h3 className="text-2xl lg:text-4xl font-extrabold  text-primary-950 dark:text-white mb-4">
         Ready to Transform Your Digital Presence?
       </h3>
@@ -98,7 +98,7 @@ function ContactCTA() {
       </button> */}
       <Button
         size="md"
-        className="bg-gradient-to-l from-accent-950 via-primary-950 to-accent-950 dark:from-accent-50 dark:via-primary-100 dark:to-accent-50 !text-white dark:!text-primary-950 [@media(hover:hover)]:hover:opacity-90 active:opacity-85 "
+        className="bg-gradient-primary dark:bg-gradient-primary-dark !text-white dark:!text-primary-950 [@media(hover:hover)]:hover:opacity-90 active:opacity-85 "
       >
         {" "}
         Contact Us

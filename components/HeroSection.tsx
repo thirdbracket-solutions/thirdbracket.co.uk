@@ -112,7 +112,7 @@ const HeroSection: React.FC = () => {
         <Button
           outline
           size="md"
-          className="md:hidden flex !border-accent-200/70 dark:!border-accent-900/70   !text-primary-900 dark:!text-primary-50  [@media(hover:hover)]:hover:!bg-accent-100 [@media(hover:hover)]:dark:hover:!bg-accent-950 active:!bg-accent-200 dark:active:!bg-accentr-900"
+          className="md:hidden flex !border-secondary-100 dark:!border-secondary-950   !text-primary-900 dark:!text-primary-50  [@media(hover:hover)]:hover:!bg-secondary-100 [@media(hover:hover)]:dark:hover:!bg-secondary-950 active:!bg-secondary-200 dark:active:!bg-secondary-900"
         >
           <svg
             className="size-4 mr-2"
@@ -133,19 +133,19 @@ const HeroSection: React.FC = () => {
         <div className="mt-6 sm:mt-8 flex flex-wrap items-center justify-center text-primary-500 sm:justify-between ">
           <a
             href="#"
-            className="mb-5 mr-5 hover:text-accent-800 dark:hover:text-accent-400 lg:mb-0"
+            className="mb-5 mr-5 hover:text-primary-700 dark:hover:text-primary-400 lg:mb-0"
           >
             <Tailwind />
           </a>
           <a
             href="#"
-            className="mb-5 mr-5 hover:text-accent-800 dark:hover:text-accent-400 lg:mb-0"
+            className="mb-5 mr-5 hover:text-primary-700 dark:hover:text-primary-400 lg:mb-0"
           >
             <Nextjs />
           </a>
           <a
             href="#"
-            className="mb-5 mr-5  hover:text-accent-800 dark:hover:text-accent-400 lg:mb-0"
+            className="mb-5 mr-5  hover:text-primary-700 dark:hover:text-primary-400 lg:mb-0"
           >
             <Vercel />
           </a>

@@ -24,7 +24,7 @@ export function FeatureOne() {
             <Card
               size="lg"
               href="/solutions"
-              className="w-full h-full rounded-lg border border-primary-600  border-opacity-30 overflow-hidden flex flex-col transition-all duration-300 ease-in-out  focus-within:border-opacity-100 active:border-opacity-100 md:hover:border-opacity-100 bg-gradient-to-t from-accent-50 dark:from-[#13070b]  to-transparent" // Added full width and height
+              className="w-full h-full rounded-lg border border-primary-600  border-opacity-30 overflow-hidden flex flex-col transition-all duration-300 ease-in-out  focus-within:border-opacity-100 active:border-opacity-100 md:hover:border-opacity-100 bg-gradient-to-b from-[#f8fafc] dark:from-[#15161e] to-transparent" // Added full width and height
               cover={
                 <div className="relative  h-52 w-full lg:h-80">
                   <Image
@@ -47,7 +47,7 @@ export function FeatureOne() {
             <Card
               size="lg"
               href="/services"
-              className="w-full h-full rounded-lg border border-primary-600  border-opacity-30 overflow-hidden flex flex-col transition-all duration-300 ease-in-out focus-within:border-opacity-100 active:border-opacity-100 md:hover:border-opacity-100 bg-gradient-to-t from-accent-50 dark:from-[#13070b]  to-transparent" // Added full width and height
+              className="w-full h-full rounded-lg border border-primary-600  border-opacity-30 overflow-hidden flex flex-col transition-all duration-300 ease-in-out focus-within:border-opacity-100 active:border-opacity-100 md:hover:border-opacity-100 bg-gradient-to-b from-[#f8fafc] dark:from-[#15161e]  to-transparent" // Added full width and height
               cover={
                 <div className="relative  h-52 w-full lg:h-80">
                   <Image

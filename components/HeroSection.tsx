@@ -8,8 +8,8 @@ const HeroSection: React.FC = () => {
       <a
         href="#"
         className="flex items-center justify-between rounded-full  
-    pr-3 py-0.5 pl-0.5  text-[10px] lg:text-xs 
-     bg-gradient-secondary-dark dark:bg-gradient-secondary backdrop-blur-md
+    pr-3 py-0.5 pl-0.5  text-xs lg:text-sm 
+     bg-[conic-gradient(at_bottom_right,_var(--tw-gradient-stops))] from-secondary-100 via-secondary-50 to-white dark:bg-[conic-gradient(at_bottom_right,_var(--tw-gradient-stops))] dark:from-primary-900 dark:via-secondary-950 dark:to-primary-950 backdrop-blur-md
     text-primary-700 dark:text-primary-300 
     transition-opacity duration-200 ease-in-out text-nowrap
     motion-reduce:transition-none motion-reduce:hover:transform-none 
@@ -19,7 +19,7 @@ const HeroSection: React.FC = () => {
           className="mr-2 lg:mr-3 rounded-full 
     
     px-2 py-0.5  text-white dark:text-primary-950 
-     bg-gradient-secondary dark:bg-gradient-secondary-dark"
+     bg-primary-700 dark:bg-primary-300"
         >
           New
         </span>
@@ -79,7 +79,7 @@ const HeroSection: React.FC = () => {
         <Button
           outline
           size="lg"
-          className="hidden  md:flex !border-secondary-100 dark:!border-secondary-950   !text-primary-900 dark:!text-primary-50  [@media(hover:hover)]:hover:!bg-secondary-100 [@media(hover:hover)]:dark:hover:!bg-secondary-950 active:!bg-secondary-200 dark:active:!bg-secondary-900"
+          className="hidden  md:flex !border-secondary-100 dark:!border-secondary-950   !text-primary-900 dark:!text-primary-50  [@media(hover:hover)]:hover:!bg-secondary-200 [@media(hover:hover)]:dark:hover:!bg-secondary-900 active:!bg-secondary-200 dark:active:!bg-secondary-900"
         >
           <svg
             className="size-4 mr-2"

@@ -24,7 +24,7 @@ export function FeatureOne() {
             <Card
               size="lg"
               href="/solutions"
-              className="w-full h-full rounded-lg border border-primary-600  border-opacity-30 overflow-hidden flex flex-col transition-all duration-300 ease-in-out  focus-within:border-opacity-100 active:border-opacity-100 md:hover:border-opacity-100 bg-gradient-to-b from-[#f8fafc] dark:from-[#15161e] to-transparent" // Added full width and height
+              className="w-full h-full rounded-lg border border-primary-500  border-opacity-40 overflow-hidden flex flex-col transition-all duration-300 ease-in-out  focus-within:border-opacity-100 active:border-opacity-100 md:hover:border-opacity-100 bg-[conic-gradient(at_bottom_right,_var(--tw-gradient-stops))] from-primary-50 via-secondary-50 to-white dark:bg-[conic-gradient(at_bottom_right,_var(--tw-gradient-stops))] dark:from-primary-950 dark:via-secondary-950 dark:to-black" // Added full width and height
               cover={
                 <div className="relative  h-52 w-full lg:h-80">
                   <Image
@@ -47,7 +47,7 @@ export function FeatureOne() {
             <Card
               size="lg"
               href="/services"
-              className="w-full h-full rounded-lg border border-primary-600  border-opacity-30 overflow-hidden flex flex-col transition-all duration-300 ease-in-out focus-within:border-opacity-100 active:border-opacity-100 md:hover:border-opacity-100 bg-gradient-to-b from-[#f8fafc] dark:from-[#15161e]  to-transparent" // Added full width and height
+              className="w-full h-full rounded-lg border border-primary-500  border-opacity-30 overflow-hidden flex flex-col transition-all duration-300 ease-in-out  focus-within:border-opacity-100 active:border-opacity-100 md:hover:border-opacity-100 bg-[conic-gradient(at_bottom_right,_var(--tw-gradient-stops))] from-primary-50 via-secondary-50 to-white dark:bg-[conic-gradient(at_bottom_right,_var(--tw-gradient-stops))] dark:from-primary-950 dark:via-secondary-950 dark:to-black" // Added full width and height
               cover={
                 <div className="relative  h-52 w-full lg:h-80">
                   <Image
@@ -72,7 +72,7 @@ export function FeatureOne() {
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <Card
               size="lg"
-              className="w-full h-full rounded-lg border border-primary-600  border-opacity-30 overflow-hidden flex flex-col transition-all duration-300 ease-in-out focus-within:border-opacity-100 active:border-opacity-100 md:hover:border-opacity-100 bg-gradient-to-b from-[#f8fafc] dark:from-[#15161e] to-transparent" // Added full width and height
+              className="w-full h-full rounded-lg border border-primary-500  border-opacity-30 overflow-hidden flex flex-col transition-all duration-300 ease-in-out focus-within:border-opacity-100 active:border-opacity-100 md:hover:border-opacity-100 bg-[conic-gradient(at_bottom_right,_var(--tw-gradient-stops))] from-primary-50 via-secondary-50 to-white dark:bg-[conic-gradient(at_bottom_right,_var(--tw-gradient-stops))] dark:from-primary-950 dark:via-secondary-950 dark:to-black" // Added full width and height
               header="Missing Modern Features?"
               href="/solutions"
             >
@@ -85,7 +85,7 @@ export function FeatureOne() {
 
             <Card
               size="lg"
-              className="w-full h-full rounded-lg border border-primary-600  border-opacity-30 overflow-hidden flex flex-col transition-all duration-300 ease-in-out focus-within:border-opacity-100 active:border-opacity-100 md:hover:border-opacity-100 bg-gradient-to-b from-[#f8fafc] dark:from-[#15161e] to-transparent" // Added full width and height
+              className="w-full h-full rounded-lg border border-primary-500  border-opacity-30 overflow-hidden flex flex-col transition-all duration-300 ease-in-out focus-within:border-opacity-100 active:border-opacity-100 md:hover:border-opacity-100 bg-[conic-gradient(at_bottom_right,_var(--tw-gradient-stops))] from-primary-50 via-secondary-50 to-white dark:bg-[conic-gradient(at_bottom_right,_var(--tw-gradient-stops))] dark:from-primary-950 dark:via-secondary-950 dark:to-black" // Added full width and height
               header="Tired of Searching for Marketers?"
               href="/solutions"
             >
@@ -98,7 +98,7 @@ export function FeatureOne() {
 
             <Card
               size="lg"
-              className="w-full h-full rounded-lg border border-primary-600  border-opacity-30 overflow-hidden flex flex-col transition-all duration-300 ease-in-out focus-within:border-opacity-100 active:border-opacity-100  md:hover:border-opacity-100 bg-gradient-to-b from-[#f8fafc] dark:from-[#15161e] to-transparent"
+              className="w-full h-full rounded-lg border border-primary-500  border-opacity-30 overflow-hidden flex flex-col transition-all duration-300 ease-in-out focus-within:border-opacity-100 active:border-opacity-100  md:hover:border-opacity-100 bg-[conic-gradient(at_bottom_right,_var(--tw-gradient-stops))] from-primary-50 via-secondary-50 to-white dark:bg-[conic-gradient(at_bottom_right,_var(--tw-gradient-stops))] dark:from-primary-950 dark:via-secondary-950 dark:to-black"
               header="SEO Takes Too Long!"
               href="/solutions"
             >

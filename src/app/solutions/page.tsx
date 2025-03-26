@@ -478,7 +478,11 @@ export default function Solutions() {
           </div> */}
 
         {/* CTA Section */}
-        <div className=" rounded-lg p-8 lg:p-12 text-center bg-gradient-accent dark:bg-gradient-accent-dark border  border-secondary-300 dark:border-secondary-900">
+        <div
+          className=" rounded-lg p-8 lg:p-12 text-center bg-[radial-gradient(ellipse_at_left,_var(--tw-gradient-stops))]
+from-[#f8ebf1] via-[#f3d7e5] to-[#eab7cf] dark:bg-[radial-gradient(ellipse_at_left,_var(--tw-gradient-stops))]
+dark:from-[#6f2c42] dark:via-[#84304b] dark:to-[#ac3b61]  border border-secondary-500  border-opacity-30"
+        >
           <h3 className="text-2xl lg:text-4xl font-extrabold  text-primary-950 dark:text-white mb-4">
             Ready to Transform Your Digital Presence?
           </h3>

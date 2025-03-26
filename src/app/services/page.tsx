@@ -34,7 +34,7 @@ function ServiceCard({ title, description, icon: Icon, features }: Service) {
       isIcon
       size="lg"
       header={title}
-      className="rounded-lg border border-primary-500  border-opacity-30 overflow-hidden flex flex-col transition-all duration-300 ease-in-out focus-within:border-opacity-100 active:border-opacity-100 md:hover:border-opacity-100 [background:radial-gradient(125%_125%_at_50%_10%,#fff_50%,#fbf4f7_100%)] dark:[background:radial-gradient(125%_125%_at_50%_10%,#000_50%,#260d15_100%)]"
+      className="rounded-lg border border-primary-500  border-opacity-30 overflow-hidden flex flex-col transition-all duration-300 ease-in-out focus-within:border-opacity-100 active:border-opacity-100 md:hover:border-opacity-100 [background:radial-gradient(125%_125%_at_50%_10%,#f6fafb_50%,#fbf4f7_100%)] dark:[background:radial-gradient(125%_125%_at_50%_10%,#101014_50%,#260d15_100%)]"
       cover={
         <div className="w-12 h-12 mb-4 flex items-center  justify-center   border border-primary-200  dark:border-primary-700/70  rounded-lg">
           <Icon className="w-6 h-6 text-primary-900 dark:text-primary-100" />
@@ -86,7 +86,11 @@ function CategorySection({ title, description, services }: ServiceCategory) {
 
 function ContactCTA() {
   return (
-    <div className="rounded-lg p-8 lg:p-12 text-center bg-gradient-accent dark:bg-gradient-accent-dark border  border-secondary-300 dark:border-secondary-900 ">
+    <div
+      className="rounded-lg p-8 lg:p-12 text-center bg-[radial-gradient(ellipse_at_left,_var(--tw-gradient-stops))]
+from-[#f8ebf1] via-[#f3d7e5] to-[#eab7cf] dark:bg-[radial-gradient(ellipse_at_left,_var(--tw-gradient-stops))]
+dark:from-[#6f2c42] dark:via-[#84304b] dark:to-[#ac3b61]  border border-secondary-500  border-opacity-30 "
+    >
       <h3 className="text-2xl lg:text-4xl font-extrabold  text-primary-950 dark:text-white mb-4">
         Ready to Transform Your Digital Presence?
       </h3>

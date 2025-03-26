@@ -17,11 +17,15 @@ const config: Config = {
       backgroundImage: {
         // "gradient-accent":
 
+        //"gradient-accent":
+          //"conic-gradient(at bottom right,  #f3d7e5, #f3f7fa, #f3d7e5 )",
+       // "gradient-accent-dark":
+          //"conic-gradient(at bottom right, #431423,  #292d3d, #6f2c42)",
         "gradient-accent":
-          "conic-gradient(at bottom right,  #f3d7e5, #f3f7fa, #f3d7e5 )",
+          "conic-gradient(at bottom right,  #f3d7e5, #f3f7fa )",
         "gradient-accent-dark":
-          "conic-gradient(at bottom right, #431423,  #292d3d, #6f2c42)",
-        "gradient-primary-dark":
+          "conic-gradient(at bottom right, #431423,  #292d3)",
+ "gradient-primary-dark":
           "conic-gradient(at bottom left, #e8ecef, #f3f7fa, #f6fafb)",
         "gradient-primary":
           "conic-gradient(at bottom left, #101014, #292d3d, #353942)",

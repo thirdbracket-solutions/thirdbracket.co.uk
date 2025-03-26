@@ -169,7 +169,7 @@ function SolutionCard({
         {description && (
           <a
             href="#"
-            className="text-secondary-900 tracking-wide dark:text-secondary-200 mb-2 text-base underline"
+            className="text-secondary-900 tracking-wide dark:text-secondary-200 mb-2  text-xl underline"
           >
             {description}
             <span className="inline-flex ml-2 items-center">

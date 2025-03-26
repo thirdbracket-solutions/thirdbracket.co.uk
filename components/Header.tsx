@@ -398,17 +398,17 @@ const Header: FC = () => {
             </div>
           </Megamenu>
 
-          <Navlink as={Link} href="#">
+          <Navlink as={Link} href="/case-studies">
             Case Studies
           </Navlink>
 
-          <Navlink as={Link} href="#">
+          <Navlink as={Link} href="/about">
             About
           </Navlink>
-          <Navlink as={Link} href="#">
+          <Navlink as={Link} href="/blog">
             Blog
           </Navlink>
-          <Navlink as={Link} href="#">
+          <Navlink as={Link} href="contact">
             Contact
           </Navlink>
         </NavItem>

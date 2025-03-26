@@ -1,37 +1,47 @@
-import { Bracket } from "@thirdbracket/bracketui";
+import {
+  Bracket,
+  Button,
+  Form,
+  FormInput,
+  FormLabel,
+  FormTextarea,
+} from "@thirdbracket/bracketui";
 import PageHeader from "../../../components/PageHeader";
 
 function ContactForm() {
   return (
-    <form className="max-w-xl mx-auto">
+    <Form className="max-w-xl mx-auto">
       <div className="mb-6">
-        <label className="block mb-2">Name</label>
-        <input
+        <FormLabel>Name</FormLabel>
+        <FormInput
           type="text"
-          className="w-full px-4 py-2 rounded-lg border border-primary-300 dark:border-primary-700 bg-white dark:bg-primary-800"
-        />
+          className="border border-primary-400 dark:border-primary-700 bg-primary-50 dark:bg-primary-950 focus:ring-primary-400 dark:focus:ring-primary-500"
+        ></FormInput>
       </div>
       <div className="mb-6">
-        <label className="block mb-2">Email</label>
-        <input
+        <FormLabel>Email</FormLabel>
+
+        <FormInput
           type="email"
-          className="w-full px-4 py-2 rounded-lg border border-primary-300 dark:border-primary-700 bg-white dark:bg-primary-800"
-        />
+          className="border border-primary-400 dark:border-primary-700 bg-primary-50 dark:bg-primary-950 focus:ring-primary-500 dark:focus:ring-primary-400"
+        ></FormInput>
       </div>
       <div className="mb-6">
-        <label className="block mb-2">Message</label>
-        <textarea
+        <FormLabel>Message</FormLabel>
+
+        <FormTextarea
           rows={6}
-          className="w-full px-4 py-2 rounded-lg border border-primary-300 dark:border-primary-700 bg-white dark:bg-primary-800"
-        ></textarea>
+          className="border border-primary-400 dark:border-primary-700 bg-primary-50 dark:bg-primary-950 focus:ring-primary-500 dark:focus:ring-primary-400"
+        ></FormTextarea>
       </div>
-      <button
+      <Button
+        size="md"
         type="submit"
-        className="w-full py-3 px-6 text-white bg-blue-600 hover:bg-blue-700 rounded-lg"
+        className="w-full !bg-gradient-primary dark:!bg-gradient-primary-dark !text-white dark:!text-primary-950  [@media(hover:hover)]:hover:opacity-90 active:opacity-80"
       >
         Send Message
-      </button>
-    </form>
+      </Button>
+    </Form>
   );
 }
 

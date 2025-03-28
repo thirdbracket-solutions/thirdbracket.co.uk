@@ -147,6 +147,7 @@ export default function RootLayout({
             `,
           }}
         />
+        <meta name="msvalidate.01" content="46803F5EEF01F535EF3999B5E1F48682" />
         <ThemeScript />
         <script
           type="application/ld+json"

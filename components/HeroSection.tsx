@@ -44,7 +44,7 @@ const HeroSection: React.FC = () => {
       {/* Heading */}
       <div className="px-4">
         <h1 className="text-5xl font-extrabold md:text-6xl lg:text-7xl bg-gradient-primary dark:bg-gradient-primary-dark text-transparent bg-clip-text  text-center   ">
-          Enterprise Solutions Without&nbsp;the Overhead&nbsp;Cost
+          Custom Web Development & Digital Marketing in Manchester
         </h1>
       </div>
       {/* 800-#1f2937,900- #111827, 200-#e5e7eb, 100-#f3f4f6  #030712 #f9fafb*/}

@@ -4,11 +4,11 @@ import { Nextjs, Tailwind, Vercel } from "./icons";
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="flex flex-col items-center  pb-8 sm:pb-12 md:pb-16 pt-20  lg:pt-24  space-y-8  md:space-y-12 mx-auto xl:max-w-6xl lg:max-w-4xl  md:max-w-3xl max-w-md sm:max-w-2xl   bg-[radial-gradient(#f0f0f0_1px,transparent_1px)] dark:bg-[radial-gradient(#1e2026_1px,transparent_1px)]  [background-size:16px_16px] ">
+    <section className="flex flex-col items-center  pb-8 sm:pb-12 md:pb-16 pt-20  lg:pt-24  space-y-8   mx-auto xl:max-w-6xl lg:max-w-4xl  md:max-w-3xl max-w-md sm:max-w-2xl   bg-[radial-gradient(#f0f0f0_1px,transparent_1px)] dark:bg-[radial-gradient(#1e2026_1px,transparent_1px)]  [background-size:16px_16px] ">
       <a
         href="#"
         className="flex items-center justify-between rounded-full  
-    pr-3 py-0.5 pl-0.5  text-[11px] lg:text-[13px] 
+    pr-3 py-0.5 pl-0.5  text-[10px] lg:text-[13px] 
      bg-[conic-gradient(at_bottom_right,_var(--tw-gradient-stops))] from-secondary-100 via-secondary-50 to-white dark:bg-[conic-gradient(at_bottom_right,_var(--tw-gradient-stops))] dark:from-primary-900 dark:via-secondary-950 dark:to-primary-950 backdrop-blur-md
     text-primary-700 dark:text-primary-300 
     transition-opacity duration-200 ease-in-out text-nowrap
@@ -43,13 +43,13 @@ const HeroSection: React.FC = () => {
 
       {/* Heading */}
       <div className="px-4">
-        <h1 className="text-5xl font-extrabold md:text-6xl lg:text-7xl bg-gradient-primary dark:bg-gradient-primary-dark text-transparent bg-clip-text  text-center   ">
+        <h1 className="text-4xl/[1.1] font-extrabold md:text-5xl/[1.2] lg:text-6xl/[1.2] bg-gradient-primary dark:bg-gradient-primary-dark text-transparent bg-clip-text  text-center   ">
           Custom Web Development & Digital Marketing in Manchester
         </h1>
       </div>
       {/* 800-#1f2937,900- #111827, 200-#e5e7eb, 100-#f3f4f6  #030712 #f9fafb*/}
       {/* Paragraph */}
-      <p className="text-primary-900/60 text-base/[1.6rem] md:text-lg/[1.85rem] lg:text-xl/8 dark:text-primary-200/60 font-light text-center px-4  backdrop-blur-sm">
+      <p className="text-primary-900/60 text-sm/[1.5rem] md:text-base/[1.80rem] lg:text-lg/[2] dark:text-primary-200/60 font-light text-center px-4 max-w-5xl  backdrop-blur-sm">
         Everything you'd expect from an agency; resources, expertise, and
         strategy; at a price you'd normally pay a freelancer. Get{" "}
         <span className="font-bold ">custom web development</span> and digital
@@ -60,7 +60,7 @@ const HeroSection: React.FC = () => {
       <div className="flex justify-center gap-3 md:gap-4 backdrop-blur-sm">
         <Button
           size="lg"
-          className="hidden  md:flex !bg-gradient-primary dark:!bg-gradient-primary-dark !text-white dark:!text-primary-950  [@media(hover:hover)]:hover:opacity-90 active:opacity-80"
+          className="hidden  lg:flex !bg-gradient-primary dark:!bg-gradient-primary-dark !text-white dark:!text-primary-950  [@media(hover:hover)]:hover:opacity-90 active:opacity-80"
         >
           Let's Grow
           <svg
@@ -79,7 +79,7 @@ const HeroSection: React.FC = () => {
         <Button
           outline
           size="lg"
-          className="hidden  md:flex !border-secondary-100 dark:!border-secondary-950   !text-primary-900 dark:!text-primary-50  [@media(hover:hover)]:hover:!bg-primary-100 [@media(hover:hover)]:dark:hover:!bg-primary-900 active:!bg-primary-200 dark:active:!bg-secondary-900"
+          className="hidden  lg:flex !border-secondary-100 dark:!border-secondary-950   !text-primary-900 dark:!text-primary-50  [@media(hover:hover)]:hover:!bg-primary-100 [@media(hover:hover)]:dark:hover:!bg-primary-900 active:!bg-primary-200 dark:active:!bg-secondary-900"
         >
           <svg
             className="size-4 mr-2"
@@ -93,7 +93,7 @@ const HeroSection: React.FC = () => {
         </Button>
         <Button
           size="md"
-          className="md:hidden flex  !bg-gradient-primary dark:!bg-gradient-primary-dark !text-white dark:!text-primary-950 [@media(hover:hover)]:hover:opacity-90 active:opacity-85"
+          className="lg:hidden flex  !bg-gradient-primary dark:!bg-gradient-primary-dark !text-white dark:!text-primary-950 [@media(hover:hover)]:hover:opacity-90 active:opacity-85"
         >
           Let's Grow
           <svg
@@ -112,7 +112,7 @@ const HeroSection: React.FC = () => {
         <Button
           outline
           size="md"
-          className="md:hidden flex !border-secondary-100 dark:!border-secondary-950   !text-primary-900 dark:!text-primary-50  [@media(hover:hover)]:hover:!bg-primary-100 [@media(hover:hover)]:dark:hover:!bg-primary-950 active:!bg-secondary-200 dark:active:!bg-secondary-900"
+          className="lg:hidden flex !border-secondary-100 dark:!border-secondary-950   !text-primary-900 dark:!text-primary-50  [@media(hover:hover)]:hover:!bg-primary-100 [@media(hover:hover)]:dark:hover:!bg-primary-950 active:!bg-secondary-200 dark:active:!bg-secondary-900"
         >
           <svg
             className="size-4 mr-2"

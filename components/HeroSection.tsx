@@ -43,7 +43,7 @@ const HeroSection: React.FC = () => {
 
       {/* Heading */}
       <div className="px-4">
-        <h1 className="text-4xl/[1.1] font-extrabold md:text-5xl/[1.2] lg:text-6xl/[1.2] bg-gradient-primary dark:bg-gradient-primary-dark text-transparent bg-clip-text  text-center   ">
+        <h1 className="text-4xl/[1.1] font-extrabold md:text-5xl/[1.2] lg:text-6xl/[1.2] bg-gradient-primary dark:bg-gradient-primary-dark text-transparent bg-clip-text  text-center   uppercase">
           Custom Web Development & Digital Marketing in Manchester
         </h1>
       </div>

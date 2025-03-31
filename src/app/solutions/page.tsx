@@ -108,46 +108,26 @@ function SolutionCard({
 }: Solution) {
   return (
     <Card
-      size="lg"
-      className="rounded-lg border border-secondary-500  border-opacity-30 overflow-hidden flex flex-col transition-all duration-300 ease-in-out focus-within:border-opacity-100 active:border-opacity-100 md:hover:border-opacity-70  [background:radial-gradient(125%_125%_at_50%_10%,#fff_50%,#fbf4f7_100%)] dark:[background:radial-gradient(125%_125%_at_50%_10%,#000_50%,#260d15_100%)]"
+      size="xl"
+      className="rounded-lg border border-primary-500  border-opacity-40 overflow-hidden flex flex-col transition-all duration-300 ease-in-out focus-within:border-opacity-100 active:border-opacity-100 md:hover:border-opacity-70  "
       // style={{
       //   backgroundImage:
       //     "linear-gradient(to top, rgb(243, 215, 229) 0%, transparent)",
       // }}
       cover={
         image && (
-          <div className="relative  h-72 w-full lg:h-80">
+          <div className="relative  h-60 w-full lg:h-80">
             <Image src={image} alt={title} fill className="object-cover " />
           </div>
         )
       }
       header={
         <div className="flex items-center mb-2">
-          {/* <div className="w-10 h-10 flex items-center justify-center bg-primary-100 dark:bg-primary-900 rounded-lg mr-3"> */}
-          {/* <Icon className="w-5 h-5 text-accent-600 dark:text-accent-400 mr-3" /> */}
-          {/* </div> */}
           <h3 className=" max-w-md">{title}</h3>
         </div>
       }
-
-      //style="background-image: linear-gradient(to top, rgb(243, 215, 229) 0%, transparent);"
     >
-      <div>
-        {/* <div className="mb-4">
-          <h4 className="font-semibold mb-2">Key Features:</h4>
-          <ul className="space-y-2">
-            {features.map((feature, index) => (
-              <li
-                key={index}
-                className="flex items-center text-sm text-primary-600 dark:text-primary-400"
-              >
-                <span className="w-1.5 h-1.5 bg-accent-400  rounded-full mr-2"></span>
-                {feature}
-              </li>
-            ))}
-          </ul>
-        </div> */}
-
+      <div className="">
         {technologies && (
           <div className="  dark:border-primary-800 pb-4 ">
             {/* <h4 className="font-semibold mb-2">Technologies:</h4> */}
@@ -169,7 +149,7 @@ function SolutionCard({
         {description && (
           <a
             href="#"
-            className="text-secondary-900 tracking-wide dark:text-secondary-200 mb-2  text-xl underline"
+            className="text-secondary-900 tracking-wide dark:text-secondary-200 mb-2  text-base underline"
           >
             {description}
             <span className="inline-flex ml-2 items-center">
@@ -196,10 +176,10 @@ function CategorySection({ title, description, solutions }: SolutionCategory) {
   return (
     <div className="mb-20">
       <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold mb-4 text-primary-800 dark:text-primary-200">
+        <h2 className="text-3xl lg:text-4xl  mb-6 font-extrabold text-primary-950 dark:text-white px-4">
           {title}
         </h2>
-        <p className="text-primary-600 dark:text-primary-400 max-w-3xl mx-auto">
+        <p className="text-primary-950/60 dark:text-primary-200/60 font-light text-base md:text-lg lg:text-xl">
           {description}
         </p>
       </div>

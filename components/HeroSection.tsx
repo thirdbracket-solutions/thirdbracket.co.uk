@@ -43,13 +43,13 @@ const HeroSection: React.FC = () => {
 
       {/* Heading */}
       <div className="px-4">
-        <h1 className="text-4xl/[1.1] font-extrabold md:text-5xl/[1.2] lg:text-6xl/[1.2] bg-gradient-primary dark:bg-gradient-primary-dark text-transparent bg-clip-text  text-center   uppercase">
-          Custom Web Development & Digital Marketing in Manchester
+        <h1 className="text-4xl/[1.1] font-extrabold md:text-5xl/[1.2] lg:text-6xl/[1.2] bg-gradient-primary dark:bg-gradient-primary-dark text-transparent bg-clip-text  text-center   camelcase">
+          Enterprise Web & Digital Marketing Agency in Manchetser
         </h1>
       </div>
       {/* 800-#1f2937,900- #111827, 200-#e5e7eb, 100-#f3f4f6  #030712 #f9fafb*/}
       {/* Paragraph */}
-      <p className="text-primary-900/60 text-sm/[1.5rem] md:text-base/[1.80rem] lg:text-lg/[2] dark:text-primary-200/60 font-light text-center px-4 max-w-5xl  backdrop-blur-sm">
+      <p className="text-primary-950/60 dark:text-primary-200/60 font-light text-base md:text-lg lg:text-xl  text-center px-4 max-w-5xl  backdrop-blur-sm">
         Everything you'd expect from an agency; resources, expertise, and
         strategy; at a price you'd normally pay a freelancer. Get{" "}
         <span className="font-bold ">custom web development</span> and digital

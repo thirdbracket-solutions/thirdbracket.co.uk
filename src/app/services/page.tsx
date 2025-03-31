@@ -34,9 +34,9 @@ function ServiceCard({ title, description, icon: Icon, features }: Service) {
       isIcon
       size="lg"
       header={title}
-      className="rounded-lg border border-primary-500  border-opacity-30 overflow-hidden flex flex-col transition-all duration-300 ease-in-out focus-within:border-opacity-100 active:border-opacity-100 md:hover:border-opacity-100 [background:radial-gradient(125%_125%_at_50%_10%,#fff_50%,#fbf4f7_100%)] dark:[background:radial-gradient(125%_125%_at_50%_10%,#000_50%,#260d15_100%)]"
+      className="rounded-lg border border-primary-500  border-opacity-40 overflow-hidden flex flex-col transition-all duration-300 ease-in-out focus-within:border-opacity-100 active:border-opacity-100 md:hover:border-opacity-100  dark:bg-[linear-gradient(to_right,#3838381a_1px,transparent_1px),linear-gradient(to_bottom,#3838381a_1px,transparent_1px)] bg-[linear-gradient(to_right,#dee1e612_1px,transparent_1px),linear-gradient(to_bottom,#dee1e612_1px,transparent_1px)]  bg-[size:14px_24px] dark:bg-secondary-950 bg-secondary-50 bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-70"
       cover={
-        <div className="w-12 h-12 mb-4 flex items-center  justify-center   border border-primary-200  dark:border-primary-700/70  rounded-lg">
+        <div className="w-12 h-12 mb-4 flex items-center  justify-center   border border-primary-500/40  dark:bg-secondary-950 bg-secondary-50  rounded-lg">
           <Icon className="w-6 h-6 text-primary-900 dark:text-primary-100" />
         </div>
       }
@@ -46,6 +46,7 @@ function ServiceCard({ title, description, icon: Icon, features }: Service) {
       <p className="text-primary-600 dark:text-primary-400 mb-4">
         {description}
       </p> */}
+
       <p className="text-primary-600 dark:text-primary-400 mb-4">
         {description}
       </p>

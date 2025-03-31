@@ -42,11 +42,7 @@ const Subscription = () => {
 
   return (
     <section className="   py-8 sm:py-12 md:py-16   ">
-      <div
-        className="max-w-screen-xl  bg-[radial-gradient(ellipse_at_left,_var(--tw-gradient-stops))]
-from-[#f8ebf1] via-[#f3d7e5] to-[#eab7cf] dark:bg-[radial-gradient(ellipse_at_left,_var(--tw-gradient-stops))]
-dark:from-[#6f2c42] dark:via-[#84304b] dark:to-[#ac3b61] border-opacity-40 rounded-lg p-8 lg:p-12 border border-secondary-500"
-      >
+      <div className="max-w-screen-xl  bg-accent-200 dark:bg-accent-800 border-opacity-40 rounded-lg p-8 lg:p-12 border border-secondary-500">
         {state.isSuccess ? (
           <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 lg:gap-12">
             <div className="text-5xl mb-4">🎉</div>
